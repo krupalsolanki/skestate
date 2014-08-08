@@ -36,6 +36,7 @@
 
 div.form
 {
+    width: 221px;
 }
 
 div.form input,
@@ -118,10 +119,10 @@ div.form div.success label
 
 div.form .errorSummary
 {
-	border: 2px solid #C00;
+	//border: 2px solid #C00;
 	padding: 7px 7px 12px 7px;
 	margin: 0 0 20px 0;
-	background: #FEE;
+	background: rgb(224, 224, 224);
 	font-size: 0.9em;
 }
 

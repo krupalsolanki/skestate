@@ -46,7 +46,7 @@ echo Yii::app()->bootstrap->init();
                 '---',
                 array('label' => 'Post Requirement', 'url' => '#'),
                 '---',
-                array('label' => 'List Property', 'url' => '#'),
+                array('label' => 'List Property', 'url' => array('/listproperty/create')),
                 '---',
                 array('label'=>'more', 'url'=>'#', 'items'=>array(    
                 array('label'=>'About Us', 'url'=>array('/site/page', 'view'=>'about')),
