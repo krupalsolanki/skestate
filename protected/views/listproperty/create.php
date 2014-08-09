@@ -15,7 +15,8 @@ $this->menu=array(
 	array('label'=>'Manage Listproperty', 'url'=>array('admin')),
 );
 */?>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
+        
 
-<h3>Fill the form and we will buzz you</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

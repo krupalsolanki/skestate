@@ -71,7 +71,7 @@ class ListpropertyController extends Controller
 		{
 			$model->attributes=$_POST['Listproperty'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->property_id));
+				$this->redirect(array('create','id'=>$model->property_id));
 		}
 
 		$this->render('create',array(

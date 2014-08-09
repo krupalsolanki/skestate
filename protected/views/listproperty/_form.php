@@ -17,8 +17,10 @@
 
 	
 
-	<?php echo $form->errorSummary($model); ?>
-
+	<?php //echo $form->errorSummary($model); ?>
+    <div class="span4">
+    <div class="widget">
+    <div class='widget-header'><h3>Fill the form and we will buzz you.</h3></div>
 	<div class="row">
 		
 		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Your name..')); ?>
@@ -61,20 +63,20 @@
 	</div>
 
 	<div class="row">
-	        <?php echo $form->textFieldRow($model,'plot_area',array('placeholder'=>'Size of your property..','append'=>'sq ft','style'=>'margin-top:0px')); ?>
-		<?php echo $form->error($model,'plot_area'); ?>
+	        <?php echo $form->textFieldRow($model,'plot_area',array('labelOptions' => array('label' => false),'placeholder'=>'Plot area of your property..','append'=>'sq ft','style'=>'margin-top:0px')); ?>
+		
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'property_price'); ?>
-		<?php echo $form->textField($model,'property_price',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'property_price'); ?>
+		
+		<?php echo $form->textFieldRow($model,'property_price',array('labelOptions' => array('label' => false),'placeholder'=>'Price of your property..','size'=>10,'maxlength'=>10)); ?>
+		
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'property_address'); ?>
-		<?php echo $form->textField($model,'property_address',array('size'=>60,'maxlength'=>300)); ?>
-		<?php echo $form->error($model,'property_address'); ?>
+		
+		<?php echo $form->textAreaRow($model,'property_address',array('labelOptions' => array('label' => false),'placeholder'=>'Where is your property?','size'=>60,'maxlength'=>300)); ?>
+		
 	</div>
 
 	<div class="row buttons">
@@ -82,11 +84,19 @@
                 <?php $this->widget('bootstrap.widgets.TbButton', array(
     'type'=>'primary',
     'label'=>'List Property',
-    'block'=>true,
+    'block'=>false,
     'buttonType'=>'submit'
 )); ?>
+            <?php $this->widget('bootstrap.widgets.TbButton', array(
+    'type'=>'primary',
+    'label'=>'Reset',
+    'block'=>false,
+    'buttonType'=>'reset'
+)); ?>
+           
 	</div>
 
 <?php $this->endWidget(); ?>
-
+    </div>
+    </div>
 </div><!-- form -->

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 	'Contact',
 );
 ?>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
 
-<h1>Get in touch</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -19,12 +19,15 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 
-<p>
- Write us your queries and we will get back to you.
-</p>
+
 
 <div class="form">
-
+    <div class="span4">
+        <div class="widget">
+            <div class="widget-header"><h3>Get in touch</h3></div>
+            <p>
+ Write us your queries and we will get back to you.
+</p>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'contact-form',
 	'enableClientValidation'=>true,
@@ -79,7 +82,8 @@ $this->breadcrumbs=array(
 	</div>
 
 <?php $this->endWidget(); ?>
-
+</div>
+</div>        
 </div><!-- form -->
 
 <?php endif; ?>
