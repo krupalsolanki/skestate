@@ -36,7 +36,7 @@ echo Yii::app()->bootstrap->init();
                 <?php
                 $this->widget('bootstrap.widgets.TbNavbar', array(
                 'type' => 'inverse',
-                'brand' => 'sk estate agency',
+                'brand' => 'SK estate agency',
                 'collapse' => true,
                 'items' => array(
                 array(
@@ -44,7 +44,7 @@ echo Yii::app()->bootstrap->init();
                 'items' => array(
                 array('label' => 'Home', 'url' => array('/site/index')),
                 '---',
-                array('label' => 'Post Requirement', 'url' => '#'),
+                array('label' => 'Post Requirement', 'url' => array('/postproperty/create')),
                 '---',
                 array('label' => 'List Property', 'url' => array('/listproperty/create')),
                 '---',

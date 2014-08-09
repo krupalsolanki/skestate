@@ -13,6 +13,7 @@ $this->breadcrumbs=array(
 //);
 ?>
 
-<h1>Register</h1>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
+
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

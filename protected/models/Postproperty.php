@@ -1,28 +1,29 @@
 <?php
 
 /**
- * This is the model class for table "listproperty".
+ * This is the model class for table "postproperty".
  *
- * The followings are the available columns in table 'listproperty':
+ * The followings are the available columns in table 'postproperty':
+ * @property integer $p_id
  * @property string $name
  * @property string $email
  * @property string $mobile
- * @property string $property_for
  * @property string $city
- * @property string $property_category
- * @property integer $rooms
- * @property integer $plot_area
- * @property string $property_price
- * @property string $property_address
+ * @property string $property_type
+ * @property string $property_for
+ * @property integer $size_of_property
+ * @property string $location
+ * @property string $budget
+ * @property string $message
  */
-class Listproperty extends CActiveRecord
+class Postproperty extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'listproperty';
+		return 'postproperty';
 	}
 
 	/**
@@ -33,17 +34,16 @@ class Listproperty extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email, mobile, property_for, city, property_category, plot_area, property_price, property_address,file', 'required'),
-			array(' plot_area', 'numerical', 'integerOnly'=>true),
-                       // array('file', 'file', 'types'=>'zip,rar,tar.gz'),
+			array('name, email, mobile, city, property_type, property_for, size_of_property, location, budget, message', 'required'),
+			array('size_of_property', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>30),
 			array('email', 'length', 'max'=>50),
-			array('mobile, property_for, city, property_price', 'length', 'max'=>10),
-			array('property_category', 'length', 'max'=>15),
-			array('property_address', 'length', 'max'=>300),
+			array('mobile, budget', 'length', 'max'=>10),
+			array('city, property_type, property_for, location', 'length', 'max'=>15),
+			array('message', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('name, email, mobile, property_for, city, property_category, rooms, plot_area, property_price, property_address', 'safe', 'on'=>'search'),
+			array('p_id, name, email, mobile, city, property_type, property_for, size_of_property, location, budget, message', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,16 +64,17 @@ class Listproperty extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'p_id' => 'P',
 			'name' => 'Name',
 			'email' => 'Email',
 			'mobile' => 'Mobile',
-			'property_for' => 'Property For',
 			'city' => 'City',
-			'property_category' => 'Property Category',
-			'rooms' => 'Rooms',
-			'plot_area' => 'Plot Area',
-			'property_price' => 'Property Price',
-			'property_address' => 'Property Address',
+			'property_type' => 'Property Type',
+			'property_for' => 'Property For',
+			'size_of_property' => 'Size Of Property',
+			'location' => 'Location',
+			'budget' => 'Budget',
+			'message' => 'Message',
 		);
 	}
 
@@ -95,17 +96,17 @@ class Listproperty extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('p_id',$this->p_id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('mobile',$this->mobile,true);
-		$criteria->compare('property_for',$this->property_for,true);
 		$criteria->compare('city',$this->city,true);
-		$criteria->compare('property_category',$this->property_category,true);
-		$criteria->compare('rooms',$this->rooms);
-		$criteria->compare('plot_area',$this->plot_area);
-		$criteria->compare('property_price',$this->property_price,true);
-		$criteria->compare('property_address',$this->property_address,true);
-                $criteria->compare('file',$this->file,true);
+		$criteria->compare('property_type',$this->property_type,true);
+		$criteria->compare('property_for',$this->property_for,true);
+		$criteria->compare('size_of_property',$this->size_of_property);
+		$criteria->compare('location',$this->location,true);
+		$criteria->compare('budget',$this->budget,true);
+		$criteria->compare('message',$this->message,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -116,7 +117,7 @@ class Listproperty extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Listproperty the static model class
+	 * @return Postproperty the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

@@ -46,13 +46,13 @@
 	</div>
     
         <div class="row">
-		<?php echo $form->dropDownList($model, 'property_for', array('disabled'=>'List My Property For', 'Sell', 'Rent', 'PG')); ?>
+		<?php echo $form->dropDownList($model, 'property_for',  array('empty'=>'List My Property For', 'Sale', 'Rent', 'PG')); ?>
 		<?php echo $form->error($model,'property_for'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->dropDownList($model,'property_category',array('Type Of Property','Residential','Commercial')); ?>
+		<?php echo $form->dropDownList($model,'property_category',array('Type Of Property','Residential Plot','Residential House','Commercial Land','Commercial Shop','Commercial Showroom','Commercial Office Space','Builder Floor Apartment','Villa','Others')); ?>
 		<?php echo $form->error($model,'property_category'); ?>
 	</div>
 
@@ -69,7 +69,7 @@
 
 	<div class="row">
 		
-		<?php echo $form->textFieldRow($model,'property_price',array('labelOptions' => array('label' => false),'placeholder'=>'Price of your property..','size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->textFieldRow($model,'property_price',array('hint'=>'Price per square feet, or the rent.','labelOptions' => array('label' => false),'style'=>'margin-top:0px','placeholder'=>'Price of your property..','prepend'=>'Rs.','size'=>10,'maxlength'=>10)); ?>
 		
 	</div>
 
@@ -78,7 +78,7 @@
 		<?php echo $form->textAreaRow($model,'property_address',array('labelOptions' => array('label' => false),'placeholder'=>'Where is your property?','size'=>60,'maxlength'=>300)); ?>
 		
 	</div>
-
+       
 	<div class="row buttons">
 		
                 <?php $this->widget('bootstrap.widgets.TbButton', array(
@@ -88,7 +88,7 @@
     'buttonType'=>'submit'
 )); ?>
             <?php $this->widget('bootstrap.widgets.TbButton', array(
-    'type'=>'primary',
+    'type'=>'default',
     'label'=>'Reset',
     'block'=>false,
     'buttonType'=>'reset'
