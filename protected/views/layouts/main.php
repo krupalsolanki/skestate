@@ -36,6 +36,7 @@ echo Yii::app()->bootstrap->init();
                 <?php
                 $this->widget('bootstrap.widgets.TbNavbar', array(
                 'type' => 'inverse',
+                   
                 'brand' => 'SK estate agency',
                 'collapse' => true,
                 'items' => array(
@@ -59,6 +60,7 @@ echo Yii::app()->bootstrap->init();
                 array(
                 'class' => 'bootstrap.widgets.TbMenu',
                 'htmlOptions' => array('class' => 'pull-right'),
+                 
                 'items' => array(
                 array('label' => 'Send Quick Email', 'url' => array('/site/contact')),
                 '---',
@@ -81,11 +83,42 @@ echo Yii::app()->bootstrap->init();
                 ));
                 ?><!-- breadcrumbs -->
 <?php endif ?>
+                
+                       
+  <?php 
+  $this->widget('application.extensions.socialLink.socialLink', array(
+    'style'=>'right', //alignment - left, right
+    'top'=>'30',  //in percentage
+        'media' => array(
+        'facebook'=>array(
+            'url'=>'http://facebook.com/sharer/sharer.php?u=',
+            'target'=>'_blank',
+        ),
+        'twitter'=>array(
+            'url'=>'http://twitter.com/',
+            'target'=>'_blank',
+        ),
+        'google-plus'=>array(
+            'url'=>'https://plus.google.com/',
+            'target'=>'_blank',
+        ),
+        'linkedin'=>array(
+            'url'=>'http://linkedin.com/',
+            'target'=>'_blank',
+        ),
+        'rss'=>array(
+            'url'=>'http://rss.com/',
+            'target'=>'_blank',
+        ), 
+      )
+));
+  ?>
+          
                 <div id="page">
                     <?php echo $content; ?> </div>
-
+                 
             <div class="clear"></div>
-
+           
             <div id="footer">
                 Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
                 All Rights Reserved.<br/>
@@ -93,6 +126,7 @@ echo Yii::app()->bootstrap->init();
             </div><!-- footer -->
 
         </div><!-- page -->
-
+ 
     </body>
+    
 </html>

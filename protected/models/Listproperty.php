@@ -33,9 +33,9 @@ class Listproperty extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email, mobile, property_for, city, property_category, plot_area, property_price, property_address,file', 'required'),
+			array('name, email, mobile, property_for, city, property_category, plot_area, property_price, property_address', 'required'),
 			array(' plot_area', 'numerical', 'integerOnly'=>true),
-                       // array('file', 'file', 'types'=>'zip,rar,tar.gz'),
+                     
 			array('name', 'length', 'max'=>30),
 			array('email', 'length', 'max'=>50),
 			array('mobile, property_for, city, property_price', 'length', 'max'=>10),

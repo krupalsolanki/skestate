@@ -4808,6 +4808,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand {
   color: #999999;
+  margin-top: 4px;
 }
 
 .navbar-inverse .navbar-text {
