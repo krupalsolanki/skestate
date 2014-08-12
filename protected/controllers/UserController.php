@@ -39,13 +39,17 @@ class UserController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
-                    /*
-			array('deny',  // deny all users
-                           'action'=>  array('delete'),
-				'users'=>array('*'),
+                  /*  array('deny', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('dashboard'),
+				'users'=>array('?'),
+			),*/
+                    
+                     array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('dashboard'),
+				'users'=>array('demo'),
 			),
-                     * 
-                     */
+                 // allow admin user to perform 'admin' and 'delete' actions
+		
 		);
 	}
 

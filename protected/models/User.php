@@ -12,6 +12,7 @@
  */
 class User extends CActiveRecord
 {
+      public $user_role;
 	/**
 	 * @return string the associated database table name
 	 */

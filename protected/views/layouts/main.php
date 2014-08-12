@@ -64,8 +64,10 @@ echo Yii::app()->bootstrap->init();
                 'items' => array(
                 array('label' => 'Send Quick Email', 'url' => array('/site/contact')),
                 '---',
+                array('label' => 'Dashboard', 'url' => array('/user/dashboard'), 'visible' => !Yii::app()->user->isGuest && Yii::app()->user->getState('isAdmin')),    
                 array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
                     '---',
+                    
                 array('label' => 'Logout ('.Yii::app()->user->name.')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),   
                 
                 array('label' => 'Register', 'url' => array('/user/create'), 'visible' => Yii::app()->user->isGuest),
@@ -121,17 +123,19 @@ echo Yii::app()->bootstrap->init();
            
             <div id="footer" class="footer">
                 <div class="container">
-                Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
-                All Rights Reserved.<br/>
+                    <strong> Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
+                        All Rights Reserved.<br/></strong>
                    </div>
             </div><!-- footer -->
+            
+     <!-- Backstretch  -->       
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/backstretch/jquery.backstretch.min.js"></script>;            
 <script type="text/javascript">
   $.backstretch("<?php echo Yii::app()->request->baseUrl; ?>/images/backstretch1.jpg", {speed: 150});
 </script>
-        <!-- page -->
+        <!-- backstretch ends -->
  
     </body>
     
