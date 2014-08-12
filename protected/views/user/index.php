@@ -1,20 +1,27 @@
 <?php
-/* @var $this UserController */
-/* @var $dataProvider CActiveDataProvider */
-
 $this->breadcrumbs=array(
-	'Users',
+	UserModule::t("Users"),
 );
-
-$this->menu=array(
-	array('label'=>'Create User', 'url'=>array('create')),
-	array('label'=>'Manage User', 'url'=>array('admin')),
-);
+if(UserModule::isAdmin()) {
+	$this->layout='//layouts/column2';
+	$this->menu=array(
+	    array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin')),
+	    array('label'=>UserModule::t('Manage Profile Field'), 'url'=>array('profileField/admin')),
+	);
+}
 ?>
 
-<h1>Users</h1>
+<h1><?php echo UserModule::t("List User"); ?></h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('zii.widgets.grid.CGridView', array(
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+	'columns'=>array(
+		array(
+			'name' => 'username',
+			'type'=>'raw',
+			'value' => 'CHtml::link(CHtml::encode($data->username),array("user/view","id"=>$data->id))',
+		),
+		'create_at',
+		'lastvisit_at',
+	),
 )); ?>
