@@ -21,7 +21,7 @@
          
     <div class="span4">
         <div class="widget">
-            <div class="widget-header"><h3>Sign Up here..</h3></div>
+          <div class="box propertyImage">
         <?php echo $form->errorSummary($model); ?>
 
     <div class="row">
@@ -66,7 +66,7 @@
     </div>
 
 <?php $this->endWidget(); ?>
-
+</div>
 </div><!-- form -->
 </div>
 </div>

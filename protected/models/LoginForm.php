@@ -12,7 +12,7 @@ class LoginForm extends CFormModel
 	public $rememberMe;
 
 	private $_identity;
-        //private $type;
+        private $_type;
 	/**
 	 * Declares the validation rules.
 	 * The rules state that username and password are required,
@@ -76,5 +76,11 @@ class LoginForm extends CFormModel
 			return false;
 	}
         
-       
+       public function isAdmin(){
+          $record = User::model()->findByAttributes(array('email' => $this->email));
+          if($record['user_role']== 0){
+              return true;
+          }
+          else return false;
+       }
 }

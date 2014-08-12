@@ -17,7 +17,7 @@
 
 	 <div class="span4">
     <div class="widget">
-    <div class='widget-header'><h3>Fill the form and we will find it for you.</h3></div>
+    <div class="box propertyImage">
 
 	<?php //echo $form->errorSummary($model); ?>
 
@@ -88,6 +88,7 @@
         </div>
 
 <?php $this->endWidget(); ?>
+        </div>
     </div>
     </div>
 </div><!-- form -->

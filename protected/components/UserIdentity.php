@@ -31,9 +31,12 @@ class UserIdentity extends CUserIdentity {
         } else {
             $this->_id = $record['email'];
             $this->_type=$record['user_role'];
-           
+            if($this->_type ==0){
+                $this->setState('isAdmin',true);
+            }
+            else{
             $this->setState('title', $record['email']);
-            
+            }
             $this->errorCode = self::ERROR_NONE;
         }
         
