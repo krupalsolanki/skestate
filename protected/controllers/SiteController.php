@@ -92,7 +92,7 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
-                        $model->password=  md5($model->password);
+                       // $model->password=  md5($model->password);
                        
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
