@@ -20,7 +20,8 @@
 	<?php //echo $form->errorSummary($model); ?>
     <div class="span4">
     <div class="widget">
-    <div class='widget-header'><h3>Fill the form and we will buzz you.</h3></div>
+    
+    <div class="box propertyImage">
 	<div class="row">
 		
 		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Your name..')); ?>
@@ -95,7 +96,7 @@
 )); ?>
            
 	</div>
-
+</div>
 <?php $this->endWidget(); ?>
     </div>
     </div>

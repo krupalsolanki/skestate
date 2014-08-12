@@ -175,4 +175,8 @@ class UserController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionDashboard(){
+            $this->render('dashboard');
+        }
 }

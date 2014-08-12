@@ -119,13 +119,19 @@ echo Yii::app()->bootstrap->init();
                  
             <div class="clear"></div>
            
-            <div id="footer">
+            <div id="footer" class="footer">
+                <div class="container">
                 Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
                 All Rights Reserved.<br/>
-<?php //echo Yii::powered(); ?>
+                   </div>
             </div><!-- footer -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
-        </div><!-- page -->
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/backstretch/jquery.backstretch.min.js"></script>;            
+<script type="text/javascript">
+  $.backstretch("<?php echo Yii::app()->request->baseUrl; ?>/images/backstretch1.jpg", {speed: 150});
+</script>
+        <!-- page -->
  
     </body>
     

@@ -8,10 +8,10 @@ $this->breadcrumbs = array(
     'Login',
 );
 ?>
+ <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
+  <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/signin.css" media="screen, projection" />
 
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
-
-
+ 
 
 <div class="form">
     <?php
@@ -23,11 +23,11 @@ $this->breadcrumbs = array(
         ),
     ));
     ?>
-
+<div class="account-container">
+    <div class="content clearfix">
         <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
-    <div class="span4">
-        <div class="widget">
-            <div class='widget-header'><h3>Login</h3></div>
+        <h1>Sign In</h1>  
+        <p>Sign in with your registered account.</p>
             <div class="row">
 
 <?php echo $form->textField($model, 'email', array('placeholder' => 'Your registered email here..')); ?>
@@ -49,10 +49,9 @@ $this->breadcrumbs = array(
 
             <div class="row buttons">
 <?php echo CHtml::submitButton('Login', array('class' => 'btn btn-primary')); ?>
-            <?php echo CHtml::resetButton('Reset', array('buttonType' => 'reset', 'class' => 'btn btn-primary')); ?>
+            <?php echo CHtml::resetButton('Reset', array('buttonType' => 'reset', 'class' => 'btn ')); ?>
             </div>
-            </div>
-        </div>
-
+          </div>
+ </div>
 <?php $this->endWidget(); ?>
         </div><!-- form -->

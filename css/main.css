@@ -38,10 +38,12 @@ body
 #footer
 {
 	padding: 10px;
-	margin: 10px 20px;
+	margin: 0px 0px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
+	//border-top: 1px solid #C9E0ED;
+        background: none repeat scroll 0% 0% #000;
+        margin-bottom: -42px;
 }
 
 #logo
@@ -142,6 +144,8 @@ div.breadcrumbs
 {
 	font-size: 0.9em;
 	padding: 5px 20px;
+        background: rgb(0, 0, 0);
+        width: 23%;
 }
 
 div.breadcrumbs span
