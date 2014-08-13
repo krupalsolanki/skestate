@@ -23,120 +23,114 @@ echo Yii::app()->bootstrap->init();
     </head>
 
     <body>
-       
-      
 
-            <div id="header">
-                <div id="logo"><?php //echo CHtml::encode(Yii::app()->name); ?></div>
-            </div><!-- header -->
-            
-            <div id="mainmenu">
-                
-              <div class="container" id="page">    
+
+
+        <div id="header">
+            <div id="logo"><?php //echo CHtml::encode(Yii::app()->name);  ?></div>
+        </div><!-- header -->
+
+        <div id="mainmenu">
+
+            <div class="container" id="page">    
                 <?php
                 $this->widget('bootstrap.widgets.TbNavbar', array(
-                'type' => 'inverse',
-                   
-                'brand' => 'SK estate agency',
-                'collapse' => true,
-                'items' => array(
-                array(
-                'class' => 'bootstrap.widgets.TbMenu',
-                'items' => array(
-                array('label' => 'Home', 'url' => array('/site/index')),
-                '---',
-                array('label' => 'Post Requirement', 'url' => array('/postproperty/create')),
-                '---',
-                array('label' => 'List Property', 'url' => array('/listproperty/create')),
-                '---',
-                array('label'=>'more', 'url'=>'#', 'items'=>array(    
-                array('label'=>'About Us', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label' => 'Contact', 'url' =>'#'),
-                )),
-                ),
-                ),
-            
-              //  '<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Search"></form>',
-                array(
-                'class' => 'bootstrap.widgets.TbMenu',
-                'htmlOptions' => array('class' => 'pull-right'),
-                 
-                'items' => array(
-                array('label' => 'Send Quick Email', 'url' => array('/site/contact')),
-                '---',
-                array('label' => 'Dashboard', 'url' => array('/user/dashboard'), 'visible' => !Yii::app()->user->isGuest && Yii::app()->user->getState('isAdmin')),    
-                array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-                    '---',
-                    
-                array('label' => 'Logout ('.Yii::app()->user->name.')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),   
-                
-                array('label' => 'Register', 'url' => array('/user/create'), 'visible' => Yii::app()->user->isGuest),
+                    'type' => 'inverse',
+                    'brand' => 'SK estate agency',
+                    'collapse' => true,
+                    'items' => array(
+                        array(
+                            'class' => 'bootstrap.widgets.TbMenu',
+                            'items' => array(
+                                array('label' => 'Home', 'url' => array('/site/index')),
+                                '---',
+                                array('label' => 'Post Requirement', 'url' => array('/postproperty/create')),
+                                '---',
+                                array('label' => 'List Property', 'url' => array('/listproperty/create')),
+                                '---',
+                                array('label' => 'more', 'url' => '#', 'items' => array(
+                                        array('label' => 'About Us', 'url' => array('/site/page', 'view' => 'about')),
+                                        array('label' => 'Contact', 'url' => '#'),
+                                    )),
+                            ),
+                        ),
+                        array(
+                            'class' => 'bootstrap.widgets.TbMenu',
+                            'htmlOptions' => array('class' => 'pull-right'),
+                            'items' => array(
+                                array('label' => 'Send Quick Email', 'url' => array('/site/contact')),
+                                '---',
+                                array('label' => Yii::app()->getModule('user')->t("Login"), 'url' => Yii::app()->getModule('user')->loginUrl, 'visible' => Yii::app()->user->isGuest),
+                                array('url' => Yii::app()->getModule('user')->profileUrl, 'label' => Yii::app()->getModule('user')->t("Profile"), 'visible' => !Yii::app()->user->isGuest),
+                                '---',
+                                array('label' => Yii::app()->getModule('user')->t("Logout") . ' (' . Yii::app()->user->name . ')', 'url' => Yii::app()->getModule('user')->logoutUrl, 'visible' => !Yii::app()->user->isGuest),
+                                array('label' => Yii::app()->getModule('user')->t("Register"), 'url' => Yii::app()->getModule('user')->registrationUrl, 'visible' => Yii::app()->user->isGuest),
+                            ),
+                        ),
                     ),
-                ),
-               ),
-               ));
-                ?>
-                </div>
-            </div><!-- mainmenu -->
-            <?php if (isset($this->breadcrumbs)): ?>
-                <?php
-                $this->widget('zii.widgets.CBreadcrumbs', array(
-                    'links' => $this->breadcrumbs,
                 ));
-                ?><!-- breadcrumbs -->
-<?php endif ?>
-                
-                       
-  <?php 
-  $this->widget('application.extensions.socialLink.socialLink', array(
-    'style'=>'right', //alignment - left, right
-    'top'=>'30',  //in percentage
-        'media' => array(
-        'facebook'=>array(
-            'url'=>'http://facebook.com/sharer/sharer.php?u=',
-            'target'=>'_blank',
-        ),
-        'twitter'=>array(
-            'url'=>'http://twitter.com/',
-            'target'=>'_blank',
-        ),
-        'google-plus'=>array(
-            'url'=>'https://plus.google.com/',
-            'target'=>'_blank',
-        ),
-        'linkedin'=>array(
-            'url'=>'http://linkedin.com/',
-            'target'=>'_blank',
-        ),
-        'rss'=>array(
-            'url'=>'http://rss.com/',
-            'target'=>'_blank',
-        ), 
-      )
-));
-  ?>
-          
-                <div id="page">
-                    <?php echo $content; ?> </div>
-                 
-            <div class="clear"></div>
-           
-            <div id="footer" class="footer">
-                <div class="container">
-                    <strong> Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
-                        All Rights Reserved.<br/></strong>
-                   </div>
-            </div><!-- footer -->
-            
-     <!-- Backstretch  -->       
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+                ?>
+            </div>
+        </div><!-- mainmenu -->
+                <?php if (isset($this->breadcrumbs)): ?>
+                    <?php
+                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'links' => $this->breadcrumbs,
+                    ));
+                    ?><!-- breadcrumbs -->
+        <?php endif ?>
 
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/backstretch/jquery.backstretch.min.js"></script>;            
-<script type="text/javascript">
-  $.backstretch("<?php echo Yii::app()->request->baseUrl; ?>/images/backstretch1.jpg", {speed: 150});
-</script>
+
+        <?php
+        $this->widget('application.extensions.socialLink.socialLink', array(
+            'style' => 'right', //alignment - left, right
+            'top' => '30', //in percentage
+            'media' => array(
+                'facebook' => array(
+                    'url' => 'http://facebook.com/sharer/sharer.php?u=',
+                    'target' => '_blank',
+                ),
+                'twitter' => array(
+                    'url' => 'http://twitter.com/',
+                    'target' => '_blank',
+                ),
+                'google-plus' => array(
+                    'url' => 'https://plus.google.com/',
+                    'target' => '_blank',
+                ),
+                'linkedin' => array(
+                    'url' => 'http://linkedin.com/',
+                    'target' => '_blank',
+                ),
+                'rss' => array(
+                    'url' => 'http://rss.com/',
+                    'target' => '_blank',
+                ),
+            )
+        ));
+        ?>
+
+        <div id="page">
+        <?php echo $content; ?> </div>
+
+        <div class="clear"></div>
+
+        <div id="footer" class="footer">
+            <div class="container">
+                <strong> Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
+                    All Rights Reserved.<br/></strong>
+            </div>
+        </div><!-- footer -->
+
+        <!-- Backstretch  -->       
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/backstretch/jquery.backstretch.min.js"></script>;            
+        <script type="text/javascript">
+        $.backstretch("<?php echo Yii::app()->request->baseUrl; ?>/images/backstretch1.jpg", {speed: 150});
+        </script>
         <!-- backstretch ends -->
- 
+
     </body>
-    
+
 </html>

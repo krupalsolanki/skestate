@@ -22,7 +22,7 @@ class Listproperty extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'listproperty';
+		return 'tbl_listproperty';
 	}
 
 	/**

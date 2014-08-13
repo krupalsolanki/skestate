@@ -144,8 +144,8 @@ div.breadcrumbs
 {
 	font-size: 0.9em;
 	padding: 5px 20px;
-        background: rgb(0, 0, 0);
-        width: 23%;
+        background:rgba(0, 0, 0, 0.23);
+        width: 10%;
 }
 
 div.breadcrumbs span

@@ -23,7 +23,7 @@ class Postproperty extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'postproperty';
+		return 'tbl_postproperty';
 	}
 
 	/**

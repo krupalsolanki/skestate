@@ -58,6 +58,7 @@ return array(
             # page after logout
             'returnLogoutUrl' => array('/user/login'),
         ),
+     'admin',
  // =====================================
    // uncomment the following to enable the Gii tool  
   'gii'=>array(
@@ -95,7 +96,7 @@ return array(
   ),
  
 'db' => array(
-'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/skestate.db',
  ),
  // uncomment the following to use a MySQL database
 
