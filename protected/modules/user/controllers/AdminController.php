@@ -28,9 +28,9 @@ class AdminController extends Controller
 				'actions'=>array('admin','delete','create','update','view'),
 				'users'=>UserModule::getAdmins(),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+		//	array('deny',  // deny all users
+		//		'users'=>array('*'),
+		//	),
 		);
 	}
 	/**

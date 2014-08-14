@@ -25,7 +25,7 @@ class ListpropertyController extends Controller
 	 * @return array access control rules
 	 */
 	public function accessRules()
-	{
+	{   
 		return array(
 			array('deny',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
@@ -170,4 +170,6 @@ class ListpropertyController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        
 }

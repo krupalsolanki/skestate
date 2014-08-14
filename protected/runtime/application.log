@@ -4937,3 +4937,441 @@ Stack trace:
 REQUEST_URI=/skestate/index.php/user/dashboard
 HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
 ---
+2014/08/14 06:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/dashboard".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 06:42:06 [error] [exception.CException] exception 'CException' with message 'DashboardController cannot find the requested view "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('dashboard', NULL, true)
+#1 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('dashboard')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionDashboard()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/dashboard
+---
+2014/08/14 06:42:37 [error] [exception.CException] exception 'CException' with message 'DashboardController cannot find the requested view "admin/dashboard".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('admin/dashboard', NULL, true)
+#1 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('admin/dashboard')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionDashboard()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/dashboard
+---
+2014/08/14 06:47:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 06:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 06:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 06:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/dashboard
+---
+2014/08/14 06:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/dashboard
+---
+2014/08/14 06:48:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/dashboard
+---
+2014/08/14 06:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/dashb...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/dashboard
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 15:58:48 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "totalUsers".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): CComponent->__call('totalUsers', Array)
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): UserModule->totalUsers()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---
+2014/08/14 16:00:20 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "totalUsers".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): CComponent->__call('totalUsers', Array)
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): UserModule->totalUsers()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---
+2014/08/14 16:00:22 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "totalUsers".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): CComponent->__call('totalUsers', Array)
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(45): UserModule->totalUsers()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---
+2014/08/14 18:32:48 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.Listproperty" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('Listproperty')
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(46): CModule->__get('Listproperty')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 18:33:08 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.listproperty" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('listproperty')
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(46): CModule->__get('listproperty')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/listproperty/create
+---
+2014/08/14 19:38:12 [error] [php] include(TbHtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\dashboard\index.php(34): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#3 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#4 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#5 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (34)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/14 19:41:23 [error] [php] Use of undefined constant User - assumed 'User' (C:\wamp\www\skestate\protected\modules\user\UserModule.php:263)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\modules\user\UserModule.php (263)
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (30)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+2014/08/14 19:41:48 [error] [php] Use of undefined constant User - assumed 'User' (C:\wamp\www\skestate\protected\modules\user\UserModule.php:263)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\modules\user\UserModule.php (263)
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (30)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+2014/08/14 19:42:31 [error] [php] Use of undefined constant User - assumed 'User' (C:\wamp\www\skestate\protected\modules\user\UserModule.php:263)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\modules\user\UserModule.php (263)
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (30)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+2014/08/14 19:45:23 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "redirect".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): CComponent->__call('redirect', Array)
+#1 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): UserModule->redirect('user/admin')
+#2 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): UserModule->allUsers()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/14 19:45:55 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "render".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): CComponent->__call('render', Array)
+#1 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): UserModule->render('user/admin')
+#2 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): UserModule->allUsers()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/14 19:45:58 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "render".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): CComponent->__call('render', Array)
+#1 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): UserModule->render('user/admin')
+#2 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): UserModule->allUsers()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/14 19:45:59 [error] [exception.CException] exception 'CException' with message 'UserModule and its behaviors do not have a method or closure named "render".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): CComponent->__call('render', Array)
+#1 C:\wamp\www\skestate\protected\modules\user\UserModule.php(272): UserModule->render('user/admin')
+#2 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): UserModule->allUsers()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/14 19:51:55 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.adminUrl" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('adminUrl')
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): CModule->__get('adminUrl')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/user/admin/create
+---
+2014/08/14 19:52:39 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.adminUrl" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('adminUrl')
+#1 C:\wamp\www\skestate\protected\views\dashboard\index.php(30): CModule->__get('adminUrl')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/user
+---
+2014/08/14 19:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/%3C?php//%20Yii::app()-%3EgetModule(%27user%27)-%3EadminUrl?%3E
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---

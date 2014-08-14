@@ -48,6 +48,8 @@ echo Yii::app()->bootstrap->init();
                                 '---',
                                 array('label' => 'List Property', 'url' => array('/listproperty/create')),
                                 '---',
+                                array('label' => 'Dashboard', 'url' => array('/dashboard/index'),'visible' => !Yii::app()->user->isGuest && Yii::app()->getModule('user')->isAdmin()),
+                                '---',
                                 array('label' => 'more', 'url' => '#', 'items' => array(
                                         array('label' => 'About Us', 'url' => array('/site/page', 'view' => 'about')),
                                         array('label' => 'Contact', 'url' => '#'),
@@ -64,6 +66,7 @@ echo Yii::app()->bootstrap->init();
                                 array('url' => Yii::app()->getModule('user')->profileUrl, 'label' => Yii::app()->getModule('user')->t("Profile"), 'visible' => !Yii::app()->user->isGuest),
                                 '---',
                                 array('label' => Yii::app()->getModule('user')->t("Logout") . ' (' . Yii::app()->user->name . ')', 'url' => Yii::app()->getModule('user')->logoutUrl, 'visible' => !Yii::app()->user->isGuest),
+                                 '---',
                                 array('label' => Yii::app()->getModule('user')->t("Register"), 'url' => Yii::app()->getModule('user')->registrationUrl, 'visible' => Yii::app()->user->isGuest),
                             ),
                         ),
@@ -112,7 +115,7 @@ echo Yii::app()->bootstrap->init();
 
         <div id="page">
         <?php echo $content; ?> </div>
-
+          
         <div class="clear"></div>
 
         <div id="footer" class="footer">

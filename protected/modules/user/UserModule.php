@@ -59,7 +59,7 @@ class UserModule extends CWebModule
 	public $profileUrl = array("/user/profile");
 	public $returnUrl = array("/user/profile");
 	public $returnLogoutUrl = array("/user/login");
-       
+        public $adminUrl=array("");
 	
 	
 	/**
@@ -262,4 +262,11 @@ class UserModule extends CWebModule
 	public function users() {
 		return User;
 	}
+        
+        public function totalUsers(){
+            $rows = User::model()->count();
+            echo $rows;
+        }
+        
+        
 }

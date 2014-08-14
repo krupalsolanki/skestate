@@ -28,9 +28,9 @@ class UserController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+			//array('deny',  // deny all users
+		//		'users'=>array('*'),
+		//	),
 		);
 	}	
 
@@ -99,7 +99,6 @@ class UserController extends Controller
 		return $this->_model;
 	}
         
-        public function actionDashboard(){
-            $this->render('dashboard');
-        }
+        
+        
 }
