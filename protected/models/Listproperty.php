@@ -105,7 +105,7 @@ class Listproperty extends CActiveRecord
 		$criteria->compare('plot_area',$this->plot_area);
 		$criteria->compare('property_price',$this->property_price,true);
 		$criteria->compare('property_address',$this->property_address,true);
-                $criteria->compare('file',$this->file,true);
+               
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

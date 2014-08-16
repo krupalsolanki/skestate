@@ -27,10 +27,11 @@
                 </div>
                 <div class="portlet-content">
                     <ul class="sidebar" id="yw1">
-                        <li><a href="<?php Yii::app()->getModule('user')->adminUrl?>">Users</a></li>
-                        <li><a href="#">View Posted Requirements </a></li>
-                        <li><a href="#">View Listed Property </a></li>
-                        <li><a href="#">Add new Project</a></li>
+                        <li><?php echo CHtml::link('Users',Yii::app()->createurl('user/admin')) ?></li>
+                        <li><?php echo CHtml::link('Posted Requirements',Yii::app()->createurl('postproperty/admin')) ?></li>
+                        <li><?php echo CHtml::link('Listed Porperty',Yii::app()->createurl('listproperty/admin')) ?></li>
+                        <li><?php echo CHtml::link('Add New Project',Yii::app()->createurl('TblProjects/create')) ?></li>
+                        <li><?php echo CHtml::link('Manage Added Project',Yii::app()->createurl('TblProjects/admin')) ?></li>
                         
                     </ul></div>
             </div>
@@ -51,18 +52,15 @@
             </div>
         </div>
         
-        <div class="span3">
+         <div class="span3">
             <div class="portlet" id="yw0">
                 <div class="portlet-decoration">
                     <div class="portlet-title">Profile</div>
                 </div>
                 <div class="portlet-content">
                     <ul class="sidebar" id="yw1">
-                        <li><a href="#">Name</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">User Name</a></li>
-                        <li><a href="#"><button class="btn btn-primary btn-block">Edit </button></a></li>
-                    </ul></div>
+                        <li><a href="#"><ins>Username </ins>:</a></li>
+                          </ul></div>
             </div>
         </div>
 

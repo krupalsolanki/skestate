@@ -59,7 +59,7 @@ class UserModule extends CWebModule
 	public $profileUrl = array("/user/profile");
 	public $returnUrl = array("/user/profile");
 	public $returnLogoutUrl = array("/user/login");
-        public $adminUrl=array("");
+        //public $adminUrl= array("/user/admin");
 	
 	
 	/**
@@ -268,5 +268,8 @@ class UserModule extends CWebModule
             echo $rows;
         }
         
+        public function getCurrentUser(){
+           return Yii::app()->session['username'];
+        }
         
 }

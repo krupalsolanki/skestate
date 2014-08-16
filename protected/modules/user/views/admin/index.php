@@ -1,15 +1,13 @@
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gridview.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tablesorter.css" media="screen, projection" />
+
 <?php
-$this->breadcrumbs=array(
-	UserModule::t('Users')=>array('/user'),
-	UserModule::t('Manage'),
+$this->breadcrumbs = array(
+    UserModule::t('Users') => array('/user'),
+    UserModule::t('Manage'),
 );
 
-$this->menu=array(
-    array('label'=>UserModule::t('Create User'), 'url'=>array('create')),
-    array('label'=>UserModule::t('Manage Users'), 'url'=>array('admin')),
-    array('label'=>UserModule::t('Manage Profile Field'), 'url'=>array('profileField/admin')),
-    array('label'=>UserModule::t('List User'), 'url'=>array('/user')),
-);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -23,55 +21,96 @@ $('.search-form form').submit(function(){
     return false;
 });
 ");
-
 ?>
-<h1><?php echo UserModule::t("Manage Users"); ?></h1>
 
-<p><?php echo UserModule::t("You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done."); ?></p>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span9">
+            <div class="main">
+                <h1>Users</h1>
+                <?php //echo CHtml::link(UserModule::t('Advanced Search'),'#',array('class'=>'search-button'));  ?>
+              <!--  <div class="search-form" style="display:none">
+                    <?php
+                    /*
+                    $this->renderPartial('_search', array(
+                        'model' => $model,
+                    )); */
+                    ?>
+                </div><!-- search-form -->
+                <?php
 
-<?php echo CHtml::link(UserModule::t('Advanced Search'),'#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-    'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+  $this->widget('zii.widgets.grid.CGridView', array(
+  'id'=>'post-grid',
 
-<?php
+  'dataProvider'=>$model->search(),
+  'filter'=>$model,
+  'columns'=>array(
+  array(
+  'name' => 'id',
+  'type'=>'raw',
+  'value' => 'CHtml::link(CHtml::encode($data->id),array("admin/update","id"=>$data->id))',
+  'htmlOptions'=>array('style'=>'width:20px;')    
+  ),
+  array(
+  'name' => 'username',
+  'type'=>'raw',
+  'value' => 'CHtml::link(UHtml::markSearch($data,"username"),array("admin/view","id"=>$data->id))',
+  ),
+  array(
+  'name'=>'email',
+  'type'=>'raw',
+  'value'=>'CHtml::link(UHtml::markSearch($data,"email"), "mailto:".$data->email)',
+  ),
+  'create_at',
+  'lastvisit_at',
+  array(
+  'name'=>'superuser',
+  'value'=>'User::itemAlias("AdminStatus",$data->superuser)',
+  'filter'=>User::itemAlias("AdminStatus"),
+  ),
+  array(
+  'name'=>'status',
+  'value'=>'User::itemAlias("UserStatus",$data->status)',
+  'filter' => User::itemAlias("UserStatus"),
+  ),
+  array(
+  'class'=>'CButtonColumn',
+   
+      ),
+  ),
+  )); 
+?>
+            </div>
+        </div>
 
-$this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'user-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		array(
-			'name' => 'id',
-			'type'=>'raw',
-			'value' => 'CHtml::link(CHtml::encode($data->id),array("admin/update","id"=>$data->id))',
-		),
-		array(
-			'name' => 'username',
-			'type'=>'raw',
-			'value' => 'CHtml::link(UHtml::markSearch($data,"username"),array("admin/view","id"=>$data->id))',
-		),
-		array(
-			'name'=>'email',
-			'type'=>'raw',
-			'value'=>'CHtml::link(UHtml::markSearch($data,"email"), "mailto:".$data->email)',
-		),
-		'create_at',
-		'lastvisit_at',
-		array(
-			'name'=>'superuser',
-			'value'=>'User::itemAlias("AdminStatus",$data->superuser)',
-			'filter'=>User::itemAlias("AdminStatus"),
-		),
-		array(
-			'name'=>'status',
-			'value'=>'User::itemAlias("UserStatus",$data->status)',
-			'filter' => User::itemAlias("UserStatus"),
-		),
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+        <div class="span3">
+            <?php /*
+              $this->menu=array(
+              array('label'=>UserModule::t('Create User'), 'url'=>array('create')),
+              array('label'=>UserModule::t('Manage Users'), 'url'=>array('admin')),
+              array('label'=>UserModule::t('Manage Profile Field'), 'url'=>array('profileField/admin')),
+              array('label'=>UserModule::t('List User'), 'url'=>array('/user')),
+              );
+             *      
+             */ ?>
+
+            <div class="portlet" id="yw0">
+                <div class="portlet-decoration">
+                    <div class="portlet-title">Profile</div>
+                </div>
+                <div class="portlet-content">
+                    <ul class="sidebar" id="yw1">
+                        <li><?php echo CHtml::link('Create',Yii::app()->createurl('/user/admin/create')) ?></li>
+                        
+                        <li><?php echo CHtml::link('List',Yii::app()->createurl('/user')) ?></li>
+                        
+                    </ul></div>
+            </div>
+
+        </div>
+
+    </div> <!--row fluid-->
+</div> <!--container fluid-->
+
+
+

@@ -20,13 +20,13 @@
 {
 	font-size: 0.9em;
 	border: 1px white solid;
-	padding: 0.3em;
+	padding: 0.4em;
 }
 
 .grid-view table.items th
 {
 	color: white;
-	background: url("bg.gif") repeat-x scroll left top white;
+        background: #333333;
 	text-align: center;
 }
 

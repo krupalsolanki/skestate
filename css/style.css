@@ -461,8 +461,8 @@ input[type="checkbox"][readonly] {
   color: #333333;
 }
 
-/* Table */
-
+/* Table 
+*/
 .grid-view table.items {
   border: 1px solid #dddddd;
   border-collapse: separate;
