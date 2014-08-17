@@ -68,8 +68,10 @@ background-color: #ffffff;
 border: 1px solid #dddddd;
 }
 
+
+
 /* Forms */
- 
+ /*
 form {
   margin: 0 0 18px;
 }
@@ -250,7 +252,7 @@ input[type="color"]:focus,
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-
+/*
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
@@ -260,7 +262,7 @@ input[type="checkbox"] {
   margin: 3px 0;
   *margin-top: 0;
   /* IE7 */
-
+/*
   line-height: normal;
   cursor: pointer;
 }
@@ -279,12 +281,13 @@ select,
 input[type="file"] {
   height: 28px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
+/*
   *margin-top: 4px;
   /* For IE7, add top margin to align select with labels */
-
+/*
   line-height: 28px;
 }
+/*
 select {
   width: 220px;
   border: 1px solid #bbb;
@@ -421,7 +424,7 @@ input[type="checkbox"][readonly] {
   background-color: transparent;
 }
 
-
+*/
 
 /* Breadcrums */
 .breadcrumbs {
@@ -462,7 +465,7 @@ input[type="checkbox"][readonly] {
 }
 
 /* Table 
-*/
+*
 .grid-view table.items {
   border: 1px solid #dddddd;
   border-collapse: separate;
@@ -516,9 +519,10 @@ p.hint { float:left; display:block;}
   margin-bottom: .6em;
   list-style: none;
 }
+*/
 /*------------------------------------------------------------------
 [ Footer/ .footer ]
-*/
+
 .footer {
   margin-top: 0;
   border-top: 1px solid #000;
@@ -542,3 +546,5 @@ p.hint { float:left; display:block;}
 }
 
 .col-md-3 { float: left; }
+
+*/

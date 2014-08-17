@@ -49,11 +49,10 @@ echo Yii::app()->bootstrap->init();
                                 array('label' => 'List Property', 'url' => array('/listproperty/create')),
                                 '---',
                                 array('label' => 'Dashboard', 'url' => array('/dashboard/index'),'visible' => !Yii::app()->user->isGuest && Yii::app()->getModule('user')->isAdmin()),
-                                '---',
-                                array('label' => 'more', 'url' => '#', 'items' => array(
-                                        array('label' => 'About Us', 'url' => array('/site/page', 'view' => 'about')),
-                                        array('label' => 'Contact', 'url' => '#'),
-                                    )),
+                                
+                                array('label' => 'About Us', 'url' => array('/site/page', 'view' => 'about')),
+                                       
+                                    
                             ),
                         ),
                         array(
@@ -125,13 +124,15 @@ echo Yii::app()->bootstrap->init();
             </div>
         </div><!-- footer -->
 
-        <!-- Backstretch  -->       
+        <!-- Backstretch -->    
+        <?php if(basename($_SERVER['PHP_SELF']) != 'contact') {?>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/backstretch/jquery.backstretch.min.js"></script>;            
         <script type="text/javascript">
         $.backstretch("<?php echo Yii::app()->request->baseUrl; ?>/images/backstretch1.jpg", {speed: 150});
         </script>
+        <?php }?>
         <!-- backstretch ends -->
 
     </body>
