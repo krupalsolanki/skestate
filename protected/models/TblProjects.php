@@ -18,6 +18,7 @@ class TblProjects extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+        public $image;
 	public function tableName()
 	{
 		return 'tbl_projects';
@@ -36,11 +37,11 @@ class TblProjects extends CActiveRecord
 			array('project_name', 'length', 'max'=>30),
 			array('project_address', 'length', 'max'=>100),
 			array('developed_by, type_of_project, type_of_property', 'length', 'max'=>50),
-			array('image', 'length', 'max'=>50),
-                        
+			array('image_path', 'length', 'max'=>300),
+                        array('image','file','types' => 'jpg, png, gif, bmp'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('project_id, project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property, image', 'safe', 'on'=>'search'),
+			array('project_id, project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -98,8 +99,8 @@ class TblProjects extends CActiveRecord
 		$criteria->compare('developed_by',$this->developed_by,true);
 		$criteria->compare('type_of_project',$this->type_of_project,true);
 		$criteria->compare('type_of_property',$this->type_of_property,true);
-		$criteria->compare('image',$this->image_file_path,true);
-
+		$criteria->compare('image',$this->image,true);
+                $criteria->compare('image_path',$this->image_path,true); 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
@@ -115,4 +116,6 @@ class TblProjects extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        
 }

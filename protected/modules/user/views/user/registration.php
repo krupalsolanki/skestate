@@ -8,7 +8,7 @@ $this->breadcrumbs = array(
     <div class="row-fluid">
         <div class="span-10">
             <div style="padding: 40px 0 150px;
-                 background: rgba(59, 102, 116, 0.6);text-align: center">
+                 background: rgba(37, 37, 37, 0.6);text-align: center">
 
 
                 <?php if (Yii::app()->user->hasFlash('registration')): ?>
@@ -34,7 +34,7 @@ $this->breadcrumbs = array(
 
                     <?php echo $form->errorSummary(array($model, $profile)); ?>
                 <fieldset>
-                    <legend><h1>Registration</h1></legend>
+                    <legend><h1 style="color: whitesmoke;">Registration</h1></legend>
                     <div class="row">
                        
                         <?php echo $form->textField($model, 'username',array('placeholder' =>'username' ,'style' => 'height:40px;font-size: 15px;width:500px;')); ?>

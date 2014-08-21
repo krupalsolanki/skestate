@@ -46,10 +46,7 @@
 		<?php echo $form->textField($model,'type_of_property',array('size'=>15,'maxlength'=>15)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'image_file_path'); ?>
-		<?php echo $form->textField($model,'image_file_path',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
+	
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

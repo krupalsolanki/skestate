@@ -1,4 +1,6 @@
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
 
+<body style="background: url('<?php echo Yii::app()->request->baseUrl; ?>/images/overlay.png'), url('<?php echo Yii::app()->request->baseUrl; ?>/images/one.jpg');">
 <?php
 /* @var $this SiteController */
 /* @var $model ContactForm */
@@ -9,12 +11,11 @@ $this->breadcrumbs = array(
     'Contact',
 );
 ?>
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base-admin.css" media="screen, projection" />
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span-10">
             <div style="padding: 40px 0 150px;
-                 background: rgba(59, 102, 116, 0.6);text-align: center">
+                 background: url('<?php echo Yii::app()->request->baseUrl; ?>/images/overlay.png'), url('<?php echo Yii::app()->request->baseUrl; ?>/images/two.jpg');text-align: center">
                  <?php if (Yii::app()->user->hasFlash('contact')): ?>
 
                     <div class="flash-success">

@@ -1,8 +1,13 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Change Password");
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gridview.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tablesorter.css" media="screen, projection" />
+
+<?php  $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Change Password");
 $this->breadcrumbs=array(
 	UserModule::t("Profile") => array('/user/profile'),
 	UserModule::t("Change Password"),
 );
+
 $this->menu=array(
 	((UserModule::isAdmin())
 		?array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin'))
@@ -14,11 +19,16 @@ $this->menu=array(
 );
 ?>
 
-<h1><?php echo UserModule::t("Change password"); ?></h1>
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span6">
+<div class="main">
+    <fieldset>
+        <legend><h1><?php echo UserModule::t("Change password"); ?></h1></legend>
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'changepassword-form',
+      'type'=>'horizontal',
 	'enableAjaxValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
@@ -27,32 +37,21 @@ $this->menu=array(
 
 	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
 	<?php echo $form->errorSummary($model); ?>
-	
-	<div class="row">
-	<?php echo $form->labelEx($model,'oldPassword'); ?>
-	<?php echo $form->passwordField($model,'oldPassword'); ?>
-	<?php echo $form->error($model,'oldPassword'); ?>
-	</div>
-	
-	<div class="row">
-	<?php echo $form->labelEx($model,'password'); ?>
-	<?php echo $form->passwordField($model,'password'); ?>
+	<?php echo $form->passwordFieldRow($model,'oldPassword'); ?>
+	<?php echo $form->passwordFieldRow($model,'password'); ?>
 	<?php echo $form->error($model,'password'); ?>
-	<p class="hint">
-	<?php echo UserModule::t("Minimal password length 4 symbols."); ?>
-	</p>
-	</div>
 	
-	<div class="row">
-	<?php echo $form->labelEx($model,'verifyPassword'); ?>
-	<?php echo $form->passwordField($model,'verifyPassword'); ?>
-	<?php echo $form->error($model,'verifyPassword'); ?>
-	</div>
-	
-	
-	<div class="row submit">
-	<?php echo CHtml::submitButton(UserModule::t("Save")); ?>
-	</div>
+	<?php echo $form->passwordFieldRow($model,'verifyPassword'); ?>
+         </fieldset>
+    <div class="form-actions">
+	<?php echo CHtml::submitButton(UserModule::t("Save"),array('class'=>'btn btn-inverse','style'=>'margin-left:100px')); ?>
+        <?php echo CHtml::resetButton('Reset',array('class'=>'btn','style'=>'margin-left:10px')); ?>
+    
+    </div>
 
 <?php $this->endWidget(); ?>
+   
 </div><!-- form -->
+        </div>
+        </div>
+    </div>

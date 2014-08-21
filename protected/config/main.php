@@ -27,6 +27,7 @@ return array(
  ),
  'modules' => array(
 // =======================================
+     
     'user'=>array(
             # encrypting method (php hash function)
             'hash' => 'md5',

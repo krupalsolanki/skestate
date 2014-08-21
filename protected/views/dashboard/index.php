@@ -55,12 +55,18 @@
          <div class="span3">
             <div class="portlet" id="yw0">
                 <div class="portlet-decoration">
-                    <div class="portlet-title">Profile</div>
+                    <div class="portlet-title">Profile Details</div>
                 </div>
                 <div class="portlet-content">
                     <ul class="sidebar" id="yw1">
-                        <li><a href="#"><ins>Username </ins>:</a></li>
-                          </ul></div>
+                        
+                        <li><a href="#"><ins>Name</ins>:</a><?php echo Yii::app()->user->firstname ." ". Yii::app()->user->lastname; ?></li>
+                        <li><a href="#"><ins>Username</ins>:</a><?php echo Yii::app()->user->username; ?></li>
+                        <li><a href="#"><ins>Email</ins>:</a><?php echo  Yii::app()->user->email; ?></li>
+                        <li><a href="#"><ins>Last Visited</ins>:</a><?php echo  Yii::app()->user->lastvisit_at; ?></li>
+                        <li><?php echo CHtml::link('Make Changes',Yii::app()->createurl('user/profile'),array('class'=>'btn btn-block btn-primary')) ?></li>
+                            
+                    </ul></div>
             </div>
         </div>
 

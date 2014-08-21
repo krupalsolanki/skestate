@@ -32,26 +32,26 @@ $this->breadcrumbs=array(
 	<?php echo CHtml::errorSummary($model); ?>
 	
 	<div class="row">
-		<?php echo CHtml::activeLabelEx($model,'username'); ?>
-		<?php echo CHtml::activeTextField($model,'username',array('placeholder'=>'your registered email..')) ?>
+		
+		<?php echo CHtml::activeTextField($model,'username',array('placeholder'=>'your registered email..','style' => 'height:25px;font-size: 15px;width:250px;')) ?>
 	</div>
 	
 	<div class="row">
-		<?php echo CHtml::activeLabelEx($model,'password'); ?>
-		<?php echo CHtml::activePasswordField($model,'password',array('placeholder'=>'your password here..')) ?>
+		
+		<?php echo CHtml::activePasswordField($model,'password',array('placeholder'=>'your password here..','style' => 'height:25px;font-size: 15px;width:250px;')) ?>
 	</div>
 	
 	<div class="row">
 		<p class="hint">
                     <strong style="font-size: 15px;"> 
-		<?php echo CHtml::link(UserModule::t("Register"),Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl); ?>
+		<?php echo CHtml::link(UserModule::t("Register"),Yii::app()->getModule('user')->registrationUrl,array('style'=>'font-size: 15px;color:black')); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl,array('style'=>'color:black;font-size: 15px;')); ?>
                     </strong>
                     </p>
 	</div>
 	
 	<div class="row rememberMe">
 		<?php echo CHtml::activeCheckBox($model,'rememberMe'); ?>
-		<?php echo CHtml::activeLabelEx($model,'rememberMe'); ?>
+		<?php echo CHtml::activeLabelEx($model,'rememberMe',array('style'=>'color:white')); ?>
 	</div>
 
 	<div class="row submit">

@@ -30,9 +30,9 @@ and open the template in the editor.
 .account-container {
 	width: 380px; 
 	display: block;
-	margin: 22px auto 0 auto;
+	margin: 22px 100px  auto;
 	
-	background: rgba(255, 255, 255, 0.14);
+	background: rgba(37, 37, 37, 0.14);
 	
 	border: 1px solid #d5d5d5;
 	
@@ -44,7 +44,7 @@ and open the template in the editor.
 }
 
 .content {
-	padding: 16px 28px 23px;
+	padding: 16px 16px 20px;
 } 
 
 .login-fields {

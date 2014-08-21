@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gridview.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tablesorter.css" media="screen, projection" />
+
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Profile");
 $this->breadcrumbs=array(
 	UserModule::t("Profile"),
@@ -11,14 +15,17 @@ $this->menu=array(
     array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword')),
     array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout')),
 );
-?><h1><?php echo UserModule::t('Your profile'); ?></h1>
+?>
 
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">
 	<?php echo Yii::app()->user->getFlash('profileMessage'); ?>
 </div>
 <?php endif; ?>
-<table class="dataGrid">
+<div class="span8">
+    <div class="main">
+        <legend><h1><?php echo UserModule::t('Your profile'); ?></h1></legend>
+        <table class="dataGrid" style="border: 1px;">
 	<tr>
 		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('username')); ?></th>
 	    <td><?php echo CHtml::encode($model->username); ?></td>
@@ -54,3 +61,8 @@ $this->menu=array(
     	<td><?php echo CHtml::encode(User::itemAlias("UserStatus",$model->status)); ?></td>
 	</tr>
 </table>
+    </div>
+</div>
+<div class="span3">
+   jkkj
+</div>

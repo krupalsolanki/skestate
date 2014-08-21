@@ -68,9 +68,15 @@ class TblProjectsController extends Controller {
             if($model->type_of_property != null){
             $model->type_of_property = implode(",", $model->type_of_property);
             }
-            $model->image=CUploadedFile::getInstanceByName('image');
+            $model->image=CUploadedFile::getInstance($model,'image');
+            $name=preg_replace('/\s+/', '', $model->project_name);
+            if($model->validate())
+            {
+              $model->image->saveAs(Yii::app()->basePath.'/../images/projects/'.$name.'-'.$model->image);
+            }
+            $model->image_path= Yii::app()->request->baseUrl.'/images/projects/'.$name.'-'.$model->image ;
             if ($model->save()) {
-               $model->image->saveAs(Yii::app()->basePath.'/../images/');
+              
                 $this->redirect(array('view', 'id' => $model->project_id));
             }
         }
@@ -163,5 +169,7 @@ class TblProjectsController extends Controller {
             Yii::app()->end();
         }
     }
+    
+    
 
 }

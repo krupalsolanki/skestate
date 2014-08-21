@@ -8,7 +8,7 @@ $this->breadcrumbs = array(
     'About',
 );
 ?>
-<div class="section about-character">
+<div class="section about-character" style=" background: url('<?php echo Yii::app()->request->baseUrl; ?>/images/overlay.png'), url('<?php echo Yii::app()->request->baseUrl; ?>/images/intro.jpg')">
     <div class="header">
         <h2 class="title" style="color:white;">						
             About SK Estate<br>
@@ -19,3 +19,4 @@ $this->breadcrumbs = array(
             SK ESTATE AGENCY is a real estate company which helps you find your home with no hassles.					</div>	
     </div>
 </div>
+   

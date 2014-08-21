@@ -8475,3 +8475,2060 @@ HTTP_REFERER=http://localhost/skestate/index.php/site/contact
 2014/08/18 05:26:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
 in C:\wamp\www\skestate\protected\modules\user\controllers\RegistrationController.php (30)
 in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:09:04 [error] [php] Object of class User could not be converted to string (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:09:17 [error] [php] Object of class User could not be converted to string (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:12:32 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#3 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#4 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:12:33 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#3 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#4 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:12:47 [error] [php] Undefined variable: model (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:16:15 [error] [php] Undefined variable: id (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:20:33 [error] [php] Object of class User could not be converted to string (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:20:59 [error] [php] Use of undefined constant username - assumed 'username' (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:21:32 [error] [php] Object of class User could not be converted to string (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:21:42 [error] [php] Object of class User could not be converted to string (C:\wamp\www\skestate\protected\views\dashboard\index.php:63)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): DashboardController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): DashboardController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\DashboardController.php(22): DashboardController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): DashboardController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): DashboardController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/dashboard/index
+in C:\wamp\www\skestate\protected\views\dashboard\index.php (63)
+in C:\wamp\www\skestate\protected\controllers\DashboardController.php (22)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/18 15:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Array".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('Array')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('Array')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/Array')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/Array
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---
+2014/08/18 15:36:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Array".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('Array')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('Array')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/Array')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/dashboard/Array
+HTTP_REFERER=http://localhost/skestate/index.php/dashboard/index
+---
+2014/08/19 14:05:57 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:05:57 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.image" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('image')
+#1 C:\wamp\www\yii\framework\validators\CFileValidator.php(166): CActiveRecord->__get('image')
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(213): CFileValidator->validateAttribute(Object(TblProjects), 'image')
+#3 C:\wamp\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(TblProjects), NULL)
+#4 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(72): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/cre...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/create
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/create
+---
+2014/08/19 14:07:15 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:10:27 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:10:27 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(74): CActiveRecord->__get('id')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/cre...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/create
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/create
+---
+2014/08/19 14:11:02 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:11:02 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(74): CActiveRecord->__get('id')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/cre...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/create
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/create
+---
+2014/08/19 14:11:26 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:11:26 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(74): CActiveRecord->__get('id')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/cre...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/create
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/create
+---
+2014/08/19 14:11:47 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:13:00 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:19:13 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:20:39 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:20:39 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(72): CActiveRecord->__get('name')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/cre...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/create
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/create
+---
+2014/08/19 14:20:54 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 14:27:27 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.image_file_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('image_file_path')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('image_file_path')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(TblProjects), 'image_file_path')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(TblProjects), 'image_file_path', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(TblProjects), 'image_file_path', Array)
+#5 C:\wamp\www\skestate\protected\views\tblProjects\_search.php(51): CActiveForm->textField(Object(TblProjects), 'image_file_path', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#9 C:\wamp\www\skestate\protected\views\tblProjects\admin.php(40): CController->renderPartial('_search', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(145): CController->render('admin', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionAdmin()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/adm...')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/admin
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/22
+---
+2014/08/19 14:28:09 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.image_file_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('image_file_path')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('image_file_path')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(TblProjects), 'image_file_path')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(TblProjects), 'image_file_path', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(TblProjects), 'image_file_path', Array)
+#5 C:\wamp\www\skestate\protected\views\tblProjects\_search.php(51): CActiveForm->textField(Object(TblProjects), 'image_file_path', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#9 C:\wamp\www\skestate\protected\views\tblProjects\admin.php(40): CController->renderPartial('_search', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(145): CController->render('admin', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionAdmin()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/adm...')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/admin
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/22
+---
+2014/08/19 14:29:00 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.image_file_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('image_file_path')
+#1 C:\wamp\www\skestate\protected\models\TblProjects.php(102): CActiveRecord->__get('image_file_path')
+#2 C:\wamp\www\skestate\protected\views\tblProjects\admin.php(45): TblProjects->search()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(145): CController->render('admin', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionAdmin()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblProjects/adm...')
+#19 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/skestate/index.php/TblProjects/admin
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/22
+---
+2014/08/19 15:30:45 [error] [exception.CException] exception 'CException' with message 'Alias "ext.JCarousel.JCarousel" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.JCarousel.J...', true)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.JCarousel.J...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(17): CBaseController->widget('ext.JCarousel.J...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 15:56:54 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 16:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Google.com".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('Google.com')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('Google.com')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Google.com')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/Google.com
+HTTP_REFERER=http://localhost/skestate/index.php/site/index
+---
+2014/08/19 18:16:46 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:17:02 [error] [php] Use of undefined constant image_path - assumed 'image_path' (C:\wamp\www\skestate\protected\views\site\index.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:17:14 [error] [php] Undefined index: image_path (C:\wamp\www\skestate\protected\views\site\index.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:18:19 [error] [php] Undefined index: project_name (C:\wamp\www\skestate\protected\views\site\index.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:19:10 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.data" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:37:52 [error] [php] Undefined variable: model (C:\wamp\www\skestate\protected\views\site\index.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (13)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:38:41 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.TblProjects" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(105): CComponent->__get('TblProjects')
+#1 C:\wamp\www\skestate\protected\views\site\index.php(13): CModule->__get('TblProjects')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:40:06 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.datProvider" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('datProvider', Object(CActiveDataProvider))
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:40:16 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.dataProvider" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('dataProvider', Object(CActiveDataProvider))
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:43:30 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.dataProvider" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('dataProvider', Object(CActiveDataProvider))
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:43:39 [error] [php] Undefined variable: dataProvider (C:\wamp\www\skestate\protected\views\site\index.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (23)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:44:19 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.file_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('file_name')
+#1 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(552) : eval()'d code(1): CActiveRecord->__get('file_name')
+#2 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(552): eval()
+#3 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(534): JCarousel->renderGalleryItems()
+#4 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): JCarousel->renderItems()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#7 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#9 C:\wamp\www\skestate\protected\views\site\index.php(27): CBaseController->widget('ext.JCarousel.J...', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#14 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:44:37 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'you must assign a value for thumbUrl' in C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php:423
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#2 C:\wamp\www\skestate\protected\views\site\index.php(27): CBaseController->widget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:45:06 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'you must assign a value for thumbUrl' in C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php:423
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#2 C:\wamp\www\skestate\protected\views\site\index.php(27): CBaseController->widget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:46:02 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php:109
+Stack trace:
+#0 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(408): CBaseListView->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(27): CBaseController->widget('ext.JCarousel.J...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:46:13 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'you must assign a value for imageUrl' in C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php:428
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#2 C:\wamp\www\skestate\protected\views\site\index.php(27): CBaseController->widget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:55:44 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.data" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Object(CActiveDataProvider))
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:58:56 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.findAll" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('findAll')
+#1 C:\wamp\www\skestate\protected\views\site\index.php(11): CActiveRecord->__get('findAll')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/TblProjects/admin
+---
+2014/08/19 18:59:03 [error] [php] Undefined index: image_path (C:\wamp\www\skestate\protected\views\site\index.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (16)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:59:44 [error] [php] Undefined index: image_path (C:\wamp\www\skestate\protected\views\site\index.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (16)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 18:59:54 [error] [php] Undefined index: project_name (C:\wamp\www\skestate\protected\views\site\index.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (16)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:00:08 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (16)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:14:48 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:15:03 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:15:25 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:22:25 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/19 19:23:36 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 06:33:32 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (13)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 07:00:09 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 07:00:09 [error] [php] move_uploaded_file(/skestate/images/projects/Demo-1098074_804318619581672_2065387558_n.jpg) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\web\CUploadedFile.php:198)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionCreate()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): TblProjectsController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TblProjectsController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): TblProjectsController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TblProjectsController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/TblProjects/create
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (75)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 07:01:45 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 13:53:02 [error] [php] Undefined variable: rawData (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 13:55:02 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_list".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): CController->renderPartial('_list', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#2 C:\wamp\www\skestate\protected\views\site\index.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 13:58:37 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "tblprojects/view".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): CController->renderPartial('tblprojects/vie...', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#2 C:\wamp\www\skestate\protected\views\site\index.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 13:59:16 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\CController.php:706)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#1 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#3 C:\wamp\www\skestate\protected\views\site\index.php(21): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php (68)
+in C:\wamp\www\skestate\protected\views\site\index.php (21)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/20 14:00:13 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "tblProjects/view".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): CController->renderPartial('tblProjects/vie...', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#2 C:\wamp\www\skestate\protected\views\site\index.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 14:01:14 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\CController.php:706)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#1 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#3 C:\wamp\www\skestate\protected\views\site\index.php(21): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php (68)
+in C:\wamp\www\skestate\protected\views\site\index.php (21)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/20 14:01:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/skestate/index.php/tblProjects/index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\BootSlider.php(68): CController->renderPartial('/skestate/index...', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(173): BootSlider->run()
+#2 C:\wamp\www\skestate\protected\views\site\index.php(21): CBaseController->widget('bootstrap.widge...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 14:08:33 [error] [php] Undefined variable: dataProvider (C:\wamp\www\skestate\protected\views\site\index.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (13)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 14:16:35 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.file_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('file_name')
+#1 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(552) : eval()'d code(1): CActiveRecord->__get('file_name')
+#2 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(552): eval()
+#3 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(534): JCarousel->renderGalleryItems()
+#4 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): JCarousel->renderItems()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#7 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#9 C:\wamp\www\skestate\protected\views\site\index.php(17): CBaseController->widget('ext.JCarousel.J...', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#14 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 14:16:52 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.file_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('file_name')
+#1 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(555) : eval()'d code(1): CActiveRecord->__get('file_name')
+#2 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(555): eval()
+#3 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(534): JCarousel->renderGalleryItems()
+#4 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): JCarousel->renderItems()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#7 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#9 C:\wamp\www\skestate\protected\views\site\index.php(17): CBaseController->widget('ext.JCarousel.J...', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#14 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 14:16:55 [error] [exception.CException] exception 'CException' with message 'Property "TblProjects.file_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('file_name')
+#1 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(555) : eval()'d code(1): CActiveRecord->__get('file_name')
+#2 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(555): eval()
+#3 C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php(534): JCarousel->renderGalleryItems()
+#4 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): JCarousel->renderItems()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#7 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#9 C:\wamp\www\skestate\protected\views\site\index.php(17): CBaseController->widget('ext.JCarousel.J...', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#14 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/20 14:19:25 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 14:25:39 [error] [php] Undefined variable: image_path (C:\wamp\www\skestate\protected\views\site\index.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (14)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 14:26:03 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'you must assign a value for thumbUrl' in C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php:423
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#2 C:\wamp\www\skestate\protected\views\site\index.php(17): CBaseController->widget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:26:38 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('image_path')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:26:57 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.project_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('project_name')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:28:11 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_file" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('image_file')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:28:43 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_file" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('image_file')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:28:45 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_file" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('image_file')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:29:02 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('image_path')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:29:42 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 14:29:59 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (11)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/20 14:32:45 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.project_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__get('project_name')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:36:37 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "callFunction".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__call('callFunction', Array)
+#1 C:\wamp\www\skestate\protected\views\site\index.php(14): SiteController->callFunction()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:36:56 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "callFunction".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(14): CComponent->__call('callFunction', Array)
+#1 C:\wamp\www\skestate\protected\views\site\index.php(14): SiteController->callFunction()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:37:48 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (125)
+in C:\wamp\www\skestate\protected\views\site\index.php (14)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/20 14:38:16 [error] [php] Undefined variable: edata (C:\wamp\www\skestate\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (125)
+in C:\wamp\www\skestate\protected\views\site\index.php (14)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/20 14:38:22 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\controllers\SiteController.php(125): CComponent->__get('image_path')
+#1 C:\wamp\www\skestate\protected\views\site\index.php(14): SiteController->callFunction()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:38:37 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.project_name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\controllers\SiteController.php(125): CComponent->__get('project_name')
+#1 C:\wamp\www\skestate\protected\views\site\index.php(14): SiteController->callFunction()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/20 14:43:50 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'you must assign a value for thumbUrl' in C:\wamp\www\skestate\protected\extensions\JCarousel\JCarousel.php:423
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(147): JCarousel->init()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.JCarousel.J...', Array)
+#2 C:\wamp\www\skestate\protected\views\tblProjects\index.php(20): CBaseController->widget('ext.JCarousel.J...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(131): CController->render('index', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblProjects/ind...')
+#19 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/skestate/index.php/tblProjects/index
+---
+2014/08/20 14:45:08 [error] [php] Undefined variable: data (C:\wamp\www\skestate\protected\views\tblProjects\index.php:20)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): TblProjectsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): TblProjectsController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(131): TblProjectsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TblProjectsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): TblProjectsController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): TblProjectsController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): TblProjectsController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TblProjectsController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/tblProjects/index
+in C:\wamp\www\skestate\protected\views\tblProjects\index.php (20)
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (131)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 05:49:12 [error] [php] Object of class TblProjects could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:12)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (12)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 05:50:56 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.data" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(20): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 05:51:18 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.dataProvider" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('dataProvider', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(20): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 05:58:21 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (21)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 06:02:51 [error] [php] Object of class TblProjects could not be converted to string (C:\wamp\www\skestate\protected\extensions\slider\slider.php:205)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(27): SiteController->widget()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (205)
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (159)
+in C:\wamp\www\skestate\protected\views\site\index.php (27)
+2014/08/21 06:09:14 [error] [php] Use of undefined constant x - assumed 'x' (C:\wamp\www\skestate\protected\views\site\index.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (14)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 06:09:41 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image_path" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(15): CComponent->__get('image_path')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 06:10:53 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:15)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (15)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 06:12:07 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\skestate\protected\extensions\slider\slider.php:202)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(30): SiteController->widget()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (202)
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (159)
+in C:\wamp\www\skestate\protected\views\site\index.php (30)
+2014/08/21 06:12:30 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\skestate\protected\extensions\slider\slider.php:202)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(30): SiteController->widget()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (202)
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (159)
+in C:\wamp\www\skestate\protected\views\site\index.php (30)
+2014/08/21 06:16:59 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\skestate\protected\extensions\slider\slider.php:202)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(32): SiteController->widget()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (202)
+in C:\wamp\www\skestate\protected\extensions\slider\slider.php (159)
+in C:\wamp\www\skestate\protected\views\site\index.php (32)
+2014/08/21 06:22:20 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(442): tag()
+#2 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php(146): image()
+#3 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php(82): TbCarousel->renderItems()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbCarousel->run()
+#5 C:\wamp\www\skestate\protected\views\site\index.php(22): SiteController->widget()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#9 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#10 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php (146)
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php (82)
+in C:\wamp\www\skestate\protected\views\site\index.php (22)
+2014/08/21 06:28:10 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "returnArray".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(21): CComponent->__call('returnArray', Array)
+#1 C:\wamp\www\skestate\protected\views\site\index.php(21): SiteController->returnArray()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 06:30:13 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "returnArray".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(21): CComponent->__call('returnArray', Array)
+#1 C:\wamp\www\skestate\protected\views\site\index.php(21): SiteController->returnArray()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 06:31:03 [error] [php] Undefined variable: imagepathArray (C:\wamp\www\skestate\protected\views\site\index.php:25)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (25)
+in C:\wamp\www\skestate\protected\views\site\index.php (21)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/21 07:27:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/img-01.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/img-...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/skestate/index.php/assets/img/img-01.jpg
+HTTP_REFERER=http://localhost/skestate/index.php/
+---
+2014/08/21 07:27:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/img/img-01-tn.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/img/img-...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/skestate/index.php/assets/img/img-01-tn.jpg
+HTTP_REFERER=http://localhost/skestate/index.php/
+---
+2014/08/21 08:53:50 [error] [php] Undefined offset: 3 (C:\wamp\www\skestate\protected\views\site\index.php:26)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (26)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/21 09:04:55 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(442): tag()
+#2 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php(146): image()
+#3 C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php(82): TbCarousel->renderItems()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbCarousel->run()
+#5 C:\wamp\www\skestate\protected\views\site\index.php(25): SiteController->widget()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#9 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#10 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php (146)
+in C:\wamp\www\skestate\protected\extensions\bootstrap\widgets\TbCarousel.php (82)
+in C:\wamp\www\skestate\protected\views\site\index.php (25)
+2014/08/21 09:05:41 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.data" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('data', '/skestate/image...')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(26): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/21 09:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/dashboard".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/skestate/index.php/user/dashboard/
+---

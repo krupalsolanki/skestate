@@ -1,14 +1,24 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle = Yii::app()->name;
 ?>
-<h2>Dummy Text</h2>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-    est laborum.
-</p>
-
+<?php $this->widget('application.extensions.slider.slider');?>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span7">
+            <legend><h1>Latest Projects</h1></legend>
+             
+         <?php 
+            $data= TblProjects::model()->findAll();
+         ?>
+            <div style="">
+              
+            </div>
+        </div>
+        <div class="span4">
+            <?php
+            ?>
+        </div>
+    </div>
+</div>

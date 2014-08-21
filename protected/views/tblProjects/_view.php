@@ -33,11 +33,11 @@
 	<?php echo CHtml::encode($data->type_of_property); ?>
 	<br />
 
-	<?php /*
+	 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('image_file_path')); ?>:</b>
-	<?php echo CHtml::encode($data->image_file_path); ?>
+	<?php echo CHtml::encode($data->image_path); ?>
 	<br />
 
-	*/ ?>
+	 ?>
 
 </div>
