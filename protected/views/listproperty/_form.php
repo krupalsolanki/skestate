@@ -3,6 +3,7 @@
 /* @var $model Listproperty */
 /* @var $form CActiveForm */
 ?>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/contact.css" media="screen, projection" />
 
 <div class="form">
 
@@ -22,33 +23,34 @@
     <div class="widget">
       
     <div class="box">
-          <legend><h2>Get your Porperty Online</h2></legend>
+        
+        <legend><h3>Get your Property Online</h3></legend>
 	<div class="row">
 		
-		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Full Name..')); ?>
+		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Full Name..','class'=>'login')); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50,'placeholder'=>'Email..')); ?>
+		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50,'placeholder'=>'Email..','class'=>'login')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'mobile',array('size'=>10,'maxlength'=>10,'placeholder'=>'Mobile number..')); ?>
+		<?php echo $form->textField($model,'mobile',array('size'=>10,'maxlength'=>10,'placeholder'=>'Mobile number..','class'=>'login')); ?>
 		<?php echo $form->error($model,'mobile'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'city',array('size'=>10,'maxlength'=>10,'placeholder'=>'City')); ?>
+		<?php echo $form->textField($model,'city',array('size'=>10,'maxlength'=>10,'placeholder'=>'City','class'=>'login')); ?>
 		<?php echo $form->error($model,'city'); ?>
 	</div>
     
         <div class="row">
-		<?php echo $form->dropDownList($model, 'property_for',  array('empty'=>'List My Property For', 'Sale', 'Rent', 'PG')); ?>
+		<?php echo $form->dropDownList($model, 'property_for', array('empty'=>'List My Property For', 'Sale', 'Rent', 'PG')); ?>
 		<?php echo $form->error($model,'property_for'); ?>
 	</div>
 
@@ -65,19 +67,19 @@
 	</div>
 
 	<div class="row">
-	        <?php echo $form->textFieldRow($model,'plot_area',array('labelOptions' => array('label' => false),'placeholder'=>'Plot area of your property..','append'=>'sq ft','style'=>'margin-top:0px')); ?>
+	        <?php echo $form->textFieldRow($model,'plot_area',array('labelOptions' => array('label' => false),'placeholder'=>'Plot area of your property..','append'=>'sq ft','style'=>'margin-top:0px','class'=>'login')); ?>
 		
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textFieldRow($model,'property_price',array('hint'=>'Price per square feet, or the rent.','labelOptions' => array('label' => false),'style'=>'margin-top:0px','placeholder'=>'Price of your property..','prepend'=>'Rs.','size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->textFieldRow($model,'property_price',array('hint'=>'Price per square feet, or the rent.','labelOptions' => array('label' => false),'style'=>'margin-top:0px','placeholder'=>'Price of your property..','prepend'=>'Rs.','size'=>10,'maxlength'=>10,'class'=>'login')); ?>
 		
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textAreaRow($model,'property_address',array('labelOptions' => array('label' => false),'placeholder'=>'Where is your property?','size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textAreaRow($model,'property_address',array('labelOptions' => array('label' => false),'placeholder'=>'Where is your property?','size'=>60,'maxlength'=>300,'class'=>'login')); ?>
 		
 	</div>
        

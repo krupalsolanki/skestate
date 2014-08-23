@@ -10602,3 +10602,354 @@ HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
 2014/08/23 13:20:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
 in C:\wamp\www\skestate\protected\modules\user\controllers\RegistrationController.php (30)
 in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:24:45 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:24:57 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:27:03 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:27:24 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:31:03 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:33:08 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:34:13 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:34:34 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:37:53 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:38:20 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:41:08 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 14:46:54 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1822): tag()
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(847): activeDropDownList()
+#3 C:\wamp\www\skestate\protected\views\listproperty\_form.php(53): TbActiveForm->dropDownList()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): ListpropertyController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(869): ListpropertyController->renderFile()
+#7 C:\wamp\www\skestate\protected\views\listproperty\create.php(24): ListpropertyController->renderPartial()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(95): ListpropertyController->renderInternal()
+#10 C:\wamp\www\yii\framework\web\CController.php(869): ListpropertyController->renderFile()
+#11 C:\wamp\www\yii\framework\web\CController.php(782): ListpropertyController->renderPartial()
+#12 C:\wamp\www\skestate\protected\controllers\ListpropertyController.php(79): ListpropertyController->render()
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ListpropertyController->actionCreate()
+#14 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): ListpropertyController->runAction()
+#16 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): ListpropertyController->filterAccessControl()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(265): ListpropertyController->runActionWithFilters()
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ListpropertyController->run()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/listproperty/create
+in C:\wamp\www\skestate\protected\views\listproperty\_form.php (53)
+in C:\wamp\www\skestate\protected\views\listproperty\create.php (24)
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (79)
+2014/08/23 14:47:13 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1822): tag()
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(847): activeDropDownList()
+#3 C:\wamp\www\skestate\protected\views\listproperty\_form.php(53): TbActiveForm->dropDownList()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): ListpropertyController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(869): ListpropertyController->renderFile()
+#7 C:\wamp\www\skestate\protected\views\listproperty\create.php(24): ListpropertyController->renderPartial()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(95): ListpropertyController->renderInternal()
+#10 C:\wamp\www\yii\framework\web\CController.php(869): ListpropertyController->renderFile()
+#11 C:\wamp\www\yii\framework\web\CController.php(782): ListpropertyController->renderPartial()
+#12 C:\wamp\www\skestate\protected\controllers\ListpropertyController.php(79): ListpropertyController->render()
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ListpropertyController->actionCreate()
+#14 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): ListpropertyController->runAction()
+#16 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): ListpropertyController->filterAccessControl()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(265): ListpropertyController->runActionWithFilters()
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ListpropertyController->run()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/listproperty/create
+in C:\wamp\www\skestate\protected\views\listproperty\_form.php (53)
+in C:\wamp\www\skestate\protected\views\listproperty\create.php (24)
+in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (79)
+2014/08/23 15:08:33 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in C:\wamp\www\skestate\protected\modules\user\controllers\RegistrationController.php (30)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/23 16:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/js/jquery.min.js
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-wide.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-normal.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-wide.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-normal.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-normal.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-wide.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+---
+2014/08/23 16:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+---
+2014/08/23 16:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-normal.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-wide.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-narrow.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-wide.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/23 16:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style-...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/css/style-normal.css
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---

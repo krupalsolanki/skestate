@@ -59,3 +59,41 @@ box-shadow: 11px 11px 11px 1px rgba(12,12,12,1.0);
          width: 100px;
      }
  }
+ 
+ @media (max-width: 480px) {
+	
+	.form  .span6 .widget .box {
+		width: 280px;	
+		margin-top: 35px;
+	}
+	
+	.box input {
+		width: 160px;
+	}
+	
+	.login-social {
+		width: 100%;
+	}
+	
+	.twitter {
+		display: block;
+		margin-bottom: 1em;
+	}
+	
+	 .form  .span6 .widget .box input {
+		width: 160px;
+		padding-left: 6px;
+                font-size: smaller;
+	}
+        .form  .span6 .widget .box select{
+                width: 160px;
+		padding-left: 6px;
+                font-size: smaller;
+        }
+        
+        .form  .span6 .widget .box h3{
+            font-size:medium ;
+        }
+	 
+}
+
