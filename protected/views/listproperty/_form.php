@@ -18,31 +18,32 @@
 	
 
 	<?php //echo $form->errorSummary($model); ?>
-    <div class="span4">
+    <div class="span6">
     <div class="widget">
-    
-    <div class="box propertyImage">
+      
+    <div class="box">
+          <legend><h2>Get your Porperty Online</h2></legend>
 	<div class="row">
 		
-		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Your name..')); ?>
+		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Full Name..')); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50,'placeholder'=>'Your email..')); ?>
+		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50,'placeholder'=>'Email..')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'mobile',array('size'=>10,'maxlength'=>10,'placeholder'=>'Your mobile number..')); ?>
+		<?php echo $form->textField($model,'mobile',array('size'=>10,'maxlength'=>10,'placeholder'=>'Mobile number..')); ?>
 		<?php echo $form->error($model,'mobile'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->textField($model,'city',array('size'=>10,'maxlength'=>10,'placeholder'=>'Enter your city')); ?>
+		<?php echo $form->textField($model,'city',array('size'=>10,'maxlength'=>10,'placeholder'=>'City')); ?>
 		<?php echo $form->error($model,'city'); ?>
 	</div>
     
@@ -83,10 +84,11 @@
 	<div class="row buttons">
 		
                 <?php $this->widget('bootstrap.widgets.TbButton', array(
-    'type'=>'primary',
+    'type'=>'warning',
     'label'=>'List Property',
     'block'=>false,
-    'buttonType'=>'submit'
+    'buttonType'=>'submit',
+                   
 )); ?>
             <?php $this->widget('bootstrap.widgets.TbButton', array(
     'type'=>'default',

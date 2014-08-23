@@ -3,7 +3,7 @@
 
 $this->pageTitle = Yii::app()->name;
 ?>
-<?php $this->widget('application.extensions.slider.slider');?>
+
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span7">

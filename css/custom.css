@@ -700,7 +700,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
     position: relative;
    
     margin: 0 auto;
-    background-color: rgba(12, 8, 8, 0.25);
+    background-color: rgba(255, 255, 255, 0.87);
    
    -webkit-box-shadow: 1px -3px 30px 4px rgba(48, 50, 50, 0.95);
 -moz-box-shadow:    1px -3px 30px 4px rgba(48, 50, 50, 0.95);

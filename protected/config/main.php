@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
-    'theme'=>'bootstrap',
+  //  'theme'=>'blackboot',
     'modules'=>array(
         'gii'=>array(
             'generatorPaths'=>array(

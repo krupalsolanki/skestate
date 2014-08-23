@@ -15,32 +15,34 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	 <div class="span4">
+	 <div class="span6">
     <div class="widget">
-    <div class="box propertyImage">
-
+    <div class="box">
+        <legend><h3>Post Requirement</h3><p>Let us know what you need, we will get it for you</p></legend>
+        
+        
 	<?php //echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
+		
 		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30,'placeholder'=>'Your name here..')); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
+		
 		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50,'placeholder'=>'A valid email please..')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'mobile'); ?>
+		
 		<?php echo $form->textField($model,'mobile',array('size'=>10,'maxlength'=>10,'placeholder'=>'Your phone number..')); ?>
 		<?php echo $form->error($model,'mobile'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'city'); ?>
+		
 		<?php echo $form->textField($model,'city',array('size'=>15,'maxlength'=>15,'placeholder'=>'Your city..')); ?>
 		<?php echo $form->error($model,'city'); ?>
 	</div>
@@ -58,31 +60,31 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'size_of_property'); ?>
+		
 		<?php echo $form->textField($model,'size_of_property',array('placeholder'=>'Size of property you are looking for.')); ?>
 		<?php echo $form->error($model,'size_of_property'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'location'); ?>
+		
 		<?php echo $form->textField($model,'location',array('size'=>15,'maxlength'=>15,'placeholder'=>'Specific location')); ?>
 		<?php echo $form->error($model,'location'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'budget'); ?>
+		
 		<?php echo $form->textField($model,'budget',array('size'=>10,'maxlength'=>10,'placeholder'=>'How much do you want to spend?')); ?>
 		<?php echo $form->error($model,'budget'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'message'); ?>
+		
 		<?php echo $form->textArea($model,'message',array('size'=>60,'maxlength'=>100,'placeholder'=>'Any extra requirement..')); ?>
 		<?php echo $form->error($model,'message'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-warning')); ?>
                 <?php echo CHtml::resetButton('Clear',array('class'=>'btn ')); ?>
 	
         </div>
