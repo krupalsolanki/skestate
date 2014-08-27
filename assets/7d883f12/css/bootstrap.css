@@ -4595,7 +4595,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav.pull-right {
   float: right;
-  margin-right: 0;
+  margin-right: -35px;
 }
 
 .navbar .nav > li {
