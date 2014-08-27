@@ -12,7 +12,8 @@ echo Yii::app()->bootstrap->init();
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/base-admin.css" media="screen, projection" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/pages/signin.css" media="screen, projection" />
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/font-awesome.css" rel="stylesheet">
-            <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+  <!--          <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">-->
+          <link href='http://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
 
 
                 <!-- blueprint CSS framework -->

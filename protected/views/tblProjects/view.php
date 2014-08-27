@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tablesorter.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" media="screen, projection" />
-
+<link href='http://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
 <?php
 /* @var $this TblProjectsController */
 /* @var $model TblProjects */
@@ -14,8 +14,9 @@ $this->breadcrumbs = array(
     <div class="row-fluid">
         <div class="span6">
             <div class="main">
-                <legend><h1>Project Name:<?php echo " " . $model->project_name; ?></h1></legend>
+                <legend><h3 style="font-family: 'Raleway', sans-serif;">Project Name:<?php echo " " . $model->project_name; ?></h3></legend>
                 <img src="<?php echo $model->image_path; ?>" width="300px">
+                <hr>
                 <?php
                 $this->widget('zii.widgets.CDetailView', array(
                     'data' => $model,
