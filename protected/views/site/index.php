@@ -21,8 +21,8 @@ $this->pageTitle = Yii::app()->name;
 
                 <img src="<?php echo $data[$j]->image_path; ?>" style="width:150px;height:150px">
                     <?php
-                    echo '<center>' . '<b>' . $data[$j]->project_name . '</b>' . '</center>';
-                    echo '<center>' . $data[$j]->project_address . '</center>';
+                    echo '<center>' . '<b>' . ucfirst($data[$j]->project_name) . '</b>' . '</center>';
+                    echo '<center>' . ucfirst($data[$j]->project_address) . '</center>';
                     echo '<center>' . '' . '</center>';
                     ?>
                    <center> <?php
@@ -30,6 +30,7 @@ $this->pageTitle = Yii::app()->name;
                             'label' => 'more',
                             'type' => 'info',
                             'size' => 'small',
+                           
                             'block' => true,
                             'htmlOptions'=>array('style'=>'margin-top:1px'),
                             'url'=> array('tblProjects/'.$data[$j]->project_id),

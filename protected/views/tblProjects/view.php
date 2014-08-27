@@ -51,5 +51,38 @@ $this->breadcrumbs = array(
                 </div>
             </div>
         <?php } ?>
+        <?php
+        if (Yii::app()->user->isGuest) {
+            ?>
+            <div class="span3">
+                <div class="portlet" id="yw0">
+                    <div class="portlet-decoration">
+                        <div class="portlet-title">Other Projects</div>
+                    </div>
+                    <div class="portlet-content">
+                        <ul class="sidebar" id="yw1">
+                            <?php
+                            $count = TblProjects::model()->count();
+                            $criteria = new CDbCriteria;
+                            $criteria->select = 't.project_id,t.project_name'; // select fields which you want in output
+                            $data = TblProjects::model()->findAll($criteria);
+                            $j;
+                            for ($j = 0; $j < $count; $j++) {
+                                ?>
+                                
+                            <li><?php echo CHtml::link(ucfirst($data[$j]->project_name),array('TblProjects/'.$data[$j]->project_id));  ?></li>
+                                 
+                            <?php
+                            if($j==1){ 
+                              ?>
+                              <li><i class=" icon-hand-down"></i><?php echo CHtml::link("more projects"); ?></li>
+                            <?php
+                                break; }
+                             
+                            } ?>
+                            </ul></div>
+                    </div>
+                </div>
+            <?php } ?>
     </div>
 </div>
