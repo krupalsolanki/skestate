@@ -1,6 +1,4 @@
 <?php
-/* @var $this Controller */
-//Yii::app()->bootstrap->register();
 echo Yii::app()->bootstrap->init();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -12,19 +10,16 @@ echo Yii::app()->bootstrap->init();
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/base-admin.css" media="screen, projection" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/pages/signin.css" media="screen, projection" />
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/css/font-awesome.css" rel="stylesheet">
-  <!--          <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">-->
-          <link href='http://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
+           <link href='http://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
 
 
-                <!-- blueprint CSS framework -->
+               
                 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
                 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-                <!--[if lt IE 8]>
-                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-                <![endif]-->
+                
 
                 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" /> -->
+                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" /> 
 
                 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
                 </head>
@@ -40,11 +35,7 @@ echo Yii::app()->bootstrap->init();
                         <div id="navbar-inner">
 
                             <div class="container">   
-                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </a>
+                               
                                 <?php
                                 $this->widget('bootstrap.widgets.TbNavbar', array(
                                     'type' => 'inverse',

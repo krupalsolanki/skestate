@@ -75,7 +75,7 @@
             }
             ?>
             <div class="row button">
-                <?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?> 
+                <?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save'),array('class'=>'btn btn-warning')); ?> 
                 <?php echo CHtml::resetButton('Reset',array('class'=>'btn','style'=>'margin-left:10px')); ?>
                 </div>
 

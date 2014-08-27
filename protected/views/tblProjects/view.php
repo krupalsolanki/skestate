@@ -73,7 +73,7 @@ $this->breadcrumbs = array(
                             <li><?php echo CHtml::link(ucfirst($data[$j]->project_name),array('TblProjects/'.$data[$j]->project_id));  ?></li>
                                  
                             <?php
-                            if($j==1){ 
+                            if($j==5){ 
                               ?>
                               <li><i class=" icon-hand-down"></i><?php echo CHtml::link("more projects"); ?></li>
                             <?php

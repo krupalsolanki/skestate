@@ -51,13 +51,13 @@
 
 	<div class="row">
 		
-		<?php echo $form->dropDownList($model,'property_type',array('I want a...','Commercial Property','Residential Property')); ?>
+		<?php echo $form->dropDownList($model,'property_type',array('Commercial Property','Residential Property'),array('prompt'=>('I want a..'))); ?>
 		<?php echo $form->error($model,'property_type'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->dropDownList($model,'property_for',array('I am looking to...','Buy','Rent')); ?>
+		<?php echo $form->dropDownList($model,'property_for',array('Buy','Rent'),array('prompt'=>('I am looking to..'))); ?>
 		<?php echo $form->error($model,'property_for'); ?>
 	</div>
 

@@ -50,19 +50,19 @@
 	</div>
     
         <div class="row">
-		<?php echo $form->dropDownList($model, 'property_for', array('empty'=>'List My Property For', 'Sale', 'Rent', 'PG')); ?>
+		<?php echo $form->dropDownList($model, 'property_for', array( 'Sale', 'Rent', 'PG'),array('prompt'=>('List My Property For'))); ?>
 		<?php echo $form->error($model,'property_for'); ?>
 	</div>
 
 	<div class="row">
 		
-		<?php echo $form->dropDownList($model,'property_category',array('Type Of Property','Residential Plot','Residential House','Commercial Land','Commercial Shop','Commercial Showroom','Commercial Office Space','Builder Floor Apartment','Villa','Others')); ?>
+		<?php echo $form->dropDownList($model,'property_category',array('Residential Plot','Residential House','Commercial Land','Commercial Shop','Commercial Showroom','Commercial Office Space','Builder Floor Apartment','Villa','Others'),array('prompt'=>('Type of Property'))); ?>
 		<?php echo $form->error($model,'property_category'); ?>
 	</div>
 
 	<div class="row">
 	
-		<?php echo $form->dropDownList($model,'rooms',array('placeholder'=>'No. of Rooms..','1','2','3','4','5','6','7','8')); ?>
+		<?php echo $form->dropDownList($model,'rooms',array(1,2,3,4,5,6,7,8),array('prompt'=>('No of Rooms'))); ?>
 		<?php echo $form->error($model,'rooms'); ?>
 	</div>
 
