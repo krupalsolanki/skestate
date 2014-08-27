@@ -18,7 +18,7 @@
 	<br />
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('project_description')); ?>:</b>
-	<?php echo CHtml::encode($data->project_description); ?>
+        <p><?php echo CHtml::encode($data->project_description); ?></p>
 	<br />
         
 	<b><?php echo CHtml::encode($data->getAttributeLabel('price_per_sqft')); ?>:</b>

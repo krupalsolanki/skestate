@@ -11758,3 +11758,15 @@ in C:\wamp\www\skestate\index.php (13)
 2014/08/27 10:38:39 [warning] [application] Failed to set unsafe attribute "rooms" of "Listproperty".
 in C:\wamp\www\skestate\protected\controllers\ListpropertyController.php (72)
 in C:\wamp\www\skestate\index.php (13)
+2014/08/27 12:10:55 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/27 12:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/dashboard/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/skestate/index.php/user/dashboard/index
+HTTP_REFERER=http://localhost/skestate/index.php/user/login
+---

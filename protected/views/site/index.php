@@ -22,7 +22,7 @@ $this->pageTitle = Yii::app()->name;
                 <img src="<?php echo $data[$j]->image_path; ?>" style="width:150px;height:150px">
                     <?php
                     echo '<center>' . '<b>' . ucfirst($data[$j]->project_name) . '</b>' . '</center>';
-                    echo '<center>' . ucfirst($data[$j]->project_address) . '</center>';
+                   
                     echo '<center>' . '' . '</center>';
                     ?>
                    <center> <?php
