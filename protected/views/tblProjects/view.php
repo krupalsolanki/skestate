@@ -5,52 +5,50 @@
 /* @var $this TblProjectsController */
 /* @var $model TblProjects */
 
-$this->breadcrumbs=array(
-	'Tbl Projects'=>array('index'),
-	$model->project_id,
-);
-
-$this->menu=array(
-	array('label'=>'List TblProjects', 'url'=>array('index')),
-	array('label'=>'Create TblProjects', 'url'=>array('create')),
-	array('label'=>'Update TblProjects', 'url'=>array('update', 'id'=>$model->project_id)),
-	array('label'=>'Delete TblProjects', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->project_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage TblProjects', 'url'=>array('admin')),
+$this->breadcrumbs = array(
+    'Tbl Projects' => array('index'),
+    $model->project_id,
 );
 ?>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span6">
             <div class="main">
-                <legend><h1>Project Name:<?php echo " ".$model->project_name; ?></h1></legend>
+                <legend><h1>Project Name:<?php echo " " . $model->project_name; ?></h1></legend>
+                <img src="<?php echo $model->image_path; ?>" width="300px">
+                <?php
+                $this->widget('zii.widgets.CDetailView', array(
+                    'data' => $model,
+                    'cssFile' => Yii::app()->baseUrl . '/css/detailview.css',
+                    'attributes' => array(
+                        'project_name',
+                        'project_address',
+                        'price_per_sqft',
+                        'developed_by',
+                        'type_of_project',
+                        'type_of_property',
+                        'project_description',
+                    ),
+                ));
+                ?>
+            </div>
+        </div>
+        <?php
+        if (Yii::app()->getModule('user')->isAdmin()) {
+            ?>
+            <div class="span3">
+                <div class="portlet" id="yw0">
+                    <div class="portlet-decoration">
+                        <div class="portlet-title">Profile</div>
+                    </div>
+                    <div class="portlet-content">
+                        <ul class="sidebar" id="yw1">
+                            <li><?php echo CHtml::link('Manage Added Projects', Yii::app()->createurl('TblProjects/admin')) ?></li>
+                            <li><?php echo CHtml::link('Add Projects', Yii::app()->createurl('TblProjects/create')) ?></li>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'project_id',
-		'project_name',
-		'project_address',
-		'price_per_sqft',
-		'developed_by',
-		'type_of_project',
-		'type_of_property',
-		
-	),
-)); ?>
-            </div>
-        </div>
-        <div class="span3">
-            <div class="portlet" id="yw0">
-                <div class="portlet-decoration">
-                    <div class="portlet-title">Profile</div>
+                        </ul></div>
                 </div>
-                <div class="portlet-content">
-                    <ul class="sidebar" id="yw1">
-                        <li><?php echo CHtml::link('Manage Added Projects',Yii::app()->createurl('TblProjects/admin')) ?></li>
-                        <li><?php echo CHtml::link('Add Projects',Yii::app()->createurl('TblProjects/create')) ?></li>
-                        
-                          </ul></div>
             </div>
-        </div>
+        <?php } ?>
     </div>
 </div>

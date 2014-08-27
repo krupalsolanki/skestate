@@ -16,7 +16,11 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('project_address')); ?>:</b>
 	<?php echo CHtml::encode($data->project_address); ?>
 	<br />
-
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('project_description')); ?>:</b>
+	<?php echo CHtml::encode($data->project_description); ?>
+	<br />
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('price_per_sqft')); ?>:</b>
 	<?php echo CHtml::encode($data->price_per_sqft); ?>
 	<br />

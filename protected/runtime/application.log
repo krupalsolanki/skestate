@@ -10953,3 +10953,729 @@ Stack trace:
 REQUEST_URI=/skestate/index.php/site/css/style-normal.css
 HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
 ---
+2014/08/26 16:43:25 [error] [php] Undefined variable: projects (C:\wamp\www\skestate\protected\views\site\index.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 16:54:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT t.project_name, t.image_path,t.project_address FROM `tbl_projects` `t` WHERE t.status = 1.
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 16:54:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT t.project_name, t.image_path,t.project_address FROM `tbl_projects` `t` WHERE t.status = 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/26 16:55:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT t.project_name, t.image_path,t.project_address FROM `tbl_projects` `t` WHERE t.status = 1.
+in C:\wamp\www\skestate\protected\views\site\index.php (19)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 16:55:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT t.project_name, t.image_path,t.project_address FROM `tbl_projects` `t` WHERE t.status = 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php
+---
+2014/08/26 16:55:39 [error] [php] Object of class TblProjects could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:25)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (25)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 16:55:56 [error] [php] Trying to get property of non-object (C:\wamp\www\skestate\protected\views\site\index.php:25)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (25)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 16:56:38 [error] [php] Object of class TblProjects could not be converted to string (C:\wamp\www\skestate\protected\views\site\index.php:25)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php
+in C:\wamp\www\skestate\protected\views\site\index.php (25)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 18:02:50 [error] [php] Undefined offset: 2 (C:\wamp\www\skestate\protected\views\site\index.php:58)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/site/index
+in C:\wamp\www\skestate\protected\views\site\index.php (58)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 18:04:08 [error] [php] Undefined offset: 2 (C:\wamp\www\skestate\protected\views\site\index.php:58)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/site/index
+in C:\wamp\www\skestate\protected\views\site\index.php (58)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 18:16:16 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "reenderPartial".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(59): CComponent->__call('reenderPartial', Array)
+#1 C:\wamp\www\skestate\protected\views\site\index.php(59): SiteController->reenderPartial('Tblprojects/vie...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/26 18:16:23 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "Tblprojects/view".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(59): CController->renderPartial('Tblprojects/vie...')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/26 18:16:44 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "TblProjects/view".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(59): CController->renderPartial('TblProjects/vie...')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/26 18:17:08 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "tblProjects/view".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\skestate\protected\views\site\index.php(59): CController->renderPartial('tblProjects/vie...')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/postproperty/create
+---
+2014/08/26 18:17:23 [error] [php] Undefined variable: model (C:\wamp\www\skestate\protected\views\tblProjects\view.php:10)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(59): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/site/index
+in C:\wamp\www\skestate\protected\views\tblProjects\view.php (10)
+in C:\wamp\www\skestate\protected\views\site\index.php (59)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/26 18:17:30 [error] [php] Undefined variable: model (C:\wamp\www\skestate\protected\views\tblProjects\view.php:10)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\skestate\protected\views\site\index.php(59): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\skestate\index.php(13): CWebApplication->run()
+REQUEST_URI=/skestate/index.php/site/index
+in C:\wamp\www\skestate\protected\views\tblProjects\view.php (10)
+in C:\wamp\www\skestate\protected\views\site\index.php (59)
+in C:\wamp\www\skestate\protected\controllers\SiteController.php (35)
+2014/08/26 18:19:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblProjects/vie...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/skestate/index.php/tblProjects/view
+HTTP_REFERER=http://localhost/skestate/index.php
+---
+2014/08/26 18:19:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblProjects/vie...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/skestate/index.php/tblProjects/view
+HTTP_REFERER=http://localhost/skestate/index.php
+---
+2014/08/26 18:20:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblProjects/vie...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/skestate/index.php/tblProjects/view
+HTTP_REFERER=http://localhost/skestate/index.php/site/index
+---
+2014/08/26 18:34:06 [error] [exception.CException] exception 'CException' with message 'Property "TbButton.style" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('style', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\skestate\protected\views\site\index.php(36): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\ske...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\ske...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\ske...', NULL, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\skestate\protected\controllers\SiteController.php(35): CController->render('index')
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/skestate/index.php/site/index
+HTTP_REFERER=http://localhost/skestate/index.php/tblProjects/24
+---
+2014/08/26 19:00:24 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:01:43 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:01:59 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:03:04 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (101)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:03:12 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (101)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:06:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php:158
+Stack trace:
+#0 C:\wamp\www\skestate\protected\controllers\TblProjectsController.php(52): TblProjectsController->loadModel('2')
+#1 [internal function]: TblProjectsController->actionView('2')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TblProjectsController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TblProjectsController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblProjects/vie...')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/skestate/index.php/tblProjects/2
+---
+2014/08/26 19:15:22 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:16:54 [warning] [application] Failed to set unsafe attribute "image" of "TblProjects".
+in C:\wamp\www\skestate\protected\controllers\TblProjectsController.php (67)
+in C:\wamp\www\skestate\index.php (13)
+2014/08/26 19:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;?%3E/images/slider.Header3.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:43:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider/Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider/Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider/Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider.Header5.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---
+2014/08/26 19:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/<')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\skestate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/skestate/index.php/site/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/slider/Header4.png
+HTTP_REFERER=http://localhost/skestate/index.php/site/page?view=about
+---

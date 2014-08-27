@@ -20,19 +20,17 @@ border-radius: 15px 0px 15px 0px;">
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	
-
-	<?php echo $form->errorSummary($model); ?>
 
 	<fieldset>
  
             <legend style="margin-left: 15px;">Add New Project</legend>
  
     <?php echo $form->textFieldRow($model, 'project_name', array('hint'=>'','size'=>30,'maxlength'=>30)); ?>
-    <?php echo $form->RadioButtonListRow($model, 'type_of_project', array('Commercial'=>'Commercial', 'Residential'=>'Residential', 'Both'=>'Both')); ?>
+    <?php echo $form->RadioButtonListRow($model, 'type_of_project', array('Commercial'=>'Commercial', 'Residential'=>'Residential', 'Both'=>'Residential and Commercial')); ?>
     <?php echo $form->checkBoxListInlineRow($model, 'type_of_property', array('Apartments'=>'Apartments', 'Bungalows'=>'Bungalows', 'Offices'=>'Offices')); ?>
     <?php echo $form->textFieldRow($model, 'price_per_sqft', array('prepend'=>'Rs.')); ?>
     <?php echo $form->textAreaRow($model, 'project_address', array('class'=>'span8', 'rows'=>5,'size'=>60,'maxlength'=>100)); ?>
+    <?php echo $form->textAreaRow($model, 'project_description', array('class'=>'span8', 'rows'=>5,'size'=>60)); ?>
     <?php echo $form->textFieldRow($model, 'developed_by', array('hint'=>'','size'=>15,'maxlength'=>15)); ?>
     <?php echo $form->fileFieldRow($model, 'image',array('hint'=>'Images files with extensions .jpg, .gif, .png are allowed')); ?>
 </fieldset>
@@ -56,7 +54,7 @@ border-radius: 15px 0px 15px 0px;">
                 <div class="portlet-content">
                     <ul class="sidebar" id="yw1">
                         <li><?php echo CHtml::link('Manage Added Projects',Yii::app()->createurl('TblProjects/admin')) ?></li>
-                        <li><?php echo CHtml::link('View All Projects',Yii::app()->createurl('TblProjects/index')) ?></li>
+                        
                         
                           </ul></div>
             </div>

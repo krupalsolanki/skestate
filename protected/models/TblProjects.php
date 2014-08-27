@@ -32,7 +32,7 @@ class TblProjects extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property', 'required'),
+			array('project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property,project_description', 'required'),
 			array('price_per_sqft', 'numerical', 'integerOnly'=>true),
 			array('project_name', 'length', 'max'=>30),
 			array('project_address', 'length', 'max'=>100),
@@ -41,7 +41,7 @@ class TblProjects extends CActiveRecord
                         array('image','file','types' => 'jpg, png, gif, bmp'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('project_id, project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property', 'safe', 'on'=>'search'),
+			array('project_id, project_name, project_address, price_per_sqft, developed_by, type_of_project, type_of_property,project_description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +70,7 @@ class TblProjects extends CActiveRecord
 			'type_of_project' => 'Type Of Project',
 			'type_of_property' => 'Type Of Property',
 			'image' => 'Image File ',
+                        'project_description' => 'Project Description ',
                       
 		);
 	}
@@ -100,7 +101,8 @@ class TblProjects extends CActiveRecord
 		$criteria->compare('type_of_project',$this->type_of_project,true);
 		$criteria->compare('type_of_property',$this->type_of_property,true);
 		$criteria->compare('image',$this->image,true);
-                $criteria->compare('image_path',$this->image_path,true); 
+                $criteria->compare('image_path',$this->image_path,true);
+                $criteria->compare('project_description',$this->project_description,true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
