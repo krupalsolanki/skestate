@@ -11,6 +11,7 @@ $this->breadcrumbs = array(
     'Contact',
 );
 ?>
+    <div style="margin-top:1.5em">
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span6">
@@ -58,14 +59,14 @@ $this->breadcrumbs = array(
 
 
                         <div class="field">
-                        <?php echo $form->textAreaRow($model, 'body', array('class'=>'login','rows' => 6, 'cols' => 50, 'placeholder' => 'Your Queries here...',)); ?>
+                        <?php echo $form->textAreaRow($model, 'body', array('class'=>'login','rows' => 6, 'cols' => 100, 'placeholder' => 'Your Queries here...','style'=>'margin: 0px 0px 10px;width: 400px;height: 187px;')); ?>
                         </div>
 
                     </fieldset>
 
 
-                    <div class="login-actions">
-                    <?php echo CHtml::submitButton('Submit', array('class' => 'btn btn-warning btn-large')); ?>
+                        <div class="login-actions" >
+                    <?php echo CHtml::submitButton('Submit', array('class' => 'btn btn-warning btn-large','style'=>'color:white;')); ?>
                     </div>
 
                     <?php $this->endWidget(); ?>

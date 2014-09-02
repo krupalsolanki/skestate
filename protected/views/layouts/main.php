@@ -27,6 +27,7 @@ echo Yii::app()->bootstrap->init();
                 <body>
 
 
+   
 
                     <div id="navbar navbar-fixed-top">
 
@@ -34,12 +35,12 @@ echo Yii::app()->bootstrap->init();
 
                         <div id="navbar-inner">
 
-                            <div class="container">   
+                            <div class="container" >   
                                
                                 <?php
                                 $this->widget('bootstrap.widgets.TbNavbar', array(
                                     'type' => 'inverse',
-                                    'brand' => 'SK estate agency',
+                                    'brand' => 'Sk Estate Agency',
                                     'collapse' => true,
                                     'items' => array(
                                         array(
@@ -120,8 +121,8 @@ echo Yii::app()->bootstrap->init();
 
                     <div id="footer" class="footer">
                         <div class="container">
-                            <strong> Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
-                                All Rights Reserved.<br/></strong>
+                             Copyright &copy; <?php echo date('Y'); ?> by sk estate agency.<br/>
+                                All Rights Reserved.<br/>
                         </div>
                     </div><!-- footer -->
 

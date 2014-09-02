@@ -30,6 +30,7 @@ border-radius: 15px 0px 15px 0px;">
     <?php echo $form->checkBoxListInlineRow($model, 'type_of_property', array('Apartments'=>'Apartments', 'Bungalows'=>'Bungalows', 'Offices'=>'Offices')); ?>
     <?php echo $form->textFieldRow($model, 'price_per_sqft', array('prepend'=>'Rs.')); ?>
     <?php echo $form->textAreaRow($model, 'project_address', array('class'=>'span8', 'rows'=>5,'size'=>60,'maxlength'=>100)); ?>
+    <?php echo $form->textFieldRow($model, 'project_area', array('hint'=>'Area where the project is developed','maxlength'=>30)); ?>
     <?php echo $form->textAreaRow($model, 'project_description', array('class'=>'span8', 'rows'=>5,'size'=>60)); ?>
     <?php echo $form->textFieldRow($model, 'developed_by', array('hint'=>'','size'=>15,'maxlength'=>15)); ?>
     <?php echo $form->fileFieldRow($model, 'image',array('hint'=>'Images files with extensions .jpg, .gif, .png are allowed')); ?>

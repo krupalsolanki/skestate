@@ -10,8 +10,9 @@ and open the template in the editor.
 .container-fluid .row-fluid .span6 .contact-container .login-fields input {
 	width: 299px;
         padding-left: 6px;
-        height: 35px;
-        border: 1px solid;
+        height: 43px;
+        
+       
 }
 
 @media (max-width: 480px) {
