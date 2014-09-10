@@ -64,7 +64,7 @@
                         <li><a href="#"><ins>Username</ins>:</a><?php echo Yii::app()->user->username; ?></li>
                         <li><a href="#"><ins>Email</ins>:</a><?php echo  Yii::app()->user->email; ?></li>
                         <li><a href="#"><ins>Last Visited</ins>:</a><?php echo  Yii::app()->user->lastvisit_at; ?></li>
-                        <li><?php echo CHtml::link('Make Changes',Yii::app()->createurl('user/profile'),array('class'=>'btn btn-block btn-primary')) ?></li>
+                        <li><?php echo CHtml::link('Make Changes',Yii::app()->createurl('user/profile/edit'),array('class'=>'btn btn-block btn-primary')) ?></li>
                             
                     </ul></div>
             </div>

@@ -35,8 +35,8 @@ $j;
         <div class="span4" style="margin-top:20px;">
 
             <legend><h3>What's New</h3>
+             <marquee behavior="scroll" direction="left" scrolldelay='150'>Contact: Mr. Naresh Kumar +919821388331</marquee>
             </legend>
-
             <marquee  behavior="scroll" direction="up" scrolldelay='150'><?php
                 for ($j = 0; $j < $count; $j++) {
                     echo CHtml::link(ucfirst($data[$j]->project_name), array('tblProjects/' . $data[$j]->project_id));
@@ -58,7 +58,7 @@ $j;
                         <div class="row padall">
                             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                                 <span></span>
-                                <img src="<?php echo $data[$j]->image_path; ?>"  style="width:100px;height:100px" />
+                                <img src="<?php echo $data[$j]->image_path; ?>"  style="width:100px;height:80px" />
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                                 <div class="clearfix">
@@ -103,7 +103,7 @@ $j;
             </style>
         </div>
         <div class="span6">
-           
+            <?php ?>
         </div>
     </div>
 </div>

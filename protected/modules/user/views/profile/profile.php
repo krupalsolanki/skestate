@@ -64,5 +64,5 @@ $this->menu=array(
     </div>
 </div>
 <div class="span3">
-   jkkj
+  
 </div>

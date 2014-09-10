@@ -33,11 +33,11 @@ $this->breadcrumbs = array(
 
                     <?php echo $form->errorSummary(array($model, $profile)); ?>
                
-                    <legend><h1>Registration</h1></legend>
+        <legend><h1 style="color:orange;">Registration</h1></legend>
                     <div class="login-fields">
                     <div class="field">
                        
-                        <?php echo $form->textField($model, 'username',array('placeholder' =>'username' ,'class'=>'login')); ?>
+                        <?php echo $form->textField($model, 'username',array('placeholder' =>'Username' ,'class'=>'login')); ?>
                         <?php echo $form->error($model, 'username'); ?>
                     </div>
 
@@ -96,7 +96,7 @@ $this->breadcrumbs = array(
                     <?php endif; ?>
                     <div style="margin:10px">
                     <div class="login action">
-                        <?php echo CHtml::submitButton(UserModule::t("Register"),array('class'=>'btn btn-warning')); ?>
+                        <?php echo CHtml::submitButton(UserModule::t("Register"),array('class'=>'btn btn-warning','style'=>'color:white')); ?>
                                             
                     </div>
                 
