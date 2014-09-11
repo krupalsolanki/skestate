@@ -101,7 +101,7 @@ sub {
 img {
   width: auto\9;
   height: auto;
- // max-width: 100%;
+  max-width: 100%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -223,8 +223,7 @@ textarea {
 
 body {
   margin: 0;
-  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -4595,7 +4594,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav.pull-right {
   float: right;
-  margin-right: -35px;
+  margin-right: 0;
 }
 
 .navbar .nav > li {
@@ -4788,8 +4787,7 @@ input[type="submit"].btn.btn-mini {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
   background-image: -webkit-linear-gradient(top, #222222, #111111);
   background-image: -o-linear-gradient(top, #222222, #111111);
-  //background-image: linear-gradient(to bottom, #222222, #111111);
-  background-image: linear-gradient(to bottom, rgb(141, 68, 0), rgb(141, 68, 0));
+  background-image: linear-gradient(to bottom, #222222, #111111);
   background-repeat: repeat-x;
   border-color: #252525;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
@@ -4797,9 +4795,8 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: rgb(255, 255, 255);
+  color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  font-size: 12px;
 }
 
 .navbar-inverse .brand:hover,
@@ -4810,12 +4807,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .brand {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+  color: #999999;
+  
 }
 
 .navbar-inverse .navbar-text {
-  color: rgb(255, 255, 255);
+  color: #999999;
 }
 
 .navbar-inverse .nav > li > a:focus,
@@ -4828,7 +4825,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
-  background-color: rgb(141, 68, 0);
+  background-color: #111111;
 }
 
 .navbar-inverse .navbar-link {
@@ -4841,8 +4838,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .divider-vertical {
-  border-right-color: rgba(248, 247, 247, 0.24);
-  border-left-color: rgba(255, 250, 250, 0);
+  border-right-color: #222222;
+  border-left-color: #111111;
 }
 
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,

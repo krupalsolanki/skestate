@@ -18,39 +18,41 @@ $this->breadcrumbs = array(
 <?php endif; ?>
 
 <?php echo CHtml::beginForm(); ?>
+<div class=" well inside">
+    <h1>
+        Login
+    </h1>
+    <hr/>
+    <div class="account-container offset3">
+        <div class="content clearfix">
+            <?php echo CHtml::errorSummary($model); ?>
 
-<div class="account-container">
-    <div class="content clearfix">
+            <div class="field">
 
-        <h1>Sign In</h1>   	
+                <?php echo CHtml::activeTextField($model, 'username', array('placeholder' => 'Username/Email', 'class' => 'login username-field')) ?>
+            </div>
 
-        <?php echo CHtml::errorSummary($model); ?>
+            <div class="field">
 
-        <div class="field">
+                <?php echo CHtml::activePasswordField($model, 'password', array('placeholder' => 'Password', 'class' => 'login password-field')) ?>
+            </div>
 
-            <?php echo CHtml::activeTextField($model, 'username', array('placeholder' => 'Username/Email', 'class'=>'login username-field')) ?>
-        </div>
-
-        <div class="field">
-
-            <?php echo CHtml::activePasswordField($model, 'password', array('placeholder' => 'Password', 'class'=>'login password-field')) ?>
-        </div>
-
-        
-
-        <div class="login-actions">
+            <div class="login-actions">
                 <span class="login-checkbox">
-            <?php echo CHtml::activeCheckBox($model, 'rememberMe',array('class'=>'field login-checkbox')); ?>
-            <?php echo CHtml::activeLabelEx($model, 'rememberMe' ); ?>
+                    <?php echo CHtml::activeCheckBox($model, 'rememberMe', array('class' => 'field login-checkbox')); ?>
+                    <?php echo CHtml::activeLabelEx($model, 'rememberMe'); ?>
                 </span>
-        
-            <?php echo CHtml::submitButton(UserModule::t("Sign In"), array('class' => 'button btn btn-warning btn-large')); ?>
-           
-        </div>
+                <div class="form-actions">
+                    
+                <?php echo CHtml::submitButton(UserModule::t("Login"), array('class' => 'button btn btn-warning btn-large')); ?>
+                </div>
 
-        <?php echo CHtml::endForm(); ?>
-    </div><!-- form -->
+            </div>
 
+            <?php echo CHtml::endForm(); ?>
+        </div><!-- form -->
+
+    </div>
 </div>
 
 <?php
