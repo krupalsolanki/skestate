@@ -256,7 +256,7 @@ address b {
 	width:73px;
 }
 a {
-	color:#428301;
+	color:rgb(183, 90, 4);;
 	outline:none;
 }
 a:hover {
@@ -499,7 +499,7 @@ header nav li a {
 	text-decoration:none;
 }
 header nav li.current a, header nav li a:hover {
-	color:#82b704;
+	color:rgb(183, 90, 4);
 }
 header .top-info {
 	position:absolute;

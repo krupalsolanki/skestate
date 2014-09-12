@@ -1,33 +1,33 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Restore");
-$this->breadcrumbs=array(
-	UserModule::t("Login") => array('/user/login'),
-	UserModule::t("Restore"),
+<?php
+$this->pageTitle = Yii::app()->name . ' - ' . UserModule::t("Restore");
+$this->breadcrumbs = array(
+    UserModule::t("Login") => array('/user/login'),
+    UserModule::t("Restore"),
 );
 ?>
 
-<h1><?php echo UserModule::t("Restore"); ?></h1>
 
-<?php if(Yii::app()->user->hasFlash('recoveryMessage')): ?>
-<div class="success">
-<?php echo Yii::app()->user->getFlash('recoveryMessage'); ?>
-</div>
+    <?php if (Yii::app()->user->hasFlash('recoveryMessage')): ?>
+    <div class="success">
+    <?php echo Yii::app()->user->getFlash('recoveryMessage'); ?>
+    </div>
 <?php else: ?>
+    <div class="span3">
+        <legend><h1>Restore</h1></legend>
+        <div class="form">
 
-<div class="form">
-<?php echo CHtml::beginForm(); ?>
+    <?php echo CHtml::beginForm(); ?>
+            <div class="row">
 
-	<?php echo CHtml::errorSummary($form); ?>
-	
-	<div class="row">
-		<?php echo CHtml::activeLabel($form,'login_or_email'); ?>
-		<?php echo CHtml::activeTextField($form,'login_or_email') ?>
-		<p class="hint"><?php echo UserModule::t("Please enter your login or email addres."); ?></p>
-	</div>
-	
-	<div class="row submit">
-		<?php echo CHtml::submitButton(UserModule::t("Restore")); ?>
-	</div>
+    <?php echo CHtml::activeTextField($form, 'login_or_email', array('placeholder' => 'Enter Username or Email')) ?>
 
-<?php echo CHtml::endForm(); ?>
-</div><!-- form -->
+            </div>
+
+            <div class="row submit">
+    <?php echo CHtml::submitButton(UserModule::t("Restore"), array('class' => 'btn-warning', 'style' => 'width:219px')); ?>
+            </div>
+
+    <?php echo CHtml::endForm(); ?>
+        </div><!-- form -->
+    </div>
 <?php endif; ?>

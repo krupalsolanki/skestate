@@ -32,7 +32,7 @@ $this->breadcrumbs = array(
                 <?php echo CHtml::activeTextField($model, 'username', array('placeholder' => 'Username/Email', 'class' => 'login username-field')) ?>
             </div>
 
-            <div class="field">
+            <div class="field" style="margin-top: 15px;">
 
                 <?php echo CHtml::activePasswordField($model, 'password', array('placeholder' => 'Password', 'class' => 'login password-field')) ?>
             </div>
@@ -43,10 +43,12 @@ $this->breadcrumbs = array(
                     <?php echo CHtml::activeLabelEx($model, 'rememberMe'); ?>
                 </span>
                 <div class="form-actions">
-                    
-                <?php echo CHtml::submitButton(UserModule::t("Login"), array('class' => 'button btn btn-warning btn-large')); ?>
+                    <?php echo CHtml::submitButton(UserModule::t("Login"), array('class' => 'button btn btn-warning btn-large')); ?>
                 </div>
-
+                <div class="form-actions">
+                   <?php echo CHtml::link('New User?',Controller::createUrl('/user/registration')); ?> |
+                   <?php echo CHtml::link('Forgot Password?',Yii::app()->getModule('user')->fpUrl); ?>
+                </div>
             </div>
 
             <?php echo CHtml::endForm(); ?>

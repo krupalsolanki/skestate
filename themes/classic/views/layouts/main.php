@@ -55,21 +55,21 @@ echo Yii::app()->bootstrap->init();
                                 ?>
 
                                 <div style="padding-top: 10px">
-                                    <h1 style="color: #82b704">
+                                    <h1 style="color: rgb(183, 90, 4);">
                                         SK ESTATE AGENCY
                                     </h1>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span class="top-info">24/7 Sales &amp; Support + 1 800 234 5678 &nbsp; l &nbsp; <a href="#">Hot Deals</a> &nbsp; l &nbsp; <a href="#">Search</a></span>
+                    <span class="top-info"><?php echo CHtml::link("Contact Us",array('/site/contact')); ?> | Support +91 982 138 8331</span>
                     <form action="#" id="login-form">
                         <fieldset>
                             <?php 
                             if (Yii::app()->user->isGuest && Yii::app()->controller->route != "user/login/login"): ?>
-                                <a href="<?php echo Controller::createUrl('user/login') ?>" class="login"><span><span>Login</span></span></a> 
+                                <a href="<?php echo Controller::createUrl('/user/login') ?>" class="login"><span><span>Login</span></span></a> 
                             <?php elseif(!Yii::app()->user->isGuest): ?>
-                                <a href="<?php echo Controller::createUrl('user/logout') ?>" class="login"><span><span>Logout</span></span></a> 
+                                <a href="<?php echo Controller::createUrl('/user/logout') ?>" class="login"><span><span>Logout</span></span></a> 
                             <?php endif; ?>
                         </fieldset>
                     </form>

@@ -42,24 +42,24 @@ $this->breadcrumbs = array(
                     <fieldset>
                         <legend><h1 >Get in Touch</h1></legend>
                         <div class="field">
-                        <?php echo $form->textFieldRow($model, 'name', array('class'=>'login','placeholder' => 'Name',)); ?>
+                        <?php echo $form->textFieldRow($model, 'name', array('class'=>'login','placeholder' => 'Name','labelOptions' => array('label' => false))); ?>
                         </div>
 
 
                         <div class="field">
-                        <?php echo $form->textFieldRow($model, 'email', array('class'=>'login','placeholder' => 'Email',)); ?>
-                        </div>
-
-
-
-                        <div class="field">
-                        <?php echo $form->textFieldRow($model, 'subject', array('class'=>'login','size' => 60, 'maxlength' => 128, 'placeholder' => 'Subject',)); ?>
+                        <?php echo $form->textFieldRow($model, 'email', array('class'=>'login','placeholder' => 'Email','labelOptions' => array('label' => false))); ?>
                         </div>
 
 
 
                         <div class="field">
-                        <?php echo $form->textAreaRow($model, 'body', array('class'=>'login','rows' => 6, 'cols' => 100, 'placeholder' => 'Your Queries here...','style'=>'margin: 0px 0px 10px;width: 400px;height: 187px;')); ?>
+                        <?php echo $form->textFieldRow($model, 'subject', array('class'=>'login','size' => 60, 'maxlength' => 128, 'placeholder' => 'Subject','labelOptions' => array('label' => false))); ?>
+                        </div>
+
+
+
+                        <div class="field">
+                        <?php echo $form->textAreaRow($model, 'body', array('class'=>'login','rows' => 6, 'cols' => 100, 'placeholder' => 'Your Queries here...','style'=>'margin: 0px 0px 10px;width: 400px;height: 187px;','labelOptions' => array('label' => false))); ?>
                         </div>
 
                     </fieldset>

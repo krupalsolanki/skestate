@@ -15,7 +15,7 @@
                                     <div class="right-bot-corner maxheight">
                                         <div class="left-bot-corner maxheight">
                                             <div class="inner">
-                                                <h3><?php echo $project->project_name ?></h3>
+                                                <h3><?php echo ucfirst($project->project_name) ?></h3>
                                                 <img src="<?php echo $project->image_path ?>" alt="Property_Image"
                                                      style="width: "/>
                                                 <hr/>
