@@ -55,20 +55,26 @@ echo Yii::app()->bootstrap->init();
                                 ?>
 
                                 <div style="padding-top: 10px">
-                                    <h1 style="color: rgb(183, 90, 4);">
-                                        SK ESTATE AGENCY
+                                    <h1 style="color: white">
+                                        <a href="http://skestateagency.in/" >
+                                            SK ESTATE AGENCY
+                                        </a>
                                     </h1>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span class="top-info"><?php echo CHtml::link("Contact Us",array('/site/contact')); ?> | Support +91 982 138 8331</span>
+                    <span class="top-info"><?php echo CHtml::link("Contact Us", array('/site/contact')); ?> | Support : +91 982 138 8331</span>
+                    <marquee direction="left" scrolldelay="20" scrollamount="2" behavior="scroll" loop="0" class="urgentMessage">
+                        <span style="color:#000000;font-family:Calibri;font-size:12px;">
+                            <?php echo htmlentities(UrgentMessage::model()->findByPk(1)->message); ?>
+                        </span>
+                    </marquee>
                     <form action="#" id="login-form">
                         <fieldset>
-                            <?php 
-                            if (Yii::app()->user->isGuest && Yii::app()->controller->route != "user/login/login"): ?>
+                            <?php if (Yii::app()->user->isGuest && Yii::app()->controller->route != "user/login/login"): ?>
                                 <a href="<?php echo Controller::createUrl('/user/login') ?>" class="login"><span><span>Login</span></span></a> 
-                            <?php elseif(!Yii::app()->user->isGuest): ?>
+                            <?php elseif (!Yii::app()->user->isGuest): ?>
                                 <a href="<?php echo Controller::createUrl('/user/logout') ?>" class="login"><span><span>Logout</span></span></a> 
                             <?php endif; ?>
                         </fieldset>
@@ -81,10 +87,35 @@ echo Yii::app()->bootstrap->init();
                 </div>
             </section>
         </div>
+        <?php if (Yii::app()->controller->route == "site/contact"): ?>
+            <aside style="margin-top: 15px">
+                <div class="container">
+                    <div class="inside">
+                        <div class="col-1">
+                            <span><h3>Head Office : </h3></span>
+                        </div>
+                        <div class="col-1" style="color: white">
+                            Shop no 44, "A" Wing, Green Fields Society,<br/>
+                            JVLR, Andheri (East),<br/>
+                            Mumbai - 400093<br/>
+                        </div>
+<!--                        <div class="col-1" >
+                            <img src="<?php echo Yii::app()->request->baseUrl ?>/themes/classic/images/worldmap.png" />
+                        </div>-->
+                        <div class="col-1">
+                            <span><h3>Mobile No : </h3></span>
+                        </div>
+                        <div class="col-1" style="color: white">
+                            +91 982 138 8331
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        <?php endif; ?>
         <footer>
             <div class="footerlink">
-                <p class="lf">Copyright &copy; <?php echo date("Y") ?> <a href="#">SK ESTATE AGENCY</a> - All Rights Reserved</p>
-                <p class="rf">Developed By Envisio Devs</p>
+                <p class="lf">Copyright &copy; <?php echo date("Y") ?> <a href="#" style="text-decoration: none; color: #72ab03">SK ESTATE AGENCY</a> - All Rights Reserved</p>
+                <p class="rf">Developed By : <b>Envisio Devs</b></p>
                 <div style="clear:both;"></div>
             </div>
         </footer>

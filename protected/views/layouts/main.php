@@ -40,7 +40,7 @@ echo Yii::app()->bootstrap->init();
                                 <?php
                                 $this->widget('bootstrap.widgets.TbNavbar', array(
                                     'type' => 'inverse',
-                                    'brand' => 'Sk Estate Agency',
+                                    'brand' => 'SK Estate Agency',
                                     'collapse' => true,
                                     'items' => array(
                                         array(

@@ -256,7 +256,7 @@ address b {
 	width:73px;
 }
 a {
-	color:rgb(183, 90, 4);;
+	color:#428301;
 	outline:none;
 }
 a:hover {
@@ -499,7 +499,7 @@ header nav li a {
 	text-decoration:none;
 }
 header nav li.current a, header nav li a:hover {
-	color:rgb(183, 90, 4);
+	color:#82b704;
 }
 header .top-info {
 	position:absolute;
@@ -704,7 +704,7 @@ aside .line-ver4 {
 	width:990px;
 	height:350px;
 	margin:7px 0;
-	background:url(../images/slider-bg.jpg) no-repeat 25px 5px;
+	background:url(../images/slider-bg.png) no-repeat 25px 5px;
 }
 #faded ul {
 	list-style:none;

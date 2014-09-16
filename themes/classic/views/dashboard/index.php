@@ -32,7 +32,7 @@
                         <li><?php echo CHtml::link('Listed Porperty',Yii::app()->createurl('listproperty/admin')) ?></li>
                         <li><?php echo CHtml::link('Add New Project',Yii::app()->createurl('TblProjects/create')) ?></li>
                         <li><?php echo CHtml::link('Manage Added Project',Yii::app()->createurl('TblProjects/admin')) ?></li>
-                        
+                        <li><?php echo CHtml::link('Urgent Message',Yii::app()->createurl('UrgentMessage/update/1')) ?></li>
                     </ul></div>
             </div>
         </div>
