@@ -7,7 +7,7 @@
  */
 
 class DashboardController extends Controller{
-    public $layout='\layouts\column1';
+    public $layout='//layouts/column1';
     
      public function accessRules()
         {

@@ -5,7 +5,6 @@
  * and open the template in the editor.
  */
 ?>
-
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/themes/sktheme/css/bootstrap-select.min.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/themes/sktheme/css/bootstrap.min.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/themes/sktheme/css/font-awesome.min.css" media="screen, projection" />
@@ -64,12 +63,12 @@
                 <div class="portlet-content">
                     <ul class="sidebar" id="yw1">
 
-                        <li><a href="#"><ins>Name</ins>:</a><?php echo Yii::app()->user->firstname . " " . Yii::app()->user->lastname; ?></li>
+                        <li><a href="#"><ins>Name</ins>:</a><?php echo Yii::app()->user->firstname ." ". Yii::app()->user->lastname; ?></li>
                         <li><a href="#"><ins>Username</ins>:</a><?php echo Yii::app()->user->username; ?></li>
-                        <li><a href="#"><ins>Email</ins>:</a><?php echo Yii::app()->user->email; ?></li>
-                        <li><a href="#"><ins>Last Visited</ins>:</a><?php echo Yii::app()->user->lastvisit_at; ?></li>
-                        <li><?php echo CHtml::link('Make Changes', Yii::app()->createurl('user/profile/edit'), array('class' => 'btn btn-block btn-primary')) ?></li>
-
+                        <li><a href="#"><ins>Email</ins>:</a><?php echo  Yii::app()->user->email; ?></li>
+                        <li><a href="#"><ins>Last Visited</ins>:</a><?php echo  Yii::app()->user->lastvisit_at; ?></li>
+                        <li><?php echo CHtml::link('Make Changes',Yii::app()->createurl('user/profile/edit'),array('class'=>'btn btn-block btn-primary')) ?></li>
+                            
                     </ul></div>
             </div>
         </div>

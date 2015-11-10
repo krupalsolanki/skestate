@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Aug, 2014, 10:54:58 PM
+    Author     : Nitish
+*/
+
+.image-div{
+    width:150px;
+    height: auto;
+    float: left;
+    margin: 20px; 
+    overflow: hidden;
+    box-shadow: -4px 2px 20px -2px rgb(12, 12, 12);
+}

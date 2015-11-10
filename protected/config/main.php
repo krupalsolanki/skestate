@@ -23,7 +23,8 @@ return array(
         'bootstrap.helpers.TbHtml',
         'bootstrap.helpers.TbArray',
         'bootstrap.behaviors.TbWidget',
-        'bootstrap.widgets.*'
+        'bootstrap.widgets.*',
+        'application.extensions.jquery-gmap.*',
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -92,7 +93,7 @@ return array(
                     'showInFireBug' => true,
                     'enabled' => YII_DEBUG,
                 ),
-                // uncomment the following to show log messages on web pages
+            // uncomment the following to show log messages on web pages
 //                array(
 //                    'class' => 'CWebLogRoute',
 //                ),

@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Sep, 2014, 1:26:57 AM
+    Author     : Krupal
+*/
+
+.formRow{
+    height: 50px;
+}
+.urgentMessage{
+    position: absolute;
+    left: 290px;
+    top: 19px;
+    width: 552px;
+    height: 16px;
+    z-index: 100;
+}

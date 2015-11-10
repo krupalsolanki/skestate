@@ -2,6 +2,7 @@
 
 class ListpropertyController extends Controller {
 
+    public $layout='//layouts/column1';
     /**
      * @return array action filters
      */
@@ -151,5 +152,4 @@ class ListpropertyController extends Controller {
             Yii::app()->end();
         }
     }
-
 }
