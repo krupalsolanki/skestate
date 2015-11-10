@@ -1,7 +1,7 @@
 <?php
 /* @var $this PropertyController */
 /* @var $model Property */
-
+$this->layout = '//layouts/column2';
 $this->breadcrumbs=array(
 	'Properties'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),

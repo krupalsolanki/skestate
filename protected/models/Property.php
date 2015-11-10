@@ -46,7 +46,7 @@ class Property extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, image_path, address, description, type_of_property', 'required'),
+            array('project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, address, description, type_of_property', 'required'),
             array('area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, type_of_property', 'numerical', 'integerOnly' => true),
             array('project_name, builder, location, image_path, address', 'length', 'max' => 200),
             array('tag_line, city', 'length', 'max' => 100),

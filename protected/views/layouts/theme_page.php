@@ -25,15 +25,14 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                             <label for="">Status:</label>
                             <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[status]">
                                 <optgroup label="Status:">
-                                    <option>Buy</option>
-                                    <option>Sale</option>
-                                    <option>Rent</option>
+                                    <option value="1">Buy</option>
+                                    <option value="2">Rent</option>
                                 </optgroup>
                             </select>
                         </div><!-- /.col -->
                         <div class="col-md-3">
                             <label for="">Location:</label>
-                            <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data- style="btn-primary" name="Property[location]">
+                            <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data-style="btn-primary" name="Property[location]">
                                 <?php
                                 foreach ($location as $location) {
                                     echo "<option>$location</option>";

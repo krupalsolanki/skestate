@@ -35,7 +35,7 @@ class PropertyController extends Controller {
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin', 'delete'),
+                'actions' => array('admin', 'delete', 'gallery', 'deleteImage'),
                 'users' => array('admin'),
             ),
             array('deny', // deny all users
@@ -62,14 +62,46 @@ class PropertyController extends Controller {
         $model = new Property;
 
         // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        $this->performAjaxValidation($model);
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
-        }
+            $error = '';
+            if ($model->validate()) {
+                $db = Yii::app()->db->beginTransaction();
+                try {
+                    $photos = CUploadedFile::getInstancesByName('Property[images]');
 
+                    if (!$model->save())
+                        throw new CException(CHtml::errorSummary($model));
+
+                    if (!mkdir(Yii::getPathOfAlias('webroot') . '/images/property/' . $model->id, 0777, true)) {
+                        die('Failed to create folders...');
+                    } else {
+                        if (isset($photos) && count($photos) > 0) {
+
+                            // go through each uploaded image
+                            foreach ($photos as $image => $pic) {
+                                echo $pic->name . '<br />';
+                                if ($pic->saveAs(Yii::getPathOfAlias('webroot') . '/images/property/' . $model->id . '/' . $pic->name)) {
+                                    
+                                } else {
+                                    echo 'Cannot upload!';
+                                }
+                            }
+                        }
+                    }
+                    // proceed if the images have been set
+                    $db->commit();
+                } catch (Exception $exc) {
+                    echo $exc->getTraceAsString();
+                    $error = $exc->getMessage();
+                    $db->rollback();
+                    die(var_dump($error));
+                }
+                $this->redirect(array('gallery', 'id' => $model->id));
+            }
+        }
         $this->render('create', array(
             'model' => $model,
         ));
@@ -88,8 +120,22 @@ class PropertyController extends Controller {
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
+            if ($model->save()) {
+                $photos = CUploadedFile::getInstancesByName('Property[images]');
+                if (isset($photos) && count($photos) > 0) {
+
+                    // go through each uploaded image
+                    foreach ($photos as $image => $pic) {
+                        echo $pic->name . '<br />';
+                        if ($pic->saveAs(Yii::getPathOfAlias('webroot') . '/images/property/' . $model->id . '/' . $pic->name)) {
+                            
+                        } else {
+                            echo 'Cannot upload!';
+                        }
+                    }
+                }
+            }
+            $this->redirect(array('gallery', 'id' => $model->id));
         }
 
         $this->render('update', array(
@@ -186,6 +232,20 @@ class PropertyController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'property-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+
+    public function actionGallery($id) {
+        $property = Property::model()->findByPk($id);
+        $this->render('gallery', array('model' => $property));
+    }
+
+    public function actionDeleteImage() {
+        $folder = Yii::getPathOfAlias('webroot') . '/images/property/'; // folder for uploaded files
+        $imageName = $_POST['image'];
+        $target = $folder . $imageName;
+        if (file_exists($target)) {
+            unlink($target); // Delete now
         }
     }
 

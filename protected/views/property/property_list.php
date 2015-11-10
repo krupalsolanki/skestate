@@ -1,7 +1,7 @@
 <?php
 if (count($dataProvider)) {
     foreach ($dataProvider as $data) {
-        $this->renderPartial('_view', array('data' => $data));
+        $this->renderPartial('_view', array('model' => $data));
     }
 } else {
     ?>

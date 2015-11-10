@@ -8,12 +8,25 @@
         </ol>
         <!-- carousel -->
         <div class="carousel-inner">
-            <div class="item active">
-                <img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/slide-1.jpg" alt="1200x500" >
-            </div><!-- /.item -->
-            <div class="item">
-                <img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/slide-1.jpg" alt="1200x500" >
-            </div><!-- /.item -->
+            <?php
+            $folder = Yii::getPathOfAlias('webroot') . '/images/property/'; // folder for uploaded files
+            $webFolder = Yii::app()->request->baseUrl . "/images/property/";
+            $files_folder = $model->id . '/';
+            $count = 0;
+            $scanned_directory = array();
+            if ($files_folder) {
+                $directory = $folder . $files_folder;
+                $scanned_directory = array_diff(scandir($directory), array('..', '.', '.swp'));
+                foreach ($scanned_directory as $img) {
+                    $count++;
+                    ?>
+            <div class="item <?php echo $count == 1 ? 'active' : null ?>">
+                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="1200x500" >
+                    </div><!-- /.item -->
+                    <?php
+                }
+            }
+            ?>
         </div><!-- /.carousel-inner -->
         <!-- Controls -->
         <a class="left carousel-control" href="#my-carousel" data-slide="prev">
@@ -44,6 +57,7 @@
 <li><i class="fa fa-fw fa-fire"></i> <strong>Heating Type:</strong> Forced air</li>
 <li><i class="fa fa-fw fa-briefcase"></i> <strong>Last Sold:</strong> May 2006, for $106.000</li>-->
                 </ul>
+                <input type="hidden" id="Property_address" value="<?= $model->address ?> " />
                 <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?></h3>
                 <ul class="tags">
                     <?php echo $model->swiming_pool ? '<li><a href="#link">Swimming Pool</a></li>' : null; ?>
@@ -77,9 +91,37 @@
             <h3 class="panel-title">Map location</h3>
         </div><!-- /.panel-heading -->
         <div class="panel-body padding-md">
-            <div class="embed-wrapper">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=S%C3%A3o+Paulo,+Brazil&amp;aq=0&amp;oq=S%C3%A3o+Paulo&amp;sll=-14.264383,-51.943359&amp;sspn=52.984978,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Paulo,+Brazil&amp;t=m&amp;z=9&amp;ll=-23.55052,-46.633309&amp;output=embed"></iframe>
-            </div>
+            <div id="basic_map" style="height: 350px; width: 100%"></div>
         </div><!-- /.panel-body -->
     </div><!-- /.panel -->
 </article><!-- /.post -->
+<script>
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('basic_map'), {
+            zoom: 14,
+            center: {lat: -34.397, lng: 150.644}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+        geocodeAddress(geocoder, map);
+    }
+
+    function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('Property_address').value;
+        geocoder.geocode({'address': address}, function (results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                resultsMap.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: resultsMap,
+                    position: results[0].geometry.location
+                });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFU9ag1KFdfCsTsU032uwk3X_y1eHjO0&callback=initMap">
+</script>

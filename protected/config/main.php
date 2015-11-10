@@ -24,7 +24,6 @@ return array(
         'bootstrap.helpers.TbArray',
         'bootstrap.behaviors.TbWidget',
         'bootstrap.widgets.*',
-        'application.extensions.jquery-gmap.*',
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
