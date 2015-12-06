@@ -8,7 +8,7 @@ return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'SK Estate Agency',
     'aliases' => array(
-        'bootstrap' => realpath(__DIR__ . '/../extensions/yiistrap'), // change this if necessary
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
         'RestfullYii' => realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
     ),
     // preloading 'log' component
@@ -97,9 +97,6 @@ return array(
 //                    'class' => 'CWebLogRoute',
 //                ),
             ),
-        ),
-        'bootstrap' => array(
-            'class' => 'bootstrap.components.TbApi',
         ),
     ),
     // application-level parameters that can be accessed
