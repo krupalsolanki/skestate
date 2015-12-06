@@ -5,6 +5,7 @@ $this->pageTitle = Yii::app()->name;
 $data = TblProperty::model()->findAll();
 $count = count($data);
 $location = Yii::app()->db->createCommand('select distinct location from tbl_property')->queryColumn();
+$possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl_property order by possession desc')->queryColumn();
 ?>
 <section class="wrapper-lg bg-custom-home">
     <div class="container">
@@ -38,6 +39,7 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                             <div class="col-md-3">
                                 <label for="">Location:</label>
                                 <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data-style="btn-primary" name="Property[location]">
+                                    <option value="">All</option>
                                     <?php
                                     foreach ($location as $location) {
                                         echo "<option>$location</option>";
@@ -46,13 +48,14 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                                 </select>
                             </div><!-- /.col -->
                             <div class="col-md-2">
-                                <label for="">Price:</label>
-                                <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="range">
-                                    <optgroup label="Price:">
-                                        <option>Up to 5000</option>
-                                        <option>Up to 10000</option>
-                                        <option>Up to 20000</option>
-                                    </optgroup>
+                                <label for="">Possession:</label>
+                                <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[possession]">
+                                    <option value="">All</option>
+                                    <?php
+                                    foreach ($possession as $possession) {
+                                        echo "<option>$possession</option>";
+                                    }
+                                    ?>
                                 </select>
                             </div><!-- /.col -->
                             <div class="col-md-2">

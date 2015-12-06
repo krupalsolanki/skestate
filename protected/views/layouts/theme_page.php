@@ -2,6 +2,7 @@
 <?php
 $this->beginContent('//layouts/theme');
 $location = Yii::app()->db->createCommand('select distinct location from tbl_property')->queryColumn();
+$possession = Yii::app()->db->createCommand('select distinct possession from tbl_property')->queryColumn();
 ?>
 <section class="wrapper-xs bg-highlight">
     <div class="container">
@@ -32,22 +33,29 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                         </div><!-- /.col -->
                         <div class="col-md-3">
                             <label for="">Location:</label>
-                            <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data-style="btn-primary" name="Property[location]">
+                            <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data-style="btn-primary" name="Property[location]" >
+                                <option value="">All</option>
                                 <?php
                                 foreach ($location as $location) {
-                                    echo "<option>$location</option>";
+                                    if ($this->location == $location)
+                                        echo "<option selected >$location</option>";
+                                    else
+                                        echo "<option >$location</option>";
                                 }
                                 ?>
                             </select>
                         </div><!-- /.col -->
                         <div class="col-md-2">
-                            <label for="">Price:</label>
-                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="range">
-                                <optgroup label="Price:">
-                                    <option>Up to 5000</option>
-                                    <option>Up to 10000</option>
-                                    <option>Up to 20000</option>
-                                </optgroup>
+                            <label for="">Possession:</label>
+                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[possession]">
+                                <?php
+                                foreach ($possession as $possession) {
+                                    if ($this->possession == $possession)
+                                        echo "<option selected >$possession</option>";
+                                    else
+                                        echo "<option >$possession</option>";
+                                }
+                                ?>
                             </select>
                         </div><!-- /.col -->
                         <div class="col-md-2">

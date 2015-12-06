@@ -75,6 +75,7 @@ return array(
             dirname(__FILE__) . '/../extensions/starship/RestfullYii/config/routes.php'
             ),
         ),
+        'bootstrap' => array('class' => 'ext.bootstrap.components.Bootstrap'),
         // database settings are configured in database.php
         'db' => require(dirname(__FILE__) . '/database.php'),
         'errorHandler' => array(

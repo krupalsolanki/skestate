@@ -8,6 +8,8 @@ class PropertyController extends Controller {
      */
     public $property_type;
     public $status;
+    public $location;
+    public $possession;
     public $layout = '//layouts/column2';
 
     /**
@@ -163,9 +165,10 @@ class PropertyController extends Controller {
     public function actionIndex() {
         $this->layout = "//layouts/theme_page";
         $range = isset($_GET['range']) ? $_GET['range'] : '';
-        $this->property_type = $property_type = isset($_GET['Property']['type_of_property']) ? $_GET['Property']['type_of_property'] : '';
-        $this->status = $status = isset($_GET['Property']['type']) ? $_GET['Property']['type'] : '';
-        $location = isset($_GET['Property']['location']) ? $_GET['Property']['location'] : '';
+        $this->property_type = isset($_GET['Property']['type_of_property']) ? $_GET['Property']['type_of_property'] : '';
+        $this->status = isset($_GET['Property']['type']) ? $_GET['Property']['type'] : '';
+        $this->location = isset($_GET['Property']['location']) ? $_GET['Property']['location'] : '';
+        $this->possession = isset($_GET['Property']['possession']) ? $_GET['Property']['possession'] : '';
         if (isset($_GET['Property'])) {
             $models = new Property('search');
             $models->unsetAttributes();  // clear any default values
@@ -190,9 +193,10 @@ class PropertyController extends Controller {
             'models' => $models,
             'pages' => $pages,
             'range' => $range,
-            'property_type' => $property_type,
-            'status' => $status,
-            'location' => $location
+            'property_type' => $this->property_type,
+            'status' => $this->status,
+            'location' => $this->location,
+            'possession' => $this->possession
         ));
     }
 
