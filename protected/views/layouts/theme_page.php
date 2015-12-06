@@ -11,7 +11,7 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                     <div class="row">
                         <div class="col-md-3">
                             <label for="">Search:</label>
-                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[type]">
+                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[type_of_property]">
                                 <?php
                                 $typeOfProperty = TypeOfProperty::model()->findAll();
                                 foreach ($typeOfProperty as $type) {
@@ -23,10 +23,10 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                         </div><!-- /.col -->
                         <div class="col-md-2">
                             <label for="">Status:</label>
-                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[status]">
+                            <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[type]">
                                 <optgroup label="Status:">
-                                    <option value="1">Buy</option>
-                                    <option value="2">Rent</option>
+                                    <option value="1" <?= $this->status == 1 ? "selected" : "" ?>>Buy</option>
+                                    <option value="2" <?= $this->status == 2 ? "selected" : "" ?>>Rent</option>
                                 </optgroup>
                             </select>
                         </div><!-- /.col -->
@@ -72,23 +72,31 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                         <h3 class="panel-title">Featured</h3>
                     </div>
                     <div class="panel-body">
+                        <?php
+                        $property = Property::getFeatured();
+                        ?>
                         <div class="thumbnail">
                             <div class="overlay-container">
-                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/item-small.jpg">
+                                <img src="<?php
+                                if ($property->image_path)
+                                    echo Yii::app()->request->baseUrl . $property->image_path;
+                                else
+                                    echo Yii::app()->request->baseUrl . "/img/item-small.jpg";
+                                ?>">
                                 <div class="overlay-content">
-                                    <h3 class="h4 headline">Great Deal</h3>
-                                    <p>So you know you're getting a top quality property from an experienced team.</p>
+                                    <h3 class="h4 headline"> <?php echo $property->project_name; ?> </h3>
+                                    <p> By: <?php echo $property->builder; ?></p>
                                 </div><!-- /.overlay-content -->
                             </div><!-- /.overlay-container -->
                             <div class="thumbnail-meta">
-                                <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
-                                <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                                <p><i class="fa fa-fw fa-home"></i> <?php echo $property->location . "," . $property->city; ?></p>
+                                <p><i class="fa fa-fw fa-map-marker"></i> <?php echo $property->address; ?></p>
                             </div>
                             <div class="thumbnail-meta">
-                                <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                                <i class="fa fa-fw fa-info-circle"></i> <?php echo $property->area; ?> sqft.| <?php echo $property->rate; ?> per sqft.| <?php echo $property->bed; ?> BHK 
                             </div>
                             <div class="thumbnail-meta">
-                                <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                                <i class="fa fa-fw fa-inr"></i> <span class="h3"><?php echo $property->budget; ?> Cr</span> <a href='<?php echo CController::createUrl('//property/' . $property->id); ?>' class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div><!-- /.thumbnail -->
                     </div><!-- /.col --> <!-- End of sidebar -->

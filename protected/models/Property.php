@@ -29,6 +29,7 @@
  * @property string $address
  * @property string $description
  * @property integer $type_of_property
+ * @property string $possession
  */
 class Property extends CActiveRecord {
 
@@ -46,14 +47,15 @@ class Property extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, address, description, type_of_property', 'required'),
+            array('project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, address, description, type_of_property, possession', 'required'),
             array('area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, type_of_property', 'numerical', 'integerOnly' => true),
             array('project_name, builder, location, image_path, address', 'length', 'max' => 200),
             array('tag_line, city', 'length', 'max' => 100),
             array('description', 'length', 'max' => 1000),
+            array('possession', 'length', 'max' => 45),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, image_path, address, description, type_of_property', 'safe', 'on' => 'search'),
+            array('id, project_name, tag_line, builder, location, area, bed, bath, balcony, parking, rate, budget, type, hot_property, swiming_pool, garden, rain_water_harvesting, security, power_backup, gymnasium, city, image_path, address, description, type_of_property, possession', 'safe', 'on' => 'search'),
         );
     }
 
@@ -159,6 +161,15 @@ class Property extends CActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public static function getFeatured() {
+        return Property::model()->find(array(
+                    'select' => '*, rand() as rand',
+                    'limit' => '1',
+                    'condition' => 'hot_property = 1',
+                    'order' => 'rand'
+        ));
     }
 
 }

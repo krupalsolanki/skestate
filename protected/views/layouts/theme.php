@@ -44,20 +44,17 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="<?php echo CController::createUrl('//site/index') ?>">
-                        <img style="height: 53px" src="<?php echo Yii::app()->request->baseUrl; ?>/images/SK_badge.png" alt="SK Logo">
+                        <img style="height: 53px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo-dark.png" alt="SK Logo">
                     </a>
                 </div>
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li class="<?= Yii::app()->controller->id != "postproperty" ? "active" : "" ?>">
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a>
                         </li>
-                        <li>
-                            <a href="<?php echo CController::createUrl('property/post'); ?>">Post Property</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo CController::createUrl('property/requirement'); ?>">Post Requirement</a>
+                        <li class="<?= Yii::app()->controller->id == "postproperty" ? "active" : "" ?>">
+                            <a href="<?php echo CController::createUrl('//postproperty'); ?>">List Requirements</a>
                         </li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.collapse -->
@@ -101,7 +98,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <p class="no-margin-bottom">All Rights Reserved ® Designed by <a href="http://envisiodevs.com" target="_blank">EnvisioDevs</a></p>
+                            <p class="no-margin-bottom">All Rights Reserved ® Developed by <a href="http://envisiodevs.com" target="_blank">EnvisioDevs</a></p>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->

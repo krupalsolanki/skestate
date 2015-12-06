@@ -53,72 +53,88 @@
             <?php echo $form->error($model, 'type_of_property'); ?>
         </div>
     </div>
-    <div class="row">
-        <?php echo $form->labelEx($model, 'builder'); ?>
-        <?php echo $form->textField($model, 'builder', array('size' => 60, 'maxlength' => 200)); ?>
-        <?php echo $form->error($model, 'builder'); ?>
+
+    <div class="row-fluid">
+        <div class="span4">
+            <?php echo $form->labelEx($model, 'builder'); ?>
+            <?php echo $form->textField($model, 'builder', array('size' => 60, 'maxlength' => 200)); ?>
+            <?php echo $form->error($model, 'builder'); ?>
+        </div>
+
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'location'); ?>
+            <?php echo $form->textField($model, 'location', array('size' => 60, 'maxlength' => 200)); ?>
+            <?php echo $form->error($model, 'location'); ?>
+        </div>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'location'); ?>
-        <?php echo $form->textField($model, 'location', array('size' => 60, 'maxlength' => 200)); ?>
-        <?php echo $form->error($model, 'location'); ?>
+    <div class="row-fluid">
+        <div class="span4 ">
+            <?php echo $form->labelEx($model, 'address'); ?>
+            <?php echo $form->textField($model, 'address', array('size' => 60, 'maxlength' => 200)); ?>
+            <?php echo $form->error($model, 'address'); ?>
+        </div>
+
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'city'); ?>
+            <?php echo $form->textField($model, 'city', array('size' => 50, 'maxlength' => 50)); ?>
+            <?php echo $form->error($model, 'city'); ?>
+        </div>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'address'); ?>
-        <?php echo $form->textField($model, 'address', array('size' => 60, 'maxlength' => 200)); ?>
-        <?php echo $form->error($model, 'address'); ?>
+    <div class="row-fluid">
+        <div class="span4 ">
+            <?php echo $form->labelEx($model, 'area'); ?>
+            <?php echo $form->textField($model, 'area'); ?>
+            <?php echo $form->error($model, 'area'); ?>
+        </div>
+
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'bed'); ?>
+            <?php echo $form->textField($model, 'bed'); ?>
+            <?php echo $form->error($model, 'bed'); ?>
+        </div>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'city'); ?>
-        <?php echo $form->textField($model, 'city', array('size' => 50, 'maxlength' => 50)); ?>
-        <?php echo $form->error($model, 'city'); ?>
+    <div class="row-fluid">
+        <div class="span4 ">
+            <?php echo $form->labelEx($model, 'bath'); ?>
+            <?php echo $form->textField($model, 'bath'); ?>
+            <?php echo $form->error($model, 'bath'); ?>
+        </div>
+
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'balcony'); ?>
+            <?php echo $form->textField($model, 'balcony'); ?>
+            <?php echo $form->error($model, 'balcony'); ?>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <?php echo $form->labelEx($model, 'parking'); ?>
+            <?php echo $form->textField($model, 'parking'); ?>
+            <?php echo $form->error($model, 'parking'); ?>
+        </div>
+
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'rate'); ?>
+            <?php echo $form->textField($model, 'rate'); ?>
+            <?php echo $form->error($model, 'rate'); ?>
+        </div>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'area'); ?>
-        <?php echo $form->textField($model, 'area'); ?>
-        <?php echo $form->error($model, 'area'); ?>
+    <div class="row-fluid">
+        <div class="span4">
+            <?php echo $form->labelEx($model, 'budget'); ?>
+            <?php echo $form->textField($model, 'budget'); ?>
+            <?php echo $form->error($model, 'budget'); ?>
+        </div>
+        <div class="span4 offset1">
+            <?php echo $form->labelEx($model, 'possession'); ?>
+            <?php echo $form->textField($model, 'possession'); ?>
+            <?php echo $form->error($model, 'possession'); ?>
+        </div>
     </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'bed'); ?>
-        <?php echo $form->textField($model, 'bed'); ?>
-        <?php echo $form->error($model, 'bed'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'bath'); ?>
-        <?php echo $form->textField($model, 'bath'); ?>
-        <?php echo $form->error($model, 'bath'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'balcony'); ?>
-        <?php echo $form->textField($model, 'balcony'); ?>
-        <?php echo $form->error($model, 'balcony'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'parking'); ?>
-        <?php echo $form->textField($model, 'parking'); ?>
-        <?php echo $form->error($model, 'parking'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'rate'); ?>
-        <?php echo $form->textField($model, 'rate'); ?>
-        <?php echo $form->error($model, 'rate'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'budget'); ?>
-        <?php echo $form->textField($model, 'budget'); ?>
-        <?php echo $form->error($model, 'budget'); ?>
-    </div>
-
 
 
     <div class="row">

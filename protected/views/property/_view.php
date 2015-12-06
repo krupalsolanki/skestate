@@ -1,7 +1,12 @@
 <div class="row">
     <article class="post">
         <div class="col-sm-12 col-md-5">
-            <a href="#link"><img class="img-responsive img-thumbnail" src="<?= Yii::app()->request->baseUrl . $model->image_path ?>"></a>
+            <a href="#link"><img class="img-responsive img-thumbnail" src="<?php
+                if ($model->image_path)
+                    echo Yii::app()->request->baseUrl . $model->image_path;
+                else
+                    echo Yii::app()->request->baseUrl . "/img/mumbai_skyline.jpg    ";
+                ?>"></a>
         </div><!-- /.col -->
         <div class="col-sm-12 col-md-7">
             <h3><a href="<?php echo CController::createUrl('//property/' . $model->id); ?>"><?= $model->project_name ?>, <span class="text-muted"><?= $model->location ?> </span></a></h3>
@@ -17,7 +22,7 @@
                 <p><a href="<?php echo CController::createUrl('//property/' . $model->id); ?>" class="btn btn-primary">View More »</a></p>
             </div>
             <div class="col-sm-12 col-md-6">
-                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?></h3>
+                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?> Cr</h3>
             </div>
 
         </div><!-- /.col -->

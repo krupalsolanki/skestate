@@ -7,7 +7,7 @@ class PostpropertyController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column1';
-
+        public $defaultAction = 'create';
 	/**
 	 * @return array action filters
 	 */
@@ -60,8 +60,8 @@ class PostpropertyController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
+	public function actionCreate(){
+            $this->layout = '//layouts/theme';
 		$model=new Postproperty;
 
 		// Uncomment the following line if AJAX validation is needed

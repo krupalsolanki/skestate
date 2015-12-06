@@ -31,7 +31,6 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                                 <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary" name="Property[status]">
                                     <optgroup label="Status:">
                                         <option>Buy</option>
-                                        <option>Sale</option>
                                         <option>Rent</option>
                                     </optgroup>
                                 </select>
@@ -89,34 +88,18 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
 <section class="wrapper-md bg-highlight">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <div class="overlay-container">
-                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/item-small.jpg">
-                        <div class="overlay-content">
-                            <h3 class="h4 headline">Great Deal</h3>
-                            <p>So you know you're getting a top quality property from an experienced team.</p>
-                        </div><!-- /.overlay-content -->
-                    </div><!-- /.overlay-container -->
-                    <div class="thumbnail-meta">
-                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
-                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
-                    </div>
-                    <div class="thumbnail-meta">
-                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
-                    </div>
-                    <div class="thumbnail-meta">
-                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div><!-- /.thumbnail -->
-            </div>
             <?php
             for ($i = 0; $i < $count; $i++) {
                 ?>
                 <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <div class="overlay-container">
-                            <img src="<?php echo Yii::app()->request->baseUrl . $data[$i]->image_path; ?>">
+                            <img src="<?php
+                            if($data[$i]->image_path)
+                            echo Yii::app()->request->baseUrl . $data[$i]->image_path; 
+                            else
+                            echo Yii::app()->request->baseUrl . "/img/item-small.jpg"; 
+                                ?>">
                             <div class="overlay-content">
                                 <h3 class="h4 headline"> <?php echo $data[$i]->project_name; ?> </h3>
                                 <p> By: <?php echo $data[$i]->builder; ?></p>
@@ -130,7 +113,7 @@ $location = Yii::app()->db->createCommand('select distinct location from tbl_pro
                             <i class="fa fa-fw fa-info-circle"></i> <?php echo $data[$i]->area; ?> sqft.| <?php echo $data[$i]->rate; ?> per sqft.| <?php echo $data[$i]->bed; ?> BHK 
                         </div>
                         <div class="thumbnail-meta">
-                            <i class="fa fa-fw fa-inr"></i> <span class="h3"><?php echo $data[$i]->budget; ?></span> <a href='<?php echo CController::createUrl('//property/' . $data[$i]->id); ?>' class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                            <i class="fa fa-fw fa-inr"></i> <span class="h3"><?php echo $data[$i]->budget; ?> Cr</span> <a href='<?php echo CController::createUrl('//property/' . $data[$i]->id); ?>' class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div><!-- /.thumbnail -->
                 </div><!-- /.col -->

@@ -1,33 +1,53 @@
 <article class="post">
     <!-- Carousel -->
     <div id="my-carousel" class="carousel slide">
-        <!-- indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#my-carousel" data-slide-to="1"></li>
-        </ol>
-        <!-- carousel -->
-        <div class="carousel-inner">
-            <?php
-            $folder = Yii::getPathOfAlias('webroot') . '/images/property/'; // folder for uploaded files
-            $webFolder = Yii::app()->request->baseUrl . "/images/property/";
-            $files_folder = $model->id . '/';
-            $count = 0;
-            $scanned_directory = array();
-            if ($files_folder) {
-                $directory = $folder . $files_folder;
-                $scanned_directory = array_diff(scandir($directory), array('..', '.', '.swp'));
+        <?php
+        $folder = Yii::getPathOfAlias('webroot') . '/images/property/'; // folder for uploaded files
+        $webFolder = Yii::app()->request->baseUrl . "/images/property/";
+        $files_folder = $model->id . '/';
+        $count = $indicators = 0;
+        $scanned_directory = array();
+        $directory = $folder . $files_folder;
+        if (file_exists($directory)) {
+            $scanned_directory = array_diff(scandir($directory), array('..', '.', '.swp'));
+            ?>
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <?php
+                foreach ($scanned_directory as $img) {
+                    $indicators++;
+                    ?>
+                    <li data-target="#my-carousel" data-slide-to="<?= $indicators ?>" class="<?php echo $count == 1 ? 'active' : null ?>"></li>
+                    <div class="item <?php echo $count == 1 ? 'active' : null ?>">
+                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="property_image" >
+                    </div><!-- /.item -->
+                <?php }
+                ?>
+            </ol>
+            <!-- carousel -->
+            <div class="carousel-inner">
+
+                <?php
                 foreach ($scanned_directory as $img) {
                     $count++;
                     ?>
-            <div class="item <?php echo $count == 1 ? 'active' : null ?>">
-                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="1200x500" >
+                    <div class="item <?php echo $count == 1 ? 'active' : null ?>">
+                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="property_image" >
                     </div><!-- /.item -->
-                    <?php
-                }
-            }
+                <?php }
+                ?>
+            </div>
+            <?php
+        } else {
             ?>
-        </div><!-- /.carousel-inner -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/mumbai_skyline.jpg" alt=""/>
+                </div><!-- /.item -->
+            </div>
+            <?php
+        }
+        ?>
         <!-- Controls -->
         <a class="left carousel-control" href="#my-carousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -58,7 +78,7 @@
 <li><i class="fa fa-fw fa-briefcase"></i> <strong>Last Sold:</strong> May 2006, for $106.000</li>-->
                 </ul>
                 <input type="hidden" id="Property_address" value="<?= $model->address ?> " />
-                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?></h3>
+                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?> Cr</h3>
                 <ul class="tags">
                     <?php echo $model->swiming_pool ? '<li><a href="#link">Swimming Pool</a></li>' : null; ?>
                     <?php echo $model->garden ? '<li><a href="#link">Garden</a></li>' : null; ?>

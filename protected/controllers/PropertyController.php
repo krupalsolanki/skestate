@@ -7,6 +7,7 @@ class PropertyController extends Controller {
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
     public $property_type;
+    public $status;
     public $layout = '//layouts/column2';
 
     /**
@@ -162,8 +163,8 @@ class PropertyController extends Controller {
     public function actionIndex() {
         $this->layout = "//layouts/theme_page";
         $range = isset($_GET['range']) ? $_GET['range'] : '';
-        $this->property_type = $property_type = isset($_GET['Property']['type']) ? $_GET['Property']['type'] : '';
-        $status = isset($_GET['Property']['status']) ? $_GET['Property']['status'] : '';
+        $this->property_type = $property_type = isset($_GET['Property']['type_of_property']) ? $_GET['Property']['type_of_property'] : '';
+        $this->status = $status = isset($_GET['Property']['type']) ? $_GET['Property']['type'] : '';
         $location = isset($_GET['Property']['location']) ? $_GET['Property']['location'] : '';
         if (isset($_GET['Property'])) {
             $models = new Property('search');
