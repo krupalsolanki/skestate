@@ -45,6 +45,9 @@
                     </button>
                     <a href="<?php echo CController::createUrl('//site/index') ?>">
                         <img style="height: 53px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo-dark.png" alt="SK Logo">
+                        <h1 style="display: inline-block;
+                            position: relative;
+                            padding: 10px 46px;">SK Estate Agency</h1>
                     </a>
                 </div>
                 <!-- Navbar -->
@@ -110,9 +113,9 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-select.min.js"></script>
         <script>
-    $(document).ready(function () {
-        $('.selectpicker').selectpicker();
-    });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker();
+            });
         </script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/holder.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/holder.js"></script>

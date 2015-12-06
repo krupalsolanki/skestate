@@ -88,11 +88,6 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
                         <?php echo $form->textArea($model, 'message', array('size' => 60, 'maxlength' => 100, 'placeholder' => 'Any extra requirement..', 'class' => 'form-control')); ?>
                         <?php echo $form->error($model, 'message'); ?>
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Send me a copy
-                        </label>
-                    </div>
                     <button type="submit" class="btn btn-primary"><?php echo $model->isNewRecord ? 'List Requirement' : 'Save' ?></button>
                 </form>
             </div><!-- /.col -->

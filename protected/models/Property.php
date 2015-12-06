@@ -99,6 +99,7 @@ class Property extends CActiveRecord {
             'address' => 'Address',
             'description' => 'Description',
             'type_of_property' => 'Type Of Property',
+            'possession' => 'Possession',
         );
     }
 
@@ -144,6 +145,7 @@ class Property extends CActiveRecord {
         $criteria->compare('address', $this->address, true);
         $criteria->compare('description', $this->description, true);
         $criteria->compare('type_of_property', $this->type_of_property);
+        $criteria->compare('possession', $this->possession);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,

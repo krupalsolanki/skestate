@@ -34,7 +34,7 @@ class Postproperty extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email, mobile, city, property_type, property_for, size_of_property, location, budget, message', 'required'),
+			array('name, email, mobile, city, property_type, property_for', 'required'),
 			array('size_of_property', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>30),
 			array('email', 'length', 'max'=>50),
