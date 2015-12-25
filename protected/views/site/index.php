@@ -95,7 +95,7 @@ $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl
             for ($i = 0; $i < $count; $i++) {
                 ?>
                 <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
+                    <div class="thumbnail min-height">
                         <div class="overlay-container">
                             <img src="<?php
                             if ($data[$i]->image_path)
@@ -137,7 +137,7 @@ $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl
                             <img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/wallpaper.jpg" alt="1200x500">
                             <div class="carousel-caption visible-lg">
                                 <h1>Bootstrap Framework Overhauled<br> Meet the new sexy</h1>
-                                <p class="lead">Beautifull Bootstrap skin with overhauled components.</p><br>
+                                <p class="lead">Beautifully Bootstrap skin with overhauled components.</p><br>
                             </div>
                         </div><!-- /.item -->
                         <div class="item">
@@ -161,3 +161,8 @@ $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
+<style>
+    .min-height{
+        min-height: 440px;   
+    }
+</style>
