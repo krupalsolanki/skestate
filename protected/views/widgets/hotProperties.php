@@ -26,7 +26,7 @@
                                                     <li><span>Project Type</span><?php echo $project->type_of_project ?></li>
                                                 </ul>
                                                 <span class="price">₹ <?php echo $project->price_per_sqft ?> /sq. ft</span>
-                                                <div class="aligncenter"><a href="<?php echo Controller::createUrl('/tblProjects').'/'.$project->project_id ?>" class="link1"><span><span>Learn More</span></span></a></div>
+                                                <div class="aligncenter"><a href="<?php echo Controller::createUrl('/tblProjects') . '/' . $project->project_id ?>" class="link1"><span><span>Learn More</span></span></a></div>
                                             </div>
                                         </div>
                                     </div>

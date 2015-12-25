@@ -2,7 +2,7 @@
 /* @var $this SiteController */
 
 $this->pageTitle = Yii::app()->name;
-$data = TblProperty::model()->findAll();
+$data = Property::model()->findAll();
 $count = count($data);
 $location = Yii::app()->db->createCommand('select distinct location from tbl_property')->queryColumn();
 $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl_property order by possession desc')->queryColumn();
@@ -98,11 +98,11 @@ $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl
                     <div class="thumbnail">
                         <div class="overlay-container">
                             <img src="<?php
-                            if($data[$i]->image_path)
-                            echo Yii::app()->request->baseUrl . $data[$i]->image_path; 
+                            if ($data[$i]->image_path)
+                                echo Yii::app()->request->baseUrl . $data[$i]->image_path;
                             else
-                            echo Yii::app()->request->baseUrl . "/img/item-small.jpg"; 
-                                ?>">
+                                echo Yii::app()->request->baseUrl . "/img/item-small.jpg";
+                            ?>">
                             <div class="overlay-content">
                                 <h3 class="h4 headline"> <?php echo $data[$i]->project_name; ?> </h3>
                                 <p> By: <?php echo $data[$i]->builder; ?></p>
@@ -113,10 +113,11 @@ $possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl
                             <p><i class="fa fa-fw fa-map-marker"></i> <?php echo $data[$i]->address; ?></p>
                         </div>
                         <div class="thumbnail-meta">
-                            <i class="fa fa-fw fa-info-circle"></i> <?php echo $data[$i]->area; ?> sqft.| <?php echo $data[$i]->rate; ?> per sqft.| <?php echo $data[$i]->bed; ?> BHK 
+                            <i class="fa fa-fw fa-chevron-up"></i> <?php echo $data[$i]->bed; ?> BHK <br/>
+                            <i class="fa fa-fw fa-info-circle"></i> <?php echo $data[$i]->area; ?> ft<sup>2</sup> |<i class="fa fa-fw fa-inr"></i><?php echo $data[$i]->rate; ?>/ft<sup>2</sup>
                         </div>
                         <div class="thumbnail-meta">
-                            <i class="fa fa-fw fa-inr"></i> <span class="h3"><?php echo $data[$i]->budget; ?> Cr</span> <a href='<?php echo CController::createUrl('//property/' . $data[$i]->id); ?>' class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                            <i class="fa fa-fw fa-inr"></i> <span class="h3"><?php echo $data[$i]->budget; ?> Cr</span> Onwards <a href='<?php echo CController::createUrl('//property/' . $data[$i]->id); ?>' class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div><!-- /.thumbnail -->
                 </div><!-- /.col -->

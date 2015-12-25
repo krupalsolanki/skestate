@@ -8,6 +8,7 @@
         $count = $indicators = 0;
         $scanned_directory = array();
         $directory = $folder . $files_folder;
+        $truncated = (strlen($model->description) > 400) ? substr($model->description, 0, 400) . '...' : $model->description;
         if (file_exists($directory)) {
             $scanned_directory = array_diff(scandir($directory), array('..', '.', '.swp'));
             ?>
@@ -18,9 +19,6 @@
                     $indicators++;
                     ?>
                     <li data-target="#my-carousel" data-slide-to="<?= $indicators ?>" class="<?php echo $count == 1 ? 'active' : null ?>"></li>
-                    <div class="item <?php echo $count == 1 ? 'active' : null ?>">
-                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="property_image" >
-                    </div><!-- /.item -->
                 <?php }
                 ?>
             </ol>
@@ -32,7 +30,7 @@
                     $count++;
                     ?>
                     <div class="item <?php echo $count == 1 ? 'active' : null ?>">
-                        <img class="img-responsive" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="property_image" >
+                        <img class="img-responsive" style="max-height: 450px; width: auto" src="<?php echo $webFolder . $files_folder . $img; ?>" alt="property_image" >
                     </div><!-- /.item -->
                 <?php }
                 ?>
@@ -59,7 +57,7 @@
 
     <h2><i class="fa fa-map-marker"></i> <?= $model->project_name ?>, <span class="text-muted"><?= $model->location ?> </span></h2>
     <p class="lead"><?= $model->tag_line ?></p>
-
+    <h2 style="display: inline-block">Possession : <?= $model->possession ?></h2>
     <hr>
 
     <div class="row">
@@ -78,7 +76,7 @@
 <li><i class="fa fa-fw fa-briefcase"></i> <strong>Last Sold:</strong> May 2006, for $106.000</li>-->
                 </ul>
                 <input type="hidden" id="Property_address" value="<?= $model->address ?> " />
-                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?> Cr</h3>
+                <h3><i class="fa fa-fw fa-rupee"></i><?= number_format($model->budget, 2) ?> Cr Onwards</h3>
                 <ul class="tags">
                     <?php echo $model->swiming_pool ? '<li><a href="#link">Swimming Pool</a></li>' : null; ?>
                     <?php echo $model->garden ? '<li><a href="#link">Garden</a></li>' : null; ?>
@@ -94,9 +92,15 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">Description</h3>
                 </div>
-                <div class="panel-body">
-                    <p><?= $model->description ?></p>
+                <div class="panel-body" id="div_description">
+                    <p id="p_content_truncated"><?= $truncated ?></p>
+                    <p id="p_content_full" style="display: none"><?= $model->description ?></p>
                 </div><!-- /.panel-body -->
+                <?php if (strlen($model->description) > 400) { ?>
+                    <div class="panel-body" >
+                        <button class="btn btn-primary" id="btn_show_more"><i class="fa fa-arrow-down"></i> Show more</button>
+                    </div>
+                <?php } ?>
             </div><!-- /.panel -->
             <h3 class="h4">Share:</h3>
             <p>
@@ -116,7 +120,6 @@
     </div><!-- /.panel -->
 </article><!-- /.post -->
 <script>
-
     function initMap() {
         var map = new google.maps.Map(document.getElementById('basic_map'), {
             zoom: 14,
@@ -141,6 +144,17 @@
             }
         });
     }
+
+
+    $(document).ready(function () {
+        $('#btn_show_more').on('click', function () {
+            $("#p_content_truncated").hide();
+            $("#p_content_full").show('slow')
+            $(this).hide();
+
+        });
+
+    });
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFU9ag1KFdfCsTsU032uwk3X_y1eHjO0&callback=initMap">

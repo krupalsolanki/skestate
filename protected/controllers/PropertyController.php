@@ -137,6 +137,8 @@ class PropertyController extends Controller {
                         }
                     }
                 }
+            } else {
+                die(var_dump($model->errors));
             }
             $this->redirect(array('gallery', 'id' => $model->id));
         }
@@ -169,28 +171,20 @@ class PropertyController extends Controller {
         $this->status = isset($_GET['Property']['type']) ? $_GET['Property']['type'] : '';
         $this->location = isset($_GET['Property']['location']) ? $_GET['Property']['location'] : '';
         $this->possession = isset($_GET['Property']['possession']) ? $_GET['Property']['possession'] : '';
+        $models = new Property('search');
+        $models->unsetAttributes();  // clear any default values
         if (isset($_GET['Property'])) {
-            $models = new Property('search');
-            $models->unsetAttributes();  // clear any default values
-            if (isset($_GET['Property'])) {
-                $models->attributes = $_GET['Property'];
-            }
-            $data_provider = $models->search();
-            $criteria = $data_provider->getCriteria();
-            $count = Property::model()->count($criteria);
-            $pages = $data_provider->getPagination();
-            $pages->setItemCount($count);
-        } else {
-            $criteria = new CDbCriteria();
-            $count = Property::model()->count($criteria);
-            $pages = new CPagination($count);
-            $pages->pageVar = 'Property_page';
-            $pages->pageSize = 5;
+            $models->attributes = $_GET['Property'];
         }
+        $data_provider = $models->search();
+        $criteria = $data_provider->getCriteria();
+        $count = Property::model()->count($criteria);
+        $pages = $data_provider->getPagination();
+        $pages->setItemCount($count);
         $pages->applyLimit($criteria);
-        $models = Property::model()->findAll($criteria);
+        $Properties = Property::model()->findAll($criteria);
         $this->render('index', array(
-            'models' => $models,
+            'models' => $Properties,
             'pages' => $pages,
             'range' => $range,
             'property_type' => $this->property_type,

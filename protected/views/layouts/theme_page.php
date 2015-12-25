@@ -2,7 +2,7 @@
 <?php
 $this->beginContent('//layouts/theme');
 $location = Yii::app()->db->createCommand('select distinct location from tbl_property')->queryColumn();
-$possession = Yii::app()->db->createCommand('select distinct possession from tbl_property')->queryColumn();
+$possession = Yii::app()->db->createCommand('SELECT distinct possession FROM tbl_property order by possession desc')->queryColumn();
 ?>
 <section class="wrapper-xs bg-highlight">
     <div class="container">
