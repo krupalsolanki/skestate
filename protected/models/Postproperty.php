@@ -64,7 +64,7 @@ class Postproperty extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'p_id' => 'P',
+			'p_id' => 'List #',
 			'name' => 'Name',
 			'email' => 'Email',
 			'mobile' => 'Mobile',

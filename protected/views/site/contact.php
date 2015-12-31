@@ -1,155 +1,69 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/contact.css" media="screen, projection" />
 
-<body>
 <?php
 /* @var $this SiteController */
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
-$this->layout = "//layouts/column1";
+$this->layout = "//layouts/theme";
 $this->pageTitle = Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs = array(
     'Contact',
 );
 ?>
-    <div style="margin-top:1.5em">
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span6">
-             <div class="contact-container">
-                <div class="content clearfix">
-                 <?php if (Yii::app()->user->hasFlash('contact')): ?>
+<?php if (Yii::app()->user->hasFlash('contact')): ?>
 
-                    <div class="flash-success">
-                        <?php echo Yii::app()->user->getFlash('contact'); ?>
-                    </div>
+    <div class="flash-success">
+        <?php echo Yii::app()->user->getFlash('contact'); ?>
+    </div>
 
-                <?php else: ?>
-                    <?php
-                    $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-                        'id' => 'contact-form',
-                        'enableClientValidation' => true,
-                        'clientOptions' => array(
-                            'validateOnSubmit' => true,
-                        //    'type' => 'horizontal',
-                        ),
-                    ));
-                    ?>
-
-                        <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
-
-                    <?php echo $form->errorSummary($model); ?>
-                    <div class="login-fields">
-                    <fieldset>
-                        <legend><h1 >Get in Touch</h1></legend>
-                        <div class="field">
-                        <?php echo $form->textFieldRow($model, 'name', array('class'=>'login','placeholder' => 'Name',)); ?>
+<?php else: ?>
+    <section class="wrapper-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <h3>Contact data</h3>
+                    <div class="well">
+                        <p><i class="fa fa-map-marker"></i> Shop no 44, “A” Wing, Green Fields Society,
+                                        JVLR, Andheri (East),
+                                        Mumbai – 400093</p>
+                        <p><i class="fa fa-phone"></i> +91 982138 8331</p>
+                        <p><i class="fa fa-envelope"></i> <?= Yii::app()->params['adminEmail'] ?></p>
+                        <hr>
+                        <p>
+                        </p><ul class="social-networks">
+                            <li><a class="btn btn-facebook" href="#link"><i class="fa fa-fw fa-facebook"></i></a></li>
+                            <li><a class="btn btn-google-plus" href="#link"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                        </ul>
+                        <p></p>
+                    </div><!-- /.well -->
+                </div><!-- /.col -->
+                <div class="col-sm-12 col-md-4">
+                    <h3>Contact by email</h3>
+                    <form role="form" method="post" action="<?php echo CController::createUrl('site/contact') ?>">
+                        <div class="form-group">
+                            <label for="exmaple-contact-email">Email address</label>
+                            <input type="email" class="form-control" name="ContactForm[email]" id="exmaple-contact-email" placeholder="Enter email">
                         </div>
-
-
-                        <div class="field">
-                        <?php echo $form->textFieldRow($model, 'email', array('class'=>'login','placeholder' => 'Email',)); ?>
+                        <div class="form-group">
+                            <label for="example-contact-name">Name</label>
+                            <input type="text" class="form-control" name="ContactForm[name]" id="example-contact-name" placeholder="Your name">
                         </div>
-
-
-
-                        <div class="field">
-                        <?php echo $form->textFieldRow($model, 'subject', array('class'=>'login','size' => 60, 'maxlength' => 128, 'placeholder' => 'Subject',)); ?>
+                        <div class="form-group">
+                            <label for="example-contact-message">Message</label>
+                            <textarea id="example-contact-message" name="ContactForm[body]" class="form-control" rows="5"></textarea>
                         </div>
-
-
-
-                        <div class="field">
-                        <?php echo $form->textAreaRow($model, 'body', array('class'=>'login','rows' => 6, 'cols' => 100, 'placeholder' => 'Your Queries here...','style'=>'margin: 0px 0px 10px;width: 400px;height: 187px;')); ?>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div><!-- /.col -->
+                <div class="col-sm-12 col-md-4">
+                    <h3>Find us on the map</h3>
+                    <div class="padding-sm widget-dashed">
+                        <div class="embed-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.282282850159!2d72.8665283143081!3d19.13911705496036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7db79000001%3A0xd342b8997a251f48!2sSK+Estate+Agency!5e0!3m2!1sen!2sin!4v1451566384423" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
-
-                    </fieldset>
-
-
-                        <div class="login-actions" >
-                    <?php echo CHtml::submitButton('Submit', array('class' => 'btn btn-warning btn-large','style'=>'color:white;')); ?>
                     </div>
-
-                    <?php $this->endWidget(); ?>
-                    </div>
-                </div>
-                </div>
-           <div style="width: 45em;margin-left: 25px;">
-                <span style="margin: 30px;"><h3>Head Office:</h3></span>
-                <p>Shop no 44, "A" Wing, Green Fields Society,</p>
-                <p> JVLR, Andheri (East),</p>
-                <p>Mumbai - 400093</p>
-           </div>
-                </div><!-- span6 -->
-             
-                
-                
-        <div style="margin: 5em;"></div>
-        <div class="row-fluid">
-            <div class="span6">
-                <div class="map">
-                <?php
-                
-                Yii::import('ext.jquery-gmap.*');
-
-                $gmap = new EGmap3Widget();
-                $gmap->setSize(600, 400);
-
-
-                $options = array(
-                    'scaleControl' => true,
-                    'streetViewControl' => true,
-                    'zoom' => 13,
-                    'center' => array(0, 0),
-                    'mapTypeId' => EGmap3MapTypeId::HYBRID,
-                    'mapTypeControlOptions' => array(
-                        'style' => EGmap3MapTypeControlStyle::DROPDOWN_MENU,
-                        'position' => EGmap3ControlPosition::TOP_CENTER,
-                    ),
-                );
-                $gmap->setOptions($options);
-
-// marker with custom icon
-                $marker = new EGmap3Marker(array(
-                    'title' => 'SK Estate Agency',
-                    'icon' => array(
-                        'url' => '/skestate/images/workoffice.png',
-                        'anchor' => array('x' => 1, 'y' => 36),
-                    'anchor' => new EGmap3Point(0,0),
-                    )
-                ));
-
-// set marker position by address
-                $marker->address = 'Shop no 44, "A" Wing, Green Fields Society, JVLR, Andheri (East), Mumbai - 400093';
-
-// data associated with the marker
-                $marker->data = 'SK Estate Agency';
-
-// add a Javascript event on marker click
-                $js = "function(marker, event, data){
-        var map = $(this).gmap3('get'),
-        infowindow = $(this).gmap3({action:'get', name:'infowindow'});
-        if (infowindow){
-            infowindow.open(map, marker);
-            infowindow.setContent(data);
-        } else {
-            $(this).gmap3({action:'addinfowindow', anchor:marker, options:{content: data}});
-        }
-}";
-                $marker->addEvent('click', $js);
-
-// center the map on the marker
-                $marker->centerOnMap();
-
-                $gmap->add($marker);
-
-                $gmap->renderMap();
-                ?>
-                    </div>
-                
-             </div>
-        </div>
-        </div>
-           
-        </div>
-   
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
 <?php endif; ?>

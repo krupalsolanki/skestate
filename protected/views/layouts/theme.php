@@ -22,14 +22,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-10">
-                            <i class="fa fa-question-circle"></i> Have any question? Email us at <i class="fa fa-envelope"></i> <a href="mailto:admin@skestateagency.in?subject=Enquiry"><span class="text-light">admin@skestateagency.in</span></a>
+                            <i class="fa fa-question-circle"></i> Have any question? Email us at <i class="fa fa-envelope"></i> <a href="mailto:<?= Yii::app()->params['adminEmail'] ?>?subject=Enquiry"><span class="text-light">admin@skestateagency.in</span></a>
                         </div><!-- /.col -->
                         <div class="col-sm-12 col-md-2">
                             <ul class="list-inline no-margin-bottom">
-                                <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-pinterest"></i></a></li>
                             </ul>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -53,11 +51,14 @@
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="<?= Yii::app()->controller->id != "postproperty" ? "active" : "" ?>">
+                        <li class="<?= Yii::app()->controller->action->id == "index" && Yii::app()->controller->id == "site" ? "active" : "" ?>">
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a>
                         </li>
                         <li class="<?= Yii::app()->controller->id == "postproperty" ? "active" : "" ?>">
                             <a href="<?php echo CController::createUrl('//postproperty'); ?>">List Requirements</a>
+                        </li>
+                        <li class="<?= Yii::app()->controller->action->id == "contact" ? "active" : "" ?>">
+                            <a href="<?php echo CController::createUrl('/site/contact'); ?>">Contact Us</a>
                         </li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.collapse -->
