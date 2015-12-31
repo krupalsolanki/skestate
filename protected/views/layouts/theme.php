@@ -26,8 +26,8 @@
                         </div><!-- /.col -->
                         <div class="col-sm-12 col-md-2">
                             <ul class="list-inline no-margin-bottom">
-                                <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/skestateagency/"><i class="text-light fa fa-lg fa-fw fa-facebook"></i></a></li>
+                                <li><a href="https://plus.google.com/109421332274280228036/about"><i class="text-light fa fa-lg fa-fw fa-google-plus"></i></a></li>
                             </ul>
                         </div><!-- /.col -->
                     </div><!-- /.row -->

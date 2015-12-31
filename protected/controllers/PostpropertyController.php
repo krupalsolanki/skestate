@@ -68,23 +68,7 @@ class PostpropertyController extends Controller {
         if (isset($_POST['Postproperty'])) {
             $model->attributes = $_POST['Postproperty'];
             if ($model->save()) {
-                $mailContent = $this->widget('zii.widgets.CDetailView', array(
-                    'data' => $model,
-                    'attributes' => array(
-                        'p_id',
-                        'name',
-                        'email',
-                        'mobile',
-                        'city',
-                        'property_type',
-                        'property_for',
-                        'size_of_property',
-                        'location',
-                        'budget',
-                        'message',
-                    ),
-                ));
-                mail(Yii::app()->params['adminEmail'], 'Property Enquiry - SK Estate Agency', $mailContent);
+                mail(Yii::app()->params['adminEmail'], 'Property Enquiry - SK Estate Agency', CJSON::encode($model));
                 $this->redirect(CController::createUrl('//site/index'));
             }
         }

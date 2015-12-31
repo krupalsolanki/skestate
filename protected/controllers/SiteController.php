@@ -51,9 +51,10 @@ class SiteController extends Controller {
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
+            $model->subject = 'Enquiry - SK Estate Agency';
             if ($model->validate()) {
                 $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode('Enquiry - SK Estate Agency') . '?=';
+                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
                 $headers = "From: $name <{$model->email}>\r\n" .
                         "Reply-To: {$model->email}\r\n" .
                         "MIME-Version: 1.0\r\n" .
@@ -61,7 +62,8 @@ class SiteController extends Controller {
                 mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
                 Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
                 $this->refresh();
-            }
+            } else
+                die(var_dump($model->errors));
         }
         $this->render('contact', array('model' => $model));
     }
