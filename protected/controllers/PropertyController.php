@@ -52,8 +52,15 @@ class PropertyController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
+        $property = $this->loadModel($id);
+        Yii::app()->clientScript->registerMetaTag($this->createAbsoluteUrl('/property/view', array('id' => $id)), 'og:url');
+        Yii::app()->clientScript->registerMetaTag('website', 'og:type');
+        Yii::app()->clientScript->registerMetaTag(Yii::app()->name, 'og:title');
+        Yii::app()->clientScript->registerMetaTag($property->description, 'og:description');
+        Yii::app()->clientScript->registerMetaTag($this->createAbsoluteUrl($property->image_path), 'og:description');
+
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $property,
         ));
     }
 

@@ -22,7 +22,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-10">
-                            <i class="fa fa-question-circle"></i> Have any question? Email us at <i class="fa fa-envelope"></i> <a href="mailto:<?= Yii::app()->params['adminEmail'] ?>?subject=Enquiry"><span class="text-light">admin@skestateagency.in</span></a>
+                            <i class="fa fa-question-circle"></i> Have any question? Email us at <i class="fa fa-envelope"></i> <a href="mailto:<?= Yii::app()->params['adminEmail'] ?>?subject=Enquiry"><span class="text-light"><?= Yii::app()->params['adminEmail'] ?></span></a>
                         </div><!-- /.col -->
                         <div class="col-sm-12 col-md-2">
                             <ul class="list-inline no-margin-bottom">

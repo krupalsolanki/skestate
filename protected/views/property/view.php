@@ -1,3 +1,23 @@
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '938749116210048',
+            xfbml: true,
+            version: 'v2.5'
+        });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <article class="post">
     <!-- Carousel -->
     <div id="my-carousel" class="carousel slide">
@@ -106,6 +126,13 @@
             <p>
                 <a href="#link" class="btn btn-primary"><i class="fa fa-envelope"></i> Email to a friend</a>
                 <a href="#link" class="btn btn-facebook"><i class="fa fa-facebook"></i> Share</a>
+            <!--<div class="fb-share-button" data-href="<?= $this->createAbsoluteUrl('/property/', array('id', $model->id)) ?>" data-layout="button"></div>-->
+            <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+            </div>
             </p>
         </div><!-- /.col -->
     </div><!-- /.row -->
@@ -158,4 +185,11 @@
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFU9ag1KFdfCsTsU032uwk3X_y1eHjO0&callback=initMap">
+</script>
+<script>
+    FB.ui({
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/',
+    }, function (response) {
+    });
 </script>
