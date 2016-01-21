@@ -124,9 +124,6 @@
             </div><!-- /.panel -->
             <h3 class="h4">Share:</h3>
             <p>
-                <a href="#link" class="btn btn-primary"><i class="fa fa-envelope"></i> Email to a friend</a>
-                <a href="#link" class="btn btn-facebook"><i class="fa fa-facebook"></i> Share</a>
-            <!--<div class="fb-share-button" data-href="<?= $this->createAbsoluteUrl('/property/', array('id', $model->id)) ?>" data-layout="button"></div>-->
             <div
                 class="fb-like"
                 data-share="true"
