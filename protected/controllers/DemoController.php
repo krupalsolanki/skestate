@@ -47,7 +47,7 @@ class DemoController extends Controller {
             $message = (isset($_GET['message']) && !empty($_GET['message'])) ? $_GET['message'] : $this->_sendErrorResponse([["missing parameter" => ["Message is required"]]]);
             $gcm_ids = GCMUsers::model()->findAll();
             foreach ($gcm_ids as $gcm_id) {
-                $sent = GCMUsers::send_notification([$gcm_id], $message);
+                $sent = GCMUsers::send_notification([$gcm_id->reg_id], $message);
                 if ($sent !== TRUE)
                     $this->_sendErrorResponse([["Error" => [$sent]]]);
             }

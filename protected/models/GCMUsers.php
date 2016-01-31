@@ -75,14 +75,14 @@ class GCMUsers extends BaseGCMUsers {
                 $GCM_ID = isset($results[0]["registration_id"]) ? $results[0]["registration_id"] : null;
                 if ($GCM_ID) {
                     if (GCMUsers::model()->exists("reg_id=:GCM", array(":GCM" => $GCM_ID))) {
-                        return TRUE;
+                        return $REG_ID;
                     } else
                         return FALSE;
                 }else {
                     return FALSE;
                 }
             } else {
-                return TRUE;
+                return $REG_ID;
             }
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
