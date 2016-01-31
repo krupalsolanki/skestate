@@ -55,7 +55,7 @@ class PropertyController extends Controller {
         $property = $this->loadModel($id);
         Yii::app()->clientScript->registerMetaTag($this->createAbsoluteUrl('/property/view', array('id' => $id)), 'og:url');
         Yii::app()->clientScript->registerMetaTag('website', 'og:type');
-        Yii::app()->clientScript->registerMetaTag($property->project_name, 'og:title');
+        Yii::app()->clientScript->registerMetaTag($property->builder . " - " . $property->project_name . ", " . $property->tag_line, 'og:title');
         Yii::app()->clientScript->registerMetaTag((strlen($property->description) > 200) ? substr($property->description, 0, 200) . '...' : $property->description, 'og:description');
         Yii::app()->clientScript->registerMetaTag($this->createAbsoluteUrl($property->image_path), 'og:image');
         Yii::app()->clientScript->registerMetaTag('938749116210048', 'fb:app_id');
