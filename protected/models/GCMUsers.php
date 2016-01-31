@@ -2,7 +2,7 @@
 
 Yii::import('application.models._base.BaseGCMUsers');
 
-define("GOOGLE_API_KEY", "AIzaSyD-SBigW8zYOgXRkpCtq9ZEBVz3kQiUuTY"); // Swapnil's private key
+define("GOOGLE_API_KEY", "AIzaSyCGu6OWk2AbZNuABl0vMiqiFYxtBzriNz0"); // Swapnil's private key
 
 class GCMUsers extends BaseGCMUsers {
 
@@ -55,7 +55,7 @@ class GCMUsers extends BaseGCMUsers {
                 echo 'Curl failed: ' . curl_error($ch);
             }
             $res = ob_get_clean();
-            $GCMValidity = $this->GCMInvalid($res, $registration_ids[0]);
+            $GCMValidity = self::GCMInvalid($res, $registration_ids[0]);
             if ($GCMValidity)
                 self::deleteUser($GCMValidity);
 
@@ -67,7 +67,7 @@ class GCMUsers extends BaseGCMUsers {
         return TRUE;
     }
 
-    public function GCMInvalid($result, $REG_ID) {
+    public static function GCMInvalid($result, $REG_ID) {
         try {
             $result = json_decode($result, true);
             if ($result["success"] == 1) {
@@ -75,14 +75,14 @@ class GCMUsers extends BaseGCMUsers {
                 $GCM_ID = isset($results[0]["registration_id"]) ? $results[0]["registration_id"] : null;
                 if ($GCM_ID) {
                     if (GCMUsers::model()->exists("reg_id=:GCM", array(":GCM" => $GCM_ID))) {
-                        return $REG_ID;
+                        return TRUE;
                     } else
                         return FALSE;
                 }else {
                     return FALSE;
                 }
             } else {
-                return $REG_ID;
+                return TRUE;
             }
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();

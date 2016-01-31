@@ -52,7 +52,7 @@ class DemoController extends Controller {
                     $this->_sendErrorResponse([["Error" => [$sent]]]);
             }
             $this->setHeader(200);
-            $this->_sendResponse(true, $result);
+            $this->_sendResponse(true, TRUE);
         });
 
 
