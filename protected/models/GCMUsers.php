@@ -2,7 +2,7 @@
 
 Yii::import('application.models._base.BaseGCMUsers');
 
-define("GOOGLE_API_KEY", "AIzaSyCGu6OWk2AbZNuABl0vMiqiFYxtBzriNz0"); // Swapnil's private key
+define("GOOGLE_API_KEY", "AIzaSyCD1T8SfIgtJo0YrH0z9TL_fVCOkdsx2Cc"); // Swapnil's private key
 
 class GCMUsers extends BaseGCMUsers {
 
@@ -18,7 +18,6 @@ class GCMUsers extends BaseGCMUsers {
      */
     public static function send_notification($registration_ids, $message) {
         try {
-            var_dump($message);
             // Set POST variables
             $url = 'https://android.googleapis.com/gcm/send';
             $headers = array(
