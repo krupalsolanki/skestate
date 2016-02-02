@@ -46,10 +46,14 @@ class DemoController extends Controller {
         $this->onRest('req.get.sendMessage.render', function() {
             $message = (isset($_GET['message']) && !empty($_GET['message'])) ? $_GET['message'] : $this->_sendErrorResponse([["missing parameter" => ["Message is required"]]]);
             $gcm_ids = GCMUsers::model()->findAll();
-            foreach ($gcm_ids as $gcm_id) {
-                $sent = GCMUsers::send_notification([$gcm_id->reg_id], $message);
-                if ($sent !== TRUE)
-                    $this->_sendErrorResponse([["Error" => [$sent]]]);
+            if ($gcm_ids) {
+                foreach ($gcm_ids as $gcm_id) {
+                    $sent = GCMUsers::send_notification([$gcm_id->reg_id], $message);
+                    if ($sent !== TRUE)
+                        $this->_sendErrorResponse([["Error" => [$sent]]]);
+                }
+            }else {
+                $this->_sendErrorResponse([["Error" => ["No GCM IDs registered"]]]);
             }
             $this->setHeader(200);
             $this->_sendResponse(true, TRUE);
@@ -73,7 +77,7 @@ class DemoController extends Controller {
             $upload = GCMUsers::uploadGCM($gcm_id, $new_gcm_id, $update);
 
             if ($upload !== TRUE)
-                $this->_sendErrorResponse($updated);
+                $this->_sendErrorResponse($upload);
 
             $this->setHeader(200);
             $this->_sendResponse(true, $upload);

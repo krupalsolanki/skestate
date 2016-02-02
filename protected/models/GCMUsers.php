@@ -101,8 +101,8 @@ class GCMUsers extends BaseGCMUsers {
     }
 
     public static function uploadGCM($gcm_id, $new_gcm = "", $update = False) {
+        $gcm = GCMUsers::model()->find('reg_id =:gcm_id', array(':gcm_id' => $gcm_id));
         if ($update) {
-            $gcm = GCMUsers::model()->find('reg_id =:gcm_id', array(':gcm_id' => $gcm_id));
             if ($gcm) {
                 $gcm->reg_id = $new_gcm;
                 if (!$gcm->save())
@@ -110,14 +110,18 @@ class GCMUsers extends BaseGCMUsers {
                 else
                     return TRUE;
             } else
-                return ['GCM ID' => ['GCM ID is not Valid']];
+                return [['GCM ID' => ['GCM ID is not Valid']]];
         }else {
-            $gcm = new GCMUsers();
-            $gcm->reg_id = $gcm_id;
-            if (!$gcm->save())
-                return $gcm->errors;
-            else
-                return TRUE;
+            if ($gcm) {
+                return [['ID Exists' => ['GCM ID already Exists']]];
+            } else {
+                $gcm = new GCMUsers();
+                $gcm->reg_id = $gcm_id;
+                if (!$gcm->save())
+                    return $gcm->errors;
+                else
+                    return TRUE;
+            }
         }
     }
 
