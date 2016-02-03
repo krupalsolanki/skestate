@@ -20,44 +20,43 @@ class GCMUsers extends BaseGCMUsers {
         try {
             // Set POST variables
             $url = 'https://android.googleapis.com/gcm/send';
+
+            // Open connection
+            $fields = array(
+                'registration_ids' => $registration_ids,
+                'data' => array("message" => $message),
+            );
             $headers = array(
                 'Authorization: key=' . GOOGLE_API_KEY,
                 'Content-Type: application/json'
             );
+
             // Open connection
             $ch = curl_init();
 
-            // Set the url, number of POST vars, POST data
+            // Set the URL, number of POST vars, POST data
             curl_setopt($ch, CURLOPT_URL, $url);
-
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            //curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields));
 
-            // Disabling SSL Certificate support temporarly
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            // curl_setopt($ch, CURLOPT_POST, true);
+            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
 
-
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(
-                            array(
-                                'registration_ids' => $registration_ids,
-                                'data' => $message,
-                            )
-            ));
-
-            curl_setopt($ch, CURLOPT_VERBOSE, true); //return verbose
             // Execute post
             $result = curl_exec($ch);
-            ob_start();
-            echo $result;
-            if ($result === FALSE) {
-                echo 'Curl failed: ' . curl_error($ch);
-            }
-            $res = ob_get_clean();
-            $GCMValidity = self::GCMInvalid($res, $registration_ids[0]);
-            if ($GCMValidity)
-                self::deleteUser($GCMValidity);
-
+//            ob_start();
+//            echo $result;
+//            if ($result === FALSE) {
+//                echo 'Curl failed: ' . curl_error($ch);
+//            }
+//            $res = ob_get_clean();
+//            $GCMValidity = self::GCMInvalid($res, $registration_ids[0]);
+//            if (!$GCMValidity)
+//                self::deleteUser($GCMValidity);
             // Close connection
             curl_close($ch);
         } catch (Exception $exc) {

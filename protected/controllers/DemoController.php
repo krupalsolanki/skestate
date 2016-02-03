@@ -48,7 +48,7 @@ class DemoController extends Controller {
             $gcm_ids = GCMUsers::model()->findAll();
             if ($gcm_ids) {
                 foreach ($gcm_ids as $gcm_id) {
-                    $sent = GCMUsers::send_notification([$gcm_id->reg_id], $message);
+                    $sent = GCMUsers::send_notification([$gcm_id->reg_id], ["message"=>$message]);
                     if ($sent !== TRUE)
                         $this->_sendErrorResponse([["Error" => [$sent]]]);
                 }
